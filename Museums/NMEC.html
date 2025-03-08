@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NMEC</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="MuseumDesign.css">
+    <link rel="icon" href="Icon.png" type="image/png">
+
+    <style>
+.flap::before,
+.flap::after {
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 50%;
+    background: url("NMEC/Act1.jpg") no-repeat;
+    background-size: cover; /* Ensure the image covers the area */
+    transition: transform 1s; /* Use transform for smoother animation */
+}
+
+.flap::before {
+    left: 0; /* Position to the left */
+    background-position: 0px; /* Adjust background position */
+}
+
+.flap::after {
+    right: 0; /* Position to the right */
+    background-position: -250px; /* Adjust background position */
+}
+
+.cor:hover .flap::after {
+    transform: translateX(300px);
+}
+
+.cor:hover .flap::before {
+    transform: translateX(-300px);
+}
+
+
+.flapa::before,
+.flapa::after {
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 50%;
+    background: url("NMEC/Act2.jpg") no-repeat;
+    background-size: cover; /* Ensure the image covers the area */
+    transition: transform 1s; /* Use transform for smoother animation */
+}
+
+.flapa::before {
+    left: 0; /* Position to the left */
+    background-position: 0px; /* Adjust background position */
+}
+
+.flapa::after {
+    right: 0; /* Position to the right */
+    background-position: -250px; /* Adjust background position */
+}
+
+.cora:hover .flapa::after {
+    transform: translateX(300px);
+}
+
+.cora:hover .flapa::before {
+    transform: translateX(-300px);
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="Icon.png" height="50px" width="35px">
+        <div class="logo">NMEC</div>
+        </div>
+        <nav class="navigation">
+            <a href="#Home">Home</a>
+            <a href="#Most-Popular-Pieces">Most Popular Pieces</a>
+            <a href="#Activities">Activities</a>
+            <a href="#Appointments">Tickets & Opening Hours </a>
+            <a href="#Contacts">Contacts</a>
+        </nav>
+    </header>
+    <section id="Home">
+    <div class="slider">
+        <div class="list">
+            <div class="item">
+                <img src="NMEC/Slide1.png" alt="National Museum">
+                <div class="content">
+                    <div class="title" style="white-space: nowrap; font-size: 3rem;">National Museum of Egyptian Civilization</div>
+                    <div class="type" style="font-size: 3rem;"> (NMEC)</div>
+                    <div class="description"style="padding-top:4% ;">
+                         <h4>The National Museum of Egyptian Civilization is considered the first of its kind in Egypt 
+                         and the Arab world.</h4>
+                    </div>
+                    <div class="button">
+                        <a href="https://nmec.gov.eg/ar/">
+                            <button class="see-more-button">SEE MORE</button>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+            <div class="item">
+                <img src="NMEC/Slide2.png " alt="National Museum">
+                <div class="content">
+                    <div class="title" style="white-space: nowrap; font-size: 3rem;">National Museum of Egyptian Civilization</div>
+                    <div class="type" style="font-size: 3rem;"> (NMEC)</div>
+                    <div class="description" style="padding-top:8.01% ;">
+                        <h4>Its foundation stone was laid in 2002 in the heart of Fustat.</h4>
+                    </div>
+                    <div class="button">
+                        <a href="https://nmec.gov.eg/ar/">
+                            <button class="see-more-button">SEE MORE</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="NMEC/Slide3.png" alt="National Museum">
+                <div class="content">
+                    <div class="title" style="white-space: nowrap; font-size: 3rem;">National Museum of Egyptian Civilization</div>
+                    <div class="type" style="font-size: 3rem;"> (NMEC)</div>
+                    <div class="description"style="padding-top:8.01% ;">
+                        <h4>Inaugurated in 2017.</h4>
+                    </div>
+                    <div class="button">
+                        <a href="https://nmec.gov.eg/ar/">
+                            <button class="see-more-button">SEE MORE</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="NMEC/Slide4.png" alt="National Museum">
+                <div class="content">
+                    <div class="title" style="white-space: nowrap; font-size: 3rem;">National Museum of Egyptian Civilization</div>
+                    <div class="type" style="font-size: 3rem;"> (NMEC)</div>
+                    <div class="description">
+                        <h4>The museum houses nine grand halls that showcase Egypt's history from prehistory to the present day. 
+                        The most famous of these halls is 
+                        the Royal Mummies Hall.</h4>
+                    </div>
+                    <div class="button">
+                        <a href="https://nmec.gov.eg/ar/">
+                            <button class="see-more-button">SEE MORE</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="thumbnail">
+            <div class="item">
+                <img src="NMEC/Slide1.png" alt="Thumbnail of NMEC">
+            </div>
+            <div class="item">
+                <img src="NMEC/Slide2.png" alt="Thumbnail of NMEC">
+            </div>
+            <div class="item">
+                <img src="NMEC/Slide3.png" alt="Thumbnail of NMEC">
+            </div>
+            <div class="item">
+                <img src="NMEC/Slide4.png" alt="Thumbnail of NMEC">
+            </div>
+        </div>
+    </div>
+        <div class="nextPrevArrows">
+            <button class="prev"> < </button>
+            <button class="next"> > </button>
+        </div>
+    </div>
+    </section>
+    <section id="Most-Popular-Pieces">
+        <br><br>
+        <div class="con">
+            <h2 class="heading reveal">Most Popular Pieces</h2>
+            <a href="#!" class="card card-1 reveal">
+                <div class="front" style="background-image: url('NMEC/1.jpg');" >
+                    <p>The scepter of Prince Ptahshepses made of gold, red agate, and obsidian</p>
+                </div>
+                <div class="back">
+                    <div>
+                        <p>Period: Old Kingdom, Sixth Dynasty, </p>
+                        <p>approximately 2323-2150 BC.</p>
+                        <p>Dynasty: 6th Dynasty</p>     
+                        <p>Place of discovery: Saqqara</p>   
+                        <p>Material: Gold</p>
+                    </div>
+                </div>
+            </a>
+            <a href="#!" class="card card-2 reveal">
+                <div class="front" style="background-image: url('NMEC/2.jpg');" >
+                    <p>King Ramses II Sarcophagus</p>
+                </div>
+                <div class="back">
+                    <div>
+                        <p>Period: He ruled Egypt in ancient times.</p> 
+                        <p> His reign lasted about 67 years, from 1279 to 1213 BC</p>
+                        <p>Dynasty: 19th Dynasty</p>     
+                        <p>Place of discovery: Deir el-Bahari Cache in Thebes 1881</p>                
+                        <p>Material: Wood</p>
+                    </div>
+                </div>
+            </a>
+            <a href="#!" class="card card-3 reveal">
+                <div class="front" style="background-image: url('NMEC/3.png');" >
+                     <p>The sarcophagus of Najm Ankh</p>
+        </div>
+        <div class="back">
+            <div>
+                <p>Period: Ptolemaic period.</p>
+                <p>Dynasty: 31st Dynasty</p>
+                <p>Place of discovery: Thebes, which is now Luxor</p>    
+                <p>Material: Cartonnage covered with gold leaf.</p>
+            </div>
+        </div>
+            </a>
+            <a href="#!" class="card card-4 reveal">
+                <div class="front" style="background-image: url('NMEC/4.jpg');" >
+                    <p>A granite statue of King Thutmose III</p>
+                </div>
+                <div class="back">
+                    <div>
+                        <p>Period: The New Kingdom, approximately 1550-1295 BC.</p>
+                        <p>Dynasty: 18th Dynasty</p>                       
+                        <p>Place of discovery: Karnak</p>                      
+                        <p>Material: Granite</p>
+                    </div>
+                </div>
+            </a>
+            <a href="#!" class="card card-5 reveal">
+                <div class="front" style="background-image: url('NMEC/5.jpg');" >
+                    <p>The outer sarcophagus of Queen Ahmose Nefertar</p>
+                </div>
+                <div class="back">
+                    <div>
+                        <p>Period: The New Kingdom, approximately 1562-1495 BC.</p>
+                        <p>Dynasty: 18th Dynasty</p>      
+                        <p>Place of discovery: Theban Necropolis</p>
+                    </div>
+                </div>
+            </a>
+            <a href="#!" class="card card-6 reveal">
+                <div class="front" style="background-image: url('NMEC/6.jpg');" >
+                    <p>The mummy of King Amenhotep I</p>
+                </div>
+                <div class="back">
+                    <div>
+                        <p>Period: He ruled Egypt in ancient times. His reign lasted about 21 years  1525-1504 BC.</p>
+                        <p>Dynasty: 19th Dynasty</p>   
+                        <p>Place of discovery: Theban Necropolis</p>
+                    </div>
+                </div>
+            </a>
+            <a href="#!" class="card card-7 reveal">
+                <div class="front" style="background-image: url('NMEC/7.jpg');" >
+                    <p>The Canopic Box of King Amenhotep II </p>
+                </div>
+                <div class="back">
+                    <div>
+                        <p>Dynasty: 18th Dynasty
+                        <p>Place of discovery: Theban Necropolis</p> 
+                        <p> Material: Limestone or Alabaster
+                        This box held <br>the sacred canopic jars that contained the internal organs of King Amenhotep II.
+                        <p> It offers a fascinating glimpse into the burial practices <br>and beliefs of ancient Egyptian civilization</p></p>
+                    </div>
+                </div>
+            </a>
+            <a href="#!" class="card card-8 reveal">
+                <div class="front" style="background-image: url('NMEC/8.jpg');" >
+                    <p>King Thutmose I's Sarcophagus</p>
+                </div>
+                <div class="back">
+                    <div>
+                        <p>Period: He ruled Egypt in ancient times. His reign lasted about 21 years  1506-1493 BC.</p>
+                        <p>Dynasty: 18th Dynasty</p>                           
+                        <p> Place of discovery: Theban Necropolis</p>
+                    </div>
+                </div>
+            </a>
+            <a href="#!" class="card card-9 reveal">
+                <div class="front" style="background-image: url('NMEC/9.jpg');" >
+                    <p>The Canopic Jars of King Thutmose IV</p>
+                </div>
+                <div class="back">
+                    <div>
+                        <p>Dynasty: 18th Dynasty</p>
+                        <p>Place of discovery: Theban Necropolis </p>
+                        <p>Material: Luxurious Egyptian Alabaster</p>
+                        <p>These magnificent ceramic jars were part of the funerary furnishings of King Thutmose IV</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </section>
+    <section id="Activities" style="background-image: url('NMEC/Background1.png'); background-size: cover; background-position: center;">
+        <div class="cont">
+            <h2 class="heading reveal">Activities</h2>
+            <div class="card-container "> 
+            <div class="cor reveal">
+                <div class="cot ">
+                    <h1 class="i">December 15, 2021 </h1>
+                    <h3 class="l">A spectacular artistic evening featuring Maestro Nader Abbasi on the revival of musical heritage took place on December 15, 2021, at the National Museum of Egyptian Civilization in Fustat. During the evening, the artist elaborated on the significance of musical heritage and how it can be revived.
+                        He also discussed the reasons behind the growing interest in this distinguished genre of music in recent times and highlighted how various countries around the world have utilized it to lead global orchestras on stages in France, Switzerland, and other nations.
+                        Maestro Nader Abbasi expressed his appreciation for the efforts, fruitful collaboration, and full coordination between the museum's administration and those organizing such evenings, seminars, and exhibitions. These efforts have achieved significant milestones in spreading intellectual, 
+                        artistic, and cultural awareness. He also referenced global recognition through events like the grand celebration of the transfer of the royal mummies to the National Museum of Egyptian Civilization and the inauguration of the Avenue of Sphinxes in Luxor.
+                    </h3>
+                    </div>
+                <div class="flap"></div>
+            </div>
+            <div class="cora reveal">
+                <div class="cota ">
+                    <h1 class="ia">The Ancient Egyptian Harp,<br> July 13, 2021</h1>
+                    <h3 class="la">As part of the cultural and artistic program organized by the National Museum of Egyptian Civilization in Fustat, the open Roman Theater at the museum hosted a mesmerizing musical performance this evening. During the event, Egyptian harpist Manal Mohyeldin captivated all attendees with her solo performance on the harp. The concert featured a selection of beautiful pieces from the heritage of Arab music as well as new compositions by Manal Mohyeldin herself. 
+                        Her performances are unique for blending classical international compositions with traditional Arab pieces, showcasing her distinctive style of musical fusion.
+                    </h3>
+                </div>
+                <div class="flapa"></div>
+            </div>
+            </div>
+        </div> 
+    </section>
+    <section id="Appointments">
+        <div class="conta">
+            <h2 class="heading reveal">Tickets & Opening Hours </h2>
+            <div class="admission-prices reveal">
+                <h2 class="hi">Ticket Prices</h2>
+                <p>Free Admission: Children under 6 years old</p>
+                <p>Egyptian & Arab Visitors:</p>
+                <table>
+                    <tr>
+                        <td>Adults</td>
+                        <td>EGP 80</td>
+                    </tr>
+                    <tr>
+                        <td>Student</td>
+                        <td>EGP 40</td>
+                    </tr>
+                </table>
+                    <p>Foreigners Visitors:</p>
+                        <table>
+                        <tr>
+                            <td>Adults</td>
+                            <td>EGP 500</td>
+                        </tr>
+                        <tr>
+                            <td>Student</td>
+                            <td>EGP 250</td>
+                        </tr>
+                    </table>
+                
+            </div>
+            <div class="opening-hours reveal">
+                <h2 class="hi">Opening Hours</h2>
+                <p>Visitors</p>
+                <table>
+                    <tr>
+                        <p>Last ticket booking at 4:00 PM</p>
+                        <td>Saturday – Thursday</td>
+                        <td>9:00 a.m. – 5:00 p.m.</td>
+                    </tr>
+                </table>
+                <table>
+                    <tr>
+                        <p><br>Last ticket booking at 4:00 PM , 8:00 PM</p>
+                        <td>Friday</td>
+                        <td>9:00 a.m. – 5:00 p.m. <br> 6:00 p.m. – 9:00 p.m.</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </section>
+    <section id="Contacts" style="background-image: url('NMEC/Background2.png'); " > 
+         <h2 class="heading reveal">Contact</h2>
+         <center>
+
+            <div class="Contact reveal" id="contact">
+                <h1 class="title">Contact us</h1>
+                <div class="icon">
+                <i class="fa fa-map-marker fa-2x"></i>    
+                </div>
+                    <div class="info">
+                        <p>Mar Girgis Metro Station, Ain Seera, Cairo - Egypt</p>
+                        </div>
+                <div class="Contact reveal" >
+                <div class="icon">
+            <i class="fa fa-phone fa-2x"></i>    
+            </div>
+                    <div class="info">
+                        <h3>Postal Code</h3>
+                        <p>17611</p>
+                    </div>                 
+                    <div class="Contact reveal">
+                        <div class="icon">
+                            <i class="fa fa-envelope fa-2x"></i>
+                        </div>
+                        
+                        <div class="info">
+                        <h3> Email </h3>
+                            <a href="mailto:info@nmec.gov.eg">info@nmec.gov.eg</a>
+                        </div>             
+                </div>
+            </div>
+            <div>
+                <ul class="social-media-list ">
+                    
+                    <li>
+                        <a href="https://www.facebook.com/nmec.gov.eg/" target="_blank" class="co-icon">
+                            <i class="fa fa-facebook"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/nmecmuseum/?igshid=YmMyMTA2M2Y" target="_blank" class="co-icon">
+                        <i class="fa fa-instagram" aria-hidden="true"></i></a>
+                      </li>
+                    <li><a href="https://x.com/NMEC17?s=08" target="_blank" class="co-icon">
+                      <i class="fa fa-twitter" aria-hidden="true"></i></a>
+                    </li>
+                       
+                    <li><a href="https://www.youtube.com/channel/UCbS7-4TJlWeM4GeG-g09tdw" target="_blank" class="co-icon">
+                        <i class="fa fa-youtube" aria-hidden="true"></i></a>
+                      </li>    
+                  </ul>
+            </div> 
+            </div> 
+        </center>
+      </section> 
+      <script src="MuseumScript.js"></script>
+</body>
+</html>

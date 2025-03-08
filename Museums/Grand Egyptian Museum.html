@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grand Egyptian Museum</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="MuseumDesign.css">
+    <link rel="icon" href="Icon.png" type="image/png">
+
+    <style>
+.flap::before,
+.flap::after {
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 50%;
+    background: url("Grand Egyptian Museum/Act1.jpg") no-repeat;
+    background-size: cover; /* Ensure the image covers the area */
+    transition: transform 1s; /* Use transform for smoother animation */
+}
+
+.flap::before {
+    left: 0; /* Position to the left */
+    background-position: 0px; /* Adjust background position */
+}
+
+.flap::after {
+    right: 0; /* Position to the right */
+    background-position: -250px; /* Adjust background position */
+}
+
+.cor:hover .flap::after {
+    transform: translateX(300px);
+}
+
+.cor:hover .flap::before {
+    transform: translateX(-300px);
+}
+
+
+.flapa::before,
+.flapa::after {
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 50%;
+    background: url("Grand Egyptian Museum/Act2.jpg") no-repeat;
+    background-size: cover; /* Ensure the image covers the area */
+    transition: transform 1s; /* Use transform for smoother animation */
+}
+
+.flapa::before {
+    left: 0; /* Position to the left */
+    background-position: 0px; /* Adjust background position */
+}
+
+.flapa::after {
+    right: 0; /* Position to the right */
+    background-position: -250px; /* Adjust background position */
+}
+
+.cora:hover .flapa::after {
+    transform: translateX(300px);
+}
+
+.cora:hover .flapa::before {
+    transform: translateX(-300px);
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="Icon.png" height="50px" width="35px">
+        <div class="logo">Grand Egyptian Museum</div>
+        </div>
+        <nav class="navigation">
+            <a href="#Home">Home</a>
+            <a href="#Most-Popular-Pieces">Most Popular Pieces</a>
+            <a href="#Activities">News</a>
+            <a href="#Appointments">Tickets & Opening Hours </a>
+            <a href="#Contacts">Contacts</a>
+        </nav>
+    </header>
+    <section id="Home">
+    <div class="slider">
+        <div class="list">
+            <div class="item">
+                <img src="Grand Egyptian Museum/Slide1.png" alt="Grand Egyptian Museum">
+                <div class="content">
+                    <div class="title" style="white-space: nowrap;">Grand Egyptian Museum</div>
+                    <div class="type"> in Giza</div>
+                    <div class="description" style="padding-top: 8.01%;">
+                       <h4>The Grand Egyptian Museum is located a few miles west of Cairo, near the Giza Pyramids.</h4>
+                    </div>
+                    <div class="button">
+                        <a href="https://visit-gem.com/en">
+                            <button class="see-more-button">SEE MORE</button>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+            <div class="item">
+                <img src="Grand Egyptian Museum/Slide2.png" alt="Grand Egyptian Museum">
+                <div class="content">
+                    <div class="title" style="white-space: nowrap;">Grand Egyptian Museum</div>
+                    <div class="type"> in Giza</div>
+                    <div class="description" style="padding-top: 4%;">
+                        <h4>It was built to become the largest museum in the world dedicated to antiquities, with the capacity to accommodate 5 million visitors annually.</h4>
+                    </div>
+                    <div class="button">
+                        <a href="https://visit-gem.com/en">
+                            <button class="see-more-button">SEE MORE</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="Grand Egyptian Museum/Slide3.png" alt="Grand Egyptian Museum">
+                <div class="content">
+                    <div class="title" style="white-space: nowrap;">Grand Egyptian Museum</div>
+                    <div class="type"> in Giza</div>
+                    <div class="description"  style="padding-top: 4%;">
+                        <h4>The museum houses over 100,000 artifacts from the Pharaonic, Greek, and Roman eras, which is expected to give a significant boost to Egypt's tourism sector.</h4>
+                    </div>
+                    <div class="button">
+                        <a href="https://visit-gem.com/en">
+                            <button class="see-more-button">SEE MORE</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="Grand Egyptian Museum/Slide4.png" alt="Grand Egyptian Museum">
+                <div class="content">
+                    <div class="title" style="white-space: nowrap;">Grand Egyptian Museum</div>
+                    <div class="type"> in Giza</div>
+                    <div class="description"  style="padding-top: 4%;">
+                        <h4>In addition to commercial and recreational service buildings, the museum also includes a restoration center and a museum garden planted with trees that were known to the ancient Egyptians.</h4>
+                    </div>
+                    <div class="button">
+                        <a href="https://visit-gem.com/en">
+                            <button class="see-more-button">SEE MORE</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="thumbnail">
+            <div class="item">
+                <img src="Grand Egyptian Museum/Slide1.png" alt="Thumbnail of Grand Egyptian Museum">
+            </div>
+            <div class="item">
+                <img src="Grand Egyptian Museum/Slide2.png" alt="Thumbnail of Grand Egyptian Museum">
+            </div>
+            <div class="item">
+                <img src="Grand Egyptian Museum/Slide3.png" alt="Thumbnail of Grand Egyptian Museum">
+            </div>
+            <div class="item">
+                <img src="Grand Egyptian Museum/Slide4.png" alt="Thumbnail of Grand Egyptian Museum">
+            </div>
+        </div>
+    </div>
+        <div class="nextPrevArrows">
+            <button class="prev"> < </button>
+            <button class="next"> > </button>
+        </div>
+    </div>
+    </section>
+    <section id="Most-Popular-Pieces">
+        <br><br>
+        <div class="con">
+            <h2 class="heading reveal">Most Popular Pieces</h2>
+            <a href="#!" class="card card-1 reveal">
+                <div class="front" style="background-image: url('Grand Egyptian Museum/1.jpg');" >
+                    <p>Statue of Ramses II with Ptah and Sekhmet</p>
+                </div>
+                <div class="back">
+                    <div>
+                        <p>This prominent artifact depicts Pharaoh Ramses II <br>(1279–1213 BC) seated between Ptah, the god of creation, and Sekhmet, the goddess of war and healing. 
+                            Made of granite or sandstone, the statue highlights the close relationship between the pharaoh and the gods in ancient Egyptian belief. 
+                            Ramses II is shown slightly larger, symbolizing his role as a mediator between humans and the divine. 
+                            The statue features intricate details and hieroglyphic inscriptions recording his titles and divine connections.</p>
+                    </div>
+                </div>
+            </a>
+            <a href="#!" class="card card-2 reveal">
+                <div class="front" style="background-image: url('Grand Egyptian Museum/2.jpg');" >
+                    <p>The Magnificent Statue of Ra-Horakhty</p>
+                </div>
+                <div class="back">
+                    <div>
+                        <p>This stunning statue dates back to the 19th Dynasty during the reign of the legendary pharaoh Ramses II. 
+                            Carved from granite, this remarkable piece is housed in the Grand Egyptian Museum, 
+                            showcasing the grandeur of ancient Egyptian artistry.</p>
+                    </div>
+                </div>
+            </a>
+            <a href="#!" class="card card-3 reveal">
+                <div class="front" style="background-image: url('Grand Egyptian Museum/3.jpg');" >
+                    <p>Large Kneeling Statue of Hatshepsut</p>
+                </div>
+                <div class="back">
+                    <div>
+                        <p>This granite statue from Dynasty 18 <br>(circa 1479–1458 B.C.) depicts Hatshepsut during her joint reign with Thutmose III. 
+                            Discovered at Deir el-Bahri, Thebes, 
+                            it measures 261.5 cm in height and was excavated by the MMA in 1927–28.</p>
+                    </div>
+                </div>
+            </a>
+            <a href="#!" class="card card-4 reveal">
+                <div class="front" style="background-image: url('Grand Egyptian Museum/4.jpg');" >
+                    <p>High Priest Ramessesnakht</p>
+                </div>
+                <div class="back">
+                    <div>
+                        <p>This depiction shows him as a scribe, protected by a baboon, the symbol of Thoth, 
+                            the god of writing, wisdom, magic, and the moon. Dating back to Dynasty 20, 
+                            the statue is carved from granite and was discovered in Karnak.</p>
+                    </div>
+                </div>
+            </a>
+            <a href="#!" class="card card-5 reveal">
+                <div class="front" style="background-image: url('Grand Egyptian Museum/5.jpg');" >
+                    <p>The statue of King Senwosret I</p>
+                </div>
+                <div class="back">
+                    <div>
+                        <p>Dating back to the 12th Dynasty and made of granite, was discovered in Tanis (San el-Hagar). 
+                            The style and amulet necklace of the statue suggest it was originally crafted for a Middle Kingdom king, likely Senwosret I, 
+                            but was later reused by King Merenptah, a New Kingdom ruler, who added his own inscriptions to it.</p>
+                    </div>
+                </div>
+            </a>
+            <a href="#!" class="card card-6 reveal">
+                <div class="front" style="background-image: url('Grand Egyptian Museum/6.jpg');" >
+                    <p>Statue of Mitri</p>
+                </div>
+                <div class="back">
+                    <div>
+                        <p>Crafted from wood with painted stucco, this statue dates back to the 5th Dynasty. 
+                            It was discovered in Saqqara, within the Mastaba of Mitri, 
+                            showcasing the artistry and craftsmanship of ancient Egyptian funerary traditions.</p>
+                    </div>
+                </div>
+            </a>
+            <a href="#!" class="card card-7 reveal">
+                <div class="front" style="background-image: url('Grand Egyptian Museum/7.jpg');" >
+                    <p>The Statue of Ramesses II</p>
+                </div>
+                <div class="back">
+                    <div>
+                        <p>It is a colossal 3,200-year-old figure depicting the pharaoh Ramesses II in a standing position. 
+                            It stands 11 meters tall, is made of red granite, and weighs 83 tons. Discovered in 1882 at Mit Rahina near ancient Memphis, 
+                            Egypt, the statue was found broken into six pieces and remained at the site for several decades.</p>
+                    </div>
+                </div>
+            </a>
+            <a href="#!" class="card card-8 reveal">
+                <div class="front" style="background-image: url('Grand Egyptian Museum/8.jpg');" >
+                    <p>Statue of Ptah</p>
+                </div>
+                <div class="back">
+                    <div>
+                        <p>Ptah, a significant creator god, is depicted as a mummified figure with hands emerging to hold a scepter featuring symbols of power (was), 
+                            life (ankh), and stability (djed). King Ramesses II dedicated this sandstone statue to the Great Temple of Ptah in Memphis during the 19th Dynasty (circa 1279–1213 BC). 
+                            Though little of the temple remains today, this statue reflects its historical grandeur.</p>
+                    </div>
+                </div>
+            </a>
+            <a href="#!" class="card card-9 reveal">
+                <div class="front" style="background-image: url('Grand Egyptian Museum/9.jpg');" >
+                    <p>Statue of Akhenaten</p>
+                </div>
+                <div class="back">
+                    <div>
+                        <p>The statue of Akhenaten, a prominent artifact from the Amarna Period (circa 1353–1336 BC), 
+                            reflects his religious revolution promoting the worship of Aten 
+                            (the sun disk) as the sole deity. It showcases the unique Amarna art style, 
+                            characterized by realistic details and exaggerated features, differing from traditional Egyptian art.  
+                            The statue depicts Akhenaten with distinctive traits, such as an elongated face, narrow eyes, full lips, and a slender body, 
+                            symbolizing the artistic shift during his reign. Made of sandstone or granite, it represents a significant transitional period in ancient Egyptian history.</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </section>
+    <section id="Activities" style="background-image: url('Grand Egyptian Museum/Background1.png'); background-size: cover; background-position: center;">
+        <div class="cont">
+            <h2 class="heading reveal">News</h2>
+            <div class="card-container "> 
+            <div class="cor reveal">
+                <div class="cot ">
+                    <h3 class="l">A New Chapter in Education & Culture!
+                        <br>Legacy Development and Management, Operator of the Grand Egyptian Museum, proudly signed an agreement with the American University in Cairo’s School of Continuing Education (SCE) to offer educational programs at the Grand Egyptian Museum. 
+                        This partnership marks the launch of two exceptional programs: a Professional Certificate for Tour Guides, which equips participants with essential skills needed to pursue their careers through hands-on training and on-site experiences at the GEM, and a Mobile Photography Workshop, 
+                        where participants can master photography techniques while capturing the breathtaking architecture and design of the museum, blending modernity and antiquity.
+                        This collaboration empowers aspiring professionals with the tools and experiences they need to excel in their fields while promoting Egypt’s extraordinary heritage.
+                        Stay tuned for updates on how you can join these transformative programs!</h3>
+                </div>
+                <div class="flap"></div>
+            </div>
+            <div class="cora reveal">
+                <div class="cota ">
+                    <h3 class="la">Mr. Ahmed Moallim Fiqi, Minister of Foreign Affairs of Somalia, 
+                        and Mr. Ali Abdi Awaare, Somalia’s Ambassador to Cairo, along with their accompanying delegation, 
+                        visited the Grand Egyptian Museum. The Somali high-ranking delegation was received by Dr. Ahmed Ghoneim, 
+                        CEO of the Grand Egyptian Museum Authority.
+                        The delegation expressed their deep admiration for the museum and praised the magnificence of its display, 
+                        highlighting the stunning artifacts and collections it houses.</h3>
+                </div>
+                <div class="flapa"></div>
+            </div>
+            </div>
+        </div> 
+    </section>
+    <section id="Appointments">
+        <div class="conta">
+            <h2 class="heading reveal">Tickets & Opening Hours </h2>
+            <div class="admission-prices reveal " style="margin-top: -50px;">
+                <h2 class="hi">Ticket Prices</h2>
+                <p>Egyptian Visitors:</p>
+                <table>
+                    <tr>
+                        <td>Adults</td>
+                        <td>EGP 200</td>
+                    </tr>
+                    <tr>
+                        <td>Student</td>
+                        <td>EGP 100</td>
+                    </tr>
+                </table>
+                    <p>Foreigners & Arab Visitors:</p>
+                        <table>
+                        <tr>
+                            <td>Adults</td>
+                            <td>EGP 1200</td>
+                        </tr>
+                        <tr>
+                            <td>Student</td>
+                            <td>EGP 600</td>
+                        </tr>
+                    </table>
+                    <p>Arabs & Foreigners residing in Egypt Visitors:</p>
+                        <table>
+                        <tr>
+                            <td>Adults</td>
+                            <td>EGP 600</td>
+                        </tr>
+                        <tr>
+                            <td>Student</td>
+                            <td>EGP 300</td>
+                        </tr>
+                    </table>
+            </div>
+            <div class="opening-hours reveal"style="margin-top: -50px;">
+                <h2 class="hi">Opening Hours</h2>
+                <p>Visitors</p>
+                <table>
+                    <tr>
+                        <p><br>Last Ticket Purchase: 5:00 PM</p>
+                        <td>Sunday, Monday, Tuesday, <br>Thursday, and Friday</td>
+                        <td  style="text-align: center;">Museum Complex <br>8:30 a.m. – 7:00 p.m.
+                            <br> Exhibition Halls <br> 9:00 a.m. – 7:00 p.m.
+                        </td>
+                    </tr>
+                </table>
+                <table>
+                    <tr>
+                        <p><br>Last Ticket Purchase: 8:00 PM</p>
+                        <td>Saturday and Wednesday</td>
+                        <td style="text-align: center; ">Museum Complex <br>8:30 a.m. – 10:00 p.m.
+                           <br> Exhibition Halls<br>9:00 a.m. – 9:00 p.m.
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </section>
+    <section id="Contacts" style="background-image: url('Grand Egyptian Museum/Background2.png'); " > 
+         <h2 class="heading reveal">Contact</h2>
+         <center>
+
+            <div class="Contact reveal" id="contact">
+                <h1 class="title">Contact us</h1>
+                <div class="icon">
+                <i class="fa fa-map-marker fa-2x"></i>    
+                </div>
+                    <div class="info">
+                        <p>El Remaya square, Giza - Egypt</p>
+                        </div>
+                <div class="Contact reveal" >
+                <div class="icon">
+            <i class="fa fa-phone fa-2x"></i>    
+            </div>
+                    <div class="info">
+                        <h3>Phone</h3>
+                        <p>02 35317344</p>
+                    </div>
+                    
+                    <div class="Contact reveal">
+                        <div class="icon">
+                            <i class="fa fa-envelope fa-2x"></i>
+                        </div>
+                        
+                        <div class="info">
+                        <h3> Email </h3>
+                            <a href="mailto:Tourism_info@easwaaqmisr.com">Tourism_info@easwaaqmisr.com</a>
+                        </div>  
+                </div>
+            </div>
+            <div>
+                <ul class="social-media-list ">
+                    
+                    <li>
+                        <a href="https://www.facebook.com/share/15dHMJSUdJ/" target="_blank" class="co-icon">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/grandegyptianmuseum?igsh=MW96aGNvazVrbGlxYQ==" target="_blank" class="co-icon">
+                        <i class="fab fa-instagram" aria-hidden="true"></i></a>
+                      </li>
+                    <li><a href="https://www.tiktok.com/@grandegyptianmuseum?_t=8mwhZT5wHyP&_r=1" target="_blank" class="co-icon">
+                      <i class="fab fa-tiktok" aria-hidden="true"></i></a>
+                    </li>   
+                  </ul>
+            </div> 
+            </div> 
+        </center>
+      </section> 
+      <script src="MuseumScript.js"></script>
+</body>
+</html>

@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Graeco-Roman Museum</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="MuseumDesign.css">
+    <link rel="icon" href="Icon.png" type="image/png">
+
+    <style>
+.flap::before,
+.flap::after {
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 50%;
+    background: url("Graeco-Roman Museum/Act1.jpeg") no-repeat;
+    background-size: cover; /* Ensure the image covers the area */
+    transition: transform 1s; /* Use transform for smoother animation */
+}
+
+.flap::before {
+    left: 0; /* Position to the left */
+    background-position: 0px; /* Adjust background position */
+}
+
+.flap::after {
+    right: 0; /* Position to the right */
+    background-position: -250px; /* Adjust background position */
+}
+
+.cor:hover .flap::after {
+    transform: translateX(300px);
+}
+
+.cor:hover .flap::before {
+    transform: translateX(-300px);
+}
+
+
+.flapa::before,
+.flapa::after {
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 50%;
+    background: url("Graeco-Roman Museum/Act2.jpeg") no-repeat;
+    background-size: cover; /* Ensure the image covers the area */
+    transition: transform 1s; /* Use transform for smoother animation */
+}
+
+.flapa::before {
+    left: 0; /* Position to the left */
+    background-position: 0px; /* Adjust background position */
+}
+
+.flapa::after {
+    right: 0; /* Position to the right */
+    background-position: -250px; /* Adjust background position */
+}
+
+.cora:hover .flapa::after {
+    transform: translateX(300px);
+}
+
+.cora:hover .flapa::before {
+    transform: translateX(-300px);
+}
+
+.logo-container {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo-container img {
+            margin-right: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="Icon.png" height="50px" width="35px">
+        <div class="logo">Graeco-Roman Museum</div>
+        </div>
+        <nav class="navigation">
+            <a href="#Home">Home</a>
+            <a href="#Most-Popular-Pieces">Most Popular Pieces</a>
+            <a href="#Activities">Activities</a>
+            <a href="#Appointments">Tickets & Opening Hours </a>
+            <a href="#Contacts">Contacts</a>
+        </nav>
+    </header>
+    <section id="Home">
+    <div class="slider">
+        <div class="list">
+            <div class="item">
+                <img src="Graeco-Roman Museum/Slide1.jpg" alt="Graeco-Roman Museum">
+                <div class="content">
+                    <div class="title" style="white-space: nowrap;">Graeco-Roman Museum</div>
+                    <div class="type" style="color: rgb(232, 233, 191);"> in Alexandria</div>
+                    <div class="description" style="padding-top:12.02%;">
+                       <h4>The idea of establishing the museum dates back<br> to around 1891, 
+                        with the aim of preserving <br>the antiquities of the city of Alexandria</h4>
+                    </div>
+                    <div class="button">
+                        <a href="https://egymonuments.gov.eg/ar/museums/graeco-roman-museum">
+                            <button class="see-more-button">SEE MORE</button>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+            <div class="item">
+                <img src="Graeco-Roman Museum/Slide2.png" alt="Graeco-Roman Museum">
+                <div class="content">
+                    <div class="title" style="white-space: nowrap;">Graeco-Roman Museum</div>
+                    <div class="type" style="color: rgb(232, 233, 191);"> in Alexandria</div>
+                    <div class="description"  style="padding-top:16.02%;">
+                        <h4>The museum was fully completed in 1895 and was<br> inaugurated by Khedive Abbas Hilmi II.</h4>
+                    </div>
+                    <div class="button">
+                        <a href="https://egymonuments.gov.eg/ar/museums/graeco-roman-museum">
+                            <button class="see-more-button">SEE MORE</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="Graeco-Roman Museum/Slide3.png" alt="Graeco-Roman Museum">
+                <div class="content">
+                    <div class="title" style="white-space: nowrap;">Graeco-Roman Museum</div>
+                    <div class="type" style="color: rgb(232, 233, 191);"> in Alexandria</div>
+                    <div class="description"  style="padding-top: 16.02%;">
+                        <h4>The museum houses artifacts dating back to the Greco<br>-Roman era as well as some Pharaonic antiquities.</h4>
+                    </div>
+                    <div class="button">
+                        <a href="https://egymonuments.gov.eg/ar/museums/graeco-roman-museum">
+                            <button class="see-more-button">SEE MORE</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="Graeco-Roman Museum/Slide4.png" alt="Graeco-Roman Museum">
+                <div class="content">
+                    <div class="title" style="white-space: nowrap;">Graeco-Roman Museum</div>
+                    <div class="type" style="color: rgb(232, 233, 191);"> in Alexandria</div>
+                    <div class="description">
+                        <h4>In 1982, a new wing was added to connect the museum's western and eastern wings.
+                            In September 2005, the museum closed for a major expansion and development project,
+                            which was delayed for ten years. Work resumed in April 2015, 
+                            introducing <br>a new design with an upper floor and a revamped <br>display approach.</h4>
+                    </div>
+                    <div class="button">
+                        <a href="https://egymonuments.gov.eg/ar/museums/graeco-roman-museum">
+                            <button class="see-more-button">SEE MORE</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="thumbnail">
+            <div class="item">
+                <img src="Graeco-Roman Museum/Slide1.jpg" alt="Thumbnail of Graeco-Roman Museum">
+            </div>
+            <div class="item">
+                <img src="Graeco-Roman Museum/Slide2.png" alt="Thumbnail of Graeco-Roman Museum">
+            </div>
+            <div class="item">
+                <img src="Graeco-Roman Museum/Slide3.png" alt="Thumbnail of Graeco-Roman Museum">
+            </div>
+            <div class="item">
+                <img src="Graeco-Roman Museum/Slide4.png" alt="Thumbnail of Graeco-Roman Museum">
+            </div>
+        </div>
+    </div>
+        <div class="nextPrevArrows">
+            <button class="prev"> < </button>
+            <button class="next"> > </button>
+        </div>
+    </div>
+    </section>
+    <section id="Most-Popular-Pieces">
+        <br><br>
+        <div class="con">
+            <h2 class="heading reveal">Most Popular Pieces</h2>
+            <a href="#!" class="card card-1 reveal">
+                <div class="front" style="background-image: url('Graeco-Roman Museum/1.jpeg');" >
+                    <p>The statue of the god Nilus</p>
+                </div>
+                <div class="back">
+                    <div>
+                        <p>The statue of the god "Nilus" is a three-dimensional sculptural piece, 
+                            categorized under human/deity statues, dating back to the Greco-Roman era, specifically the 2nd century AD. 
+                            Discovered in Lower Egypt, Alexandria, at El-Mahmoudia (Sidi Bishr), the statue is made of marble and measures 43 cm in height, 60 cm in length, 
+                            and 12 cm in width. It was temporarily displayed at the Antiquities Museum of the Bibliotheca Alexandrina starting in 2008 until its return to the Graeco-Roman Museum in Alexandria on August 16, 2022.</p>
+                    </div>
+                </div>
+            </a>
+            <a href="#!" class="card card-2 reveal">
+                <div class="front" style="background-image: url('Graeco-Roman Museum/2.jpeg');" >
+                    <p>Bust of the God Serapis</p>
+                </div>
+                <div class="back">
+                    <div>
+                        <p>The marble bust of the god Serapis, dating to the<br> Greco-Roman period (332 BC – 395 AD), 
+                            was discovered in Alexandria. Temporarily exhibited at the Bibliotheca Alexandrina's Antiquities Museum from 2008, 
+                            it was returned to the Greek-Roman Museum on August 16, 2022.</p>
+                    </div>
+                </div>
+            </a>
+            <a href="#!" class="card card-3 reveal">
+                <div class="front" style="background-image: url('Graeco-Roman Museum/3.jpeg');" >
+                    <p>Marble Statue of Marcus Aurelius</p>
+                </div>
+                <div class="back">
+                    <div>
+                        <p>Depicting Marcus Aurelius as a Crown Prince or Caesar, this statue presents him in military attire, 
+                            holding a sword in his left hand while his right rests on a cornucopia, symbolizing the abundance and prosperity of the Roman Empire.
+                            Dating to the Roman Period (155–161 AD), it was discovered in Alexandria and is made of marble.</p>
+                    </div>
+                </div>
+            </a>
+            <a href="#!" class="card card-4 reveal">
+                <div class="front" style="background-image: url('Graeco-Roman Museum/4.jpeg');" >
+                    <p>Colossal Head of Octavius</p>
+                </div>
+                <div class="back">
+                    <div>
+                        <p>This marble head, dating to the Graeco-Roman Period <br>(31 BCE – 395 CE),
+                            is a remarkable example of sculpture in the round. Standing 75 cm tall, its provenance remains unknown. 
+                            Temporarily exhibited at the Bibliotheca Alexandrina Antiquities Museum from 2007, 
+                            it was returned to the Graeco-Roman Museum in Alexandria on August 16, 2022.</p>
+                    </div>
+                </div>
+            </a>
+            <a href="#!" class="card card-5 reveal">
+                <div class="front" style="background-image: url('Graeco-Roman Museum/5.jpeg');" >
+                    <p>The statue of the Apis</p>
+                </div>
+                <div class="back">
+                    <div>
+                        <p>The statue of the Apis Bull was commissioned for sculpting by the Roman Emperor Hadrian in the Serapeum of Alexandria, 
+                            after the Jews destroyed the Serapeum temple, which was originally founded by the Ptolemies and preserved by the Romans. 
+                            It was discovered in 1895 and is currently displayed at the Greek-Roman Museum in Alexandria.</p>
+                    </div>
+                </div>
+            </a>
+            <a href="#!" class="card card-6 reveal">
+                <div class="front" style="background-image: url('Graeco-Roman Museum/6.jpeg');" >
+                    <p>Statue of King Ptolemy XII</p>
+                </div>
+                <div class="back">
+                    <div>
+                        <p>This statue depicts King Ptolemy XII in the traditional Egyptian style, with his left foot forward and arms by his sides,
+                            portraying him as a pharaoh. It was discovered at Tebtunis in Fayoum, Egypt.</p>
+                    </div>
+                </div>
+            </a>
+            <a href="#!" class="card card-7 reveal">
+                <div class="front" style="background-image: url('Graeco-Roman Museum/7.jpeg');" >
+                    <p>The statue depicts a Ptolemaic king</p>
+                </div>
+                <div class="back">
+                    <div>
+                        <p>On 4th of May 2009, in Shallalat Gardens of Alexandria, a marble statue was found, during the excavations held by H.R.I.A.C. (Hellenic Research Institute of Alexandrian Civilization).
+                             The statue represents a standing naked man in a form of classical contraposto, with one foot raised, possibly bent to a support.
+                            Head and body are in a very good condition, but the part of the legs under the knees is missing.</p>
+                    </div>
+                </div>
+            </a>
+            <a href="#!" class="card card-8 reveal">
+                <div class="front" style="background-image: url('Graeco-Roman Museum/8.jpeg');" >
+                    <p>Head of Emperor Vespasian</p>
+                </div>
+                <div class="back">
+                    <div>
+                        <p>This head depicts Emperor Vespasian with his distinct features but with a younger appearance.
+                            It was likely sculpted in Alexandria, where it was originally completed with plaster or an additional marble piece featuring long locks of hair on the right side.
+                            This suggests that the head may have originally represented a previous emperor, possibly Caligula or Nero, 
+                            before being reworked to depict Vespasian.</p>
+                            <p>Roman Period (62 AD) | Material: Marble | Unknown Provenance</p>
+                    </div>
+                </div>
+            </a>
+            <a href="#!" class="card card-9 reveal">
+                <div class="front" style="background-image: url('Graeco-Roman Museum/9.jpg');" >
+                    <p>The statue of the goddess Aphrodite</p>
+                </div>
+                <div class="back">
+                    <div>
+                        <p>The statue of the goddess "Aphrodite" is a three-dimensional sculptural piece, categorized under human/deity statues, 
+                            dating back to the Greco-Roman era, specifically the 2nd century AD. Discovered in Lower Egypt, Alexandria, at El-Mahmoudia (Sidi Bishr), the statue is made of marble and stands 103 cm tall.
+                            It was temporarily displayed at the Antiquities Museum of the Bibliotheca Alexandrina starting in 2008 until its return to the Graeco-Roman Museum in Alexandria on August 16, 2022.</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </section>
+    <section id="Activities" style="background-image: url('Graeco-Roman Museum/Background1.png'); background-size: cover; background-position: center;">
+        <div class="cont">
+            <h2 class="heading reveal">Activities</h2>
+            <div class="card-container "> 
+            <div class="cor reveal">
+                <div class="cot ">
+                    <h3 class="l">The team of the General Administration of Museum Education for People with Special Needs at the Graeco-Roman Museum welcomed a group of our children with special needs, including those with intellectual disabilities and learning difficulties. The day included the following activities:
+
+                        A guided tour to introduce them to the museum's unique collections, accompanied by simplified explanations.
+                        
+                        A workshop for designing animated drawings using cardboard, where the children animated artworks inspired by pieces from the museum.
+                        
+                        A storytelling session using these drawings, which the children greatly enjoyed. They also took commemorative photos to document their experience.
+                        <br>Under the supervision of:
+                        <br>Dr. Heba Abdel Aziz, Head of the General Administration of Museum Education for People with Special Needs in the Museums Sector.</h3>
+                </div>
+                <div class="flap"></div>
+            </div>
+            <div class="cora reveal">
+                <div class="cota ">
+                    <h3 class="la">As part of efforts to promote archaeological and cultural awareness among students from various universities, the team at the Graeco-Roman Museum  is honored to organize a guided tour for students from Cardiff University. The tour aims to introduce them to the museum's rich and diverse collection, showcasing the historical significance of the Greco-Roman era in Egypt. The museum's modern display scenario, featuring advanced presentation, development, and restoration techniques, highlights these treasures. The visiting students expressed great admiration for the museum's collection and its innovative exhibition approach.</h3>
+                </div>
+                <div class="flapa"></div>
+            </div>
+            </div>
+        </div> 
+    </section>
+    <section id="Appointments">
+        <div class="conta">
+            <h2 class="heading reveal">Tickets & Opening Hours </h2>
+            <div class="admission-prices reveal">
+                <h2 class="hi">Ticket Prices</h2>
+                <p>Egyptian & Arab Visitors:</p>
+                <table>
+                    <tr>
+                        <td>Adults</td>
+                        <td>EGP 40</td>
+                    </tr>
+                    <tr>
+                        <td>Student</td>
+                        <td>EGP 20</td>
+                    </tr>
+                </table>
+                    <p>Foreigners Visitors</p>
+                        <table>
+                        <tr>
+                            <td>Adults</td>
+                            <td>EGP 400</td>
+                        </tr>
+                        <tr>
+                            <td>Student</td>
+                            <td>EGP 200</td>
+                        </tr>
+                    </table>
+            </div>
+            <div class="opening-hours reveal">
+                <h2 class="hi">Opening Hours</h2>
+                <p style="padding: 2.5%;">Visitors</p>
+                <table>
+                    <tr>
+                        <td>Every day</td>
+                        <td>9:00 a.m. – 5:00 p.m.</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </section>
+    <section id="Contacts" style="background-image: url('Graeco-Roman Museum/Background2.png'); " > 
+         <h2 class="heading reveal">Contact</h2>
+         <center>
+
+            <div class="Contact reveal" id="contact">
+                <h1 class="title">Contact us</h1>
+                <div class="icon">
+                <i class="fa fa-map-marker fa-2x"></i>    
+                </div>
+                    <div class="info">
+                        <p>5 Elmathaf st. , Alexandria - Egypt</p>
+                        </div>
+                <div class="Contact reveal" >
+                <div class="icon">
+            <i class="fa fa-phone fa-2x"></i>    
+            </div>
+                    <div class="info">
+                        <h3>Phone</h3>
+                        <p>03 4876434</p>
+                    </div>
+                    
+                    <div class="Contact reveal">
+                        <div class="icon">
+                            <i class="fa fa-envelope fa-2x"></i>
+                        </div>
+                        
+                        <div class="info">
+                        <h3> Email </h3>
+                            <a href="mailto:graecoromanmuseum@mota.gov.eg">graecoromanmuseum@mota.gov.eg</a>
+                        </div>  
+                </div>
+            </div>
+            <div>
+                <ul class="social-media-list ">
+                    
+                    <li>
+                        <a href="https://www.facebook.com/share/19JQNTJE3R/" target="_blank" class="co-icon">
+                            <i class="fa fa-facebook"></i>
+                        </a>
+                    </li> 
+                  </ul>
+            </div> 
+            </div> 
+        </center>
+      </section> 
+      <script src="MuseumScript.js"></script>
+</body>
+</html>

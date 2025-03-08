@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luxor Museum</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="MuseumDesign.css">
+    <link rel="icon" href="Icon.png" type="image/png">
+
+    <style>
+.flap::before,
+.flap::after {
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 50%;
+    background: url("Luxor Museum/Act1.jpg") no-repeat;
+    background-size: cover; /* Ensure the image covers the area */
+    transition: transform 1s; /* Use transform for smoother animation */
+}
+
+.flap::before {
+    left: 0; /* Position to the left */
+    background-position: 0px; /* Adjust background position */
+}
+
+.flap::after {
+    right: 0; /* Position to the right */
+    background-position: -250px; /* Adjust background position */
+}
+
+.cor:hover .flap::after {
+    transform: translateX(300px);
+}
+
+.cor:hover .flap::before {
+    transform: translateX(-300px);
+}
+
+
+.flapa::before,
+.flapa::after {
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 50%;
+    background: url("Luxor Museum/Act2.jpg") no-repeat;
+    background-size: cover; /* Ensure the image covers the area */
+    transition: transform 1s; /* Use transform for smoother animation */
+}
+
+.flapa::before {
+    left: 0; /* Position to the left */
+    background-position: 0px; /* Adjust background position */
+}
+
+.flapa::after {
+    right: 0; /* Position to the right */
+    background-position: -250px; /* Adjust background position */
+}
+
+.cora:hover .flapa::after {
+    transform: translateX(300px);
+}
+
+.cora:hover .flapa::before {
+    transform: translateX(-300px);
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="Icon.png" height="50px" width="35px">
+        <div class="logo">Luxor Museum</div>
+        </div>
+        <nav class="navigation">
+            <a href="#Home">Home</a>
+            <a href="#Most-Popular-Pieces">Most Popular Pieces</a>
+            <a href="#Activities">Activities</a>
+            <a href="#Appointments">Tickets & Opening Hours </a>
+            <a href="#Contacts">Contacts</a>
+        </nav>
+    </header>
+    <section id="Home">
+    <div class="slider">
+        <div class="list">
+            <div class="item">
+                <img src="Luxor Museum/Slide1.jpg" alt="Luxor Museum">
+                <div class="content">
+                    <div class="title">Luxor Museum</div>
+                    <div class="type"> in Luxor</div>
+                    <div class="description" >
+                       <h4>The Luxor Museum is located on the Nile Corniche, specifically in the East Bank area of the city,
+                        historically known as Thebes.</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="Luxor Museum/Slide2.png" alt="Luxor Museum">
+                <div class="content">
+                    <div class="title">Luxor Museum</div>
+                    <div class="type"> in Luxor</div>
+                    <div class="description" >
+                        <h4>Built on an area exceeding 5,300 square meters, 
+                            the museum is a major tourist attraction due to its rich collection of historical artifacts.</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="Luxor Museum/Slide3.png" alt="Luxor Museum">
+                <div class="content">
+                    <div class="title">Luxor Museum</div>
+                    <div class="type"> in Luxor</div>
+                    <div class="description">
+                        <h4>It was inaugurated in 1975 by former President Anwar Sadat and the then-President of France, 
+                            Valéry Giscard d'Estaing, highlighting its cultural and historical significance.</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="Luxor Museum/Slide4.jpg" alt="Luxor Museum">
+                <div class="content">
+                    <div class="title">Luxor Museum</div>
+                    <div class="type"> in Luxor</div>
+                    <div class="description"  >
+                        <h4>In 1984, a new hall was added to the museum, followed by the "Cachette" Hall in 1989, which houses recent archaeological discoveries from the Luxor Temple. In 2004, the "Glory of Thebes" Hall was inaugurated, 
+                            further enriching the museum's collection and showcasing the grandeur of ancient <br> Thebes.</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="thumbnail">
+            <div class="item">
+                <img src="Luxor Museum/Slide1.jpg" alt="Thumbnail of Luxor Museum">
+            </div>
+            <div class="item">
+                <img src="Luxor Museum/Slide2.png" alt="Thumbnail of Luxor Museum">
+            </div>
+            <div class="item">
+                <img src="Luxor Museum/Slide3.png" alt="Thumbnail of Luxor Museum">
+            </div>
+            <div class="item">
+                <img src="Luxor Museum/Slide4.jpg" alt="Thumbnail of Luxor Museum">
+            </div>
+        </div>
+    </div>
+        <div class="nextPrevArrows">
+            <button class="prev"> < </button>
+            <button class="next"> > </button>
+        </div>
+    </div>
+    </section>
+    <section id="Most-Popular-Pieces">
+        <br><br>
+        <div class="con">
+            <h2 class="heading reveal">Most Popular Pieces</h2>
+            <a href="#!" class="card card-1 reveal">
+                <div class="front" style="background-image: url('Luxor Museum/1.jpg');" >
+                    <p>Statue of King Thutmose III</p>
+                </div>
+                <div class="back">
+                    <div>
+                        <p>This gray basalt statue of King Thutmose III<br> (1479–1425 BCE), one of Egypt’s greatest warrior kings, was discovered in Karnak Temples in 1904. Exceptionally crafted, it portrays him with a youthful, confident expression, standing with his left foot forward while holding symbols of power. He wears the nemes headdress, 
+                            the royal beard, a kilt, and a belt inscribed with his name in a cartouche. The statue is 90 cm tall.</p>
+                    </div>
+                </div>
+            </a>
+            <a href="#!" class="card card-2 reveal">
+                <div class="front" style="background-image: url('Luxor Museum/2.jpg');" >
+                    <p>statue of King Horemheb</p>
+                </div>
+                <div class="back">
+                    <div>
+                        <p>King Horemheb kneeling before the god Amun,<br>  presenting him with two jars of wine.</p>
+                    </div>
+                </div>
+            </a>
+            <a href="#!" class="card card-3 reveal">
+                <div class="front" style="background-image: url('Luxor Museum/3.jpg');" >
+                    <p>The ceremonial axe of Ahmose</p>
+                </div>
+                <div class="back">
+                    <div>
+                        <p>The ceremonial axe of Pharaoh Ahmose, the Eighteenth Dynasty King of Egypt, is a remarkable artifact crafted from gold, electrum, copper, semi-precious stones, and wood. 
+                            This exquisite piece reflects the artistry and grandeur of ancient Egyptian craftsmanship.</p>
+                    </div>
+                </div>
+            </a>
+            <a href="#!" class="card card-4 reveal">
+                <div class="front" style="background-image: url('Luxor Museum/4.jpg');" >
+                    <p>Statue of King Amenhotep III
+                    </p>
+                </div>
+                <div class="back">
+                    <div>
+                        <p>The Statue of King Amenhotep III at the Luxor Museum, carved from pink quartzite, depicts the renowned 18th Dynasty king standing on a procession sledge with a column inscribed with his names and titles. Displayed in the Cachette Hall (opened in 1991), it highlights discoveries from the Luxor Temple Cachette (1989), 
+                            showcasing the grandeur of his reign and ancient Egyptian artistry.</p>
+                    </div>
+                </div>
+            </a>
+            <a href="#!" class="card card-5 reveal">
+                <div class="front" style="background-image: url('Luxor Museum/5.jpg');" >
+                    <p>The statue depicts Sobek, the crocodile god of the Nile, fertility, 
+                        and royal protection, presenting the ankh to King Amenhotep III</p>
+                </div>
+                <div class="back">
+                    <div>
+                        <p>The statue shows Sobek, the crocodile god of the Nile, fertility, and royal protection, presenting the ankh<br> (key of life) to King Amenhotep III of the 18th Dynasty (1390–1352 BC). Depicted with a crocodile head and human body, Sobek symbolizes both ferocity and protection, while also representing life and renewal through the Nile. 
+                            This artwork reflects the king's divine connection and Sobek's dual role in ancient Egyptian religion.</p>
+                    </div>
+                </div>
+            </a>
+            <a href="#!" class="card card-6 reveal">
+                <div class="front" style="background-image: url('Luxor Museum/6.jpg');" >
+                    <p>Statue of Mut</p>
+                </div>
+                <div class="back">
+                    <div>
+                        <p>The statue of Mut, carved in calcite (Egyptian alabaster), features inscriptions representing the titles of King Ramesses II (User-Maat-Ra Setepen-Ra), who ruled from approximately 1279 to 1213 BCE. The inscriptions describe him as "beloved of Mut, Lady of Heaven," highlighting the connection between the king and the goddess. 
+                            This elegant statue showcases the artistry and religious significance of the era.</p>
+                    </div>
+                </div>
+            </a>
+            <a href="#!" class="card card-7 reveal">
+                <div class="front" style="background-image: url('Luxor Museum/7.jpg');" >
+                    <p>The colossal head of King Amenhotep III </p>
+                </div>
+                <div class="back">
+                    <div>
+                        <p>The colossal head of King Amenhotep III carved from red granite, was discovered in 1957 at his mortuary temple in Qurna. Standing 2.15 meters tall with the crown, 
+                            it highlights the grandeur and artistry of the 18th Dynasty (1391-1353 BC).</p>
+                    </div>
+                </div>
+            </a>
+            <a href="#!" class="card card-8 reveal">
+                <div class="front" style="background-image: url('Luxor Museum/8.jpg');" >
+                    <p>Cartouches of King Thutmose III</p>
+                </div>
+                <div class="back">
+                    <div>
+                        <p>This fragment of a wall or a block from a larger structure is adorned with the names of Amenhotep III enclosed in royal cartouches, 
+                            featuring hieroglyphic inscriptions painted in vibrant colors such as blue, red, yellow, and green, derived from minerals like lapis lazuli and ochre. The symbols include the ankh (life), the scarab, <br> (sun and rebirth), and the falcon (Horus), emphasizing the divine legitimacy of rulership. 
+                            Additionally, depictions of deities and protective symbols highlight the religious significance and the dual decorative and protective functions of the inscriptions.</p>
+                    </div>
+                </div>
+            </a>
+            <a href="#!" class="card card-9 reveal">
+                <div class="front" style="background-image: url('Luxor Museum/9.jpg');" >
+                    <p>The mummy of King Ahmose I</p>
+                </div>
+                <div class="back">
+                    <div>
+                        <p>The mummy of King Ahmose I, who expelled the Hyksos from Egypt,
+                            was discovered in the Deir el-Bahri cache in 1881. French archaeologist Gaston Maspero unwrapped the linen bandages in 1886, revealing a medium-height body with a robust neck and chest, indicating the king's strength. The large chest made the head appear smaller, and the mummy featured prominent cheekbones, thick wavy hair, and facial features resembling his father, 
+                            Seqenenre Tao. The mummy is now displayed at the Luxor Museum.</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </section>
+    <section id="Activities" style="background-image: url('Luxor Museum/Background1.png'); background-size: cover; background-position: center;">
+        <div class="cont">
+            <h2 class="heading reveal">Activities</h2>
+            <div class="card-container "> 
+            <div class="cor reveal">
+                <div class="cot ">
+                    <h3 class="l">A workshop titled "Academic Research Tools, Writing, and International Publishing" was held at the Luxor Museum of Ancient Egyptian Art in collaboration with the French Institute (IFAO) in Cairo and the French-Egyptian Center in Karnak. The event began with a welcome speech by Dr. Alaa El-Menshawy, Director of the Luxor Museum. The workshop featured lectures by:  
+                        <br> - Prof. Dr. Ahmed Mohamed Makawy, Professor of Egyptian Antiquities at Cairo University.  
+                        <br> - Dr. Jérémy Hourdin, Director of the French-Egyptian Center at Karnak Temple.  
+                        <br> - Dr. Mathilde Prévost, Research Training Officer at the French Institute.  
+                        
+                        <br>At the conclusion of the workshop, certificates were awarded to the participants. This event is part of the scientific activities offered by the Luxor Museum of Ancient Egyptian Art.</h3>
+                </div>
+                <div class="flap"></div>
+            </div>
+            <div class="cora reveal">
+                <div class="cota ">
+                    <h3 class="la">In celebration of Egyptian Police Day, the Luxor Museum of Ancient Egyptian Art, through its Museum Education Department for People with Special Needs, hosted a group of children with special needs who are friends of the department. The event included the following activities:  
+                        <br>- A non-archaeological exhibition showcasing warrior kings and ancient Egyptian weapons.  
+                        <br>- A drawing workshop to design ancient Egyptian war tools.  
+                        <br>- A guided tour of the museum to introduce warrior kings and some military tools used by the ancient Egyptians, such as bows, arrows, and daggers.</h3>
+                </div>
+                <div class="flapa"></div>
+            </div>
+            </div>
+        </div> 
+    </section>
+    <section id="Appointments">
+        <div class="conta">
+            <h2 class="heading reveal">Tickets & Opening Hours </h2>
+            <div class="admission-prices reveal">
+                <h2 class="hi">Ticket Prices</h2>
+                <p>Egyptian & Arab Visitors:</p>
+                <table>
+                    <tr>
+                        <td>Adults</td>
+                        <td>EGP 30</td>
+                    </tr>
+                    <tr>
+                        <td>Student</td>
+                        <td>EGP 10</td>
+                    </tr>
+                </table>
+                    <p>Foreign Visitors:</p>
+                        <table>
+                        <tr>
+                            <td>Adults</td>
+                            <td>EGP 400</td>
+                        </tr>
+                        <tr>
+                            <td>Student</td>
+                            <td>EGP 200</td>
+                        </tr>
+                    </table>
+            </div>
+            <div class="opening-hours reveal">
+                <h2 class="hi">Opening Hours</h2>
+                <p style="padding: 2.5%;">Visitors</p>
+                <table>
+                    <tr>
+                        <td>Everyday</td>
+                        <td>9:00 a.m. – 2:00 p.m. <br> 5:00 p.m. – 8:00 p.m.</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </section>
+    <section id="Contacts" style="background-image: url('Luxor Museum/Background2.jpg'); " > 
+         <h2 class="heading reveal">Contact</h2>
+         <center>
+
+            <div class="Contact reveal" id="contact">
+                <h1 class="title">Contact us</h1>
+                <div class="icon">
+                <i class="fa fa-map-marker fa-2x"></i>    
+                </div>
+                    <div class="info">
+                        <p>Kornish El Nile, Luxor City, Luxor, Luxor Governorate - Egypt</p>
+                        </div>
+                <div class="Contact reveal" >
+                <div class="icon">
+            <i class="fa fa-phone fa-2x"></i>    
+            </div>
+                    <div class="info">
+                        <h3>Phone</h3>
+                        <p>095 2370 569</p>
+                    </div>
+                    
+                    <div class="Contact reveal">
+                        <div class="icon">
+                            <i class="fa fa-envelope fa-2x"></i>
+                        </div>
+                        
+                        <div class="info">
+                        <h3> Email </h3>
+                            <a href="mailto:luxormuseum1975@gmail.com">luxormuseum1975@gmail.com</a>
+                        </div>  
+                </div>
+            </div>
+            <div>
+                <ul class="social-media-list ">
+                    
+                    <li>
+                        <a href="https://www.facebook.com/share/15MFVMPpp2/" target="_blank" class="co-icon">
+                            <i class="fa fa-facebook"></i>
+                        </a>
+                    </li>   
+                  </ul>
+            </div> 
+            </div> 
+        </center>
+      </section> 
+      <script src="MuseumScript.js"></script>
+</body>
+</html>

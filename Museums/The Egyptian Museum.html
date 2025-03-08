@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Egyptian Museum</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="MuseumDesign.css">
+    <link rel="icon" href="Icon.png" type="image/png">
+
+    <style>
+.flap::before,
+.flap::after {
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 50%;
+    background: url("The Egyptian Museum/Act1.png") no-repeat;
+    background-size: cover; /* Ensure the image covers the area */
+    transition: transform 1s; /* Use transform for smoother animation */
+}
+
+.flap::before {
+    left: 0; /* Position to the left */
+    background-position: 0px; /* Adjust background position */
+}
+
+.flap::after {
+    right: 0; /* Position to the right */
+    background-position: -250px; /* Adjust background position */
+}
+
+.cor:hover .flap::after {
+    transform: translateX(300px);
+}
+
+.cor:hover .flap::before {
+    transform: translateX(-300px);
+}
+
+
+.flapa::before,
+.flapa::after {
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 50%;
+    background: url("The Egyptian Museum/Act2.png") no-repeat;
+    background-size: cover; /* Ensure the image covers the area */
+    transition: transform 1s; /* Use transform for smoother animation */
+}
+
+.flapa::before {
+    left: 0; /* Position to the left */
+    background-position: 0px; /* Adjust background position */
+}
+
+.flapa::after {
+    right: 0; /* Position to the right */
+    background-position: -250px; /* Adjust background position */
+}
+
+.cora:hover .flapa::after {
+    transform: translateX(300px);
+}
+
+.cora:hover .flapa::before {
+    transform: translateX(-300px);
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="Icon.png" height="50px" width="35px">
+        <div class="logo">The Egyptian Museum</div>
+        </div>
+        <nav class="navigation">
+            <a href="#Home">Home</a>
+            <a href="#Most-Popular-Pieces">Most Popular Pieces</a>
+            <a href="#Activities">Activities</a>
+            <a href="#Appointments">Tickets & Opening Hours </a>
+            <a href="#Contacts">Contacts</a>
+        </nav>
+    </header>
+    <section id="Home">
+    <div class="slider">
+        <div class="list">
+            <div class="item">
+                <img src="The Egyptian Museum/Slide1.png" alt="The Egyptian Museum">
+                <div class="content">
+                    <div class="title" style="white-space: nowrap;">The Egyptian Museum</div>
+                    <div class="type"> in Cairo</div>
+                    <div class="description" style="padding-top: 4%;">
+                       <h4>  Since 1902
+                       <br> Housing over 170,000 artefacts</h4>
+                    </div>
+                    <div class="button">
+                        <a href="https://egyptianmuseumcairo.eg/">
+                            <button class="see-more-button">SEE MORE</button>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+            <div class="item">
+                <img src="The Egyptian Museum/Slide2.jpeg" alt="The Egyptian Museum">
+                <div class="content">
+                    <div class="title" style="white-space: nowrap;">The Egyptian Museum</div>
+                    <div class="type"> in Cairo</div>
+                    <div class="description" style="padding-top: 4%;">
+                        <h4> Since 1902
+                       <br> Housing over 170,000 artefacts</h4>
+                    </div>
+                    <div class="button">
+                        <a href="https://egyptianmuseumcairo.eg/">
+                            <button class="see-more-button">SEE MORE</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="The Egyptian Museum/Slide3.jpeg" alt="The Egyptian Museum">
+                <div class="content">
+                    <div class="title" style="white-space: nowrap;">The Egyptian Museum</div>
+                    <div class="type"> in Cairo</div>
+                    <div class="description"  style="padding-top: 4%;">
+                        <h4> Since 1902
+                       <br> Housing over 170,000 artefacts</h4>
+                    </div>
+                    <div class="button">
+                        <a href="https://egyptianmuseumcairo.eg/">
+                            <button class="see-more-button">SEE MORE</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="The Egyptian Museum/Slide4.png" alt="The Egyptian Museum">
+                <div class="content">
+                    <div class="title" style="white-space: nowrap;">The Egyptian Museum</div>
+                    <div class="type"> in Cairo</div>
+                    <div class="description"  style="padding-top: 4%;">
+                        <h4> Since 1902
+                       <br> Housing over 170,000 artefacts</h4>
+                    </div>
+                    <div class="button">
+                        <a href="https://egyptianmuseumcairo.eg/">
+                            <button class="see-more-button">SEE MORE</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="thumbnail">
+            <div class="item">
+                <img src="The Egyptian Museum/Slide1.png" alt="Thumbnail of The Egyptian Museum">
+            </div>
+            <div class="item">
+                <img src="The Egyptian Museum/Slide2.jpeg" alt="Thumbnail of The Egyptian Museum">
+            </div>
+            <div class="item">
+                <img src="The Egyptian Museum/Slide3.jpeg" alt="Thumbnail of The Egyptian Museum">
+            </div>
+            <div class="item">
+                <img src="The Egyptian Museum/Slide4.png" alt="Thumbnail of The Egyptian Museum">
+            </div>
+        </div>
+    </div>
+        <div class="nextPrevArrows">
+            <button class="prev"> < </button>
+            <button class="next"> > </button>
+        </div>
+    </div>
+    </section>
+    <section id="Most-Popular-Pieces">
+        <br><br>
+        <div class="con">
+            <h2 class="heading reveal">Most Popular Pieces</h2>
+            <a href="#!" class="card card-1 reveal">
+                <div class="front" style="background-image: url('The Egyptian Museum/1.jpeg');" >
+                    <p>Narmer Palette</p>
+                </div>
+                <div class="back">
+                    <div>
+                        <p>Period: Late Predynastic Period</p>
+                        <p>Dynasty: Dynasty 0, reign of Narmer (ca. 3000 BC)</p>
+                        <p>Size: Height: 64cm, Width: 42 cm</p>
+                        <p>Place of discovery: Hierakonpolis (Nekhen) – Aswan Governorate</p>
+                        <p>Material: Siltstone</p>
+                    </div>
+                </div>
+            </a>
+            <a href="#!" class="card card-2 reveal">
+                <div class="front" style="background-image: url('The Egyptian Museum/2.jpeg');" >
+                    <p>A statue of the god Osiris, god of the afterlife</p>
+                </div>
+                <div class="back">
+                    <div>
+                        <p>Period: Late Period, 26th Dynasty, King Ahmose II (Amasis)</p>
+                        <p>Dynasty: 18th Dynasty</p>
+                        <p>Size: H: 89.5 cm , W: 28 cm, L: 46 cm</p>
+                        <p>Material: Gray schist stone</p>
+                        <p>Place of discovery:  Necropolis of Memphis, North Saqqara, Horemheb area, Tomb of Psamtik</p>
+                    </div>
+                </div>
+            </a>
+            <a href="#!" class="card card-3 reveal">
+                <div class="front" style="background-image: url('The Egyptian Museum/3.jpg');" >
+                    <p>Triad of Menkaure between Hathor and the Theban god</p>
+                </div>
+                <div class="back">
+                    <div>
+                        <p>Period: Old Kingdom</p>
+                        <p>Dynasty: 4th Dynasty, reign of Menkaure (Mycerinos) (2447-2448 BC)</p>
+                        <p>Dimension:  Height Between 92.5 cm and 95.5 cm</p>
+                        <p>Place of discovery: Giza, Valley Temple of Menkaure</p>
+                        <p>Material: Grey-green Schist</p>
+                    </div>
+                </div>
+            </a>
+            <a href="#!" class="card card-4 reveal">
+                <div class="front" style="background-image: url('The Egyptian Museum/4.jpeg');" >
+                    <p>Colossus of Amenhotep IV/Akhenaten in the Khat and Double Crown</p>
+                </div>
+                <div class="back">
+                    <div>
+                        <p>Period: New Kingdom, Reign of Akhenaten 
+                            <br>(1350 – 1333 BC)
+                        </p>
+                        <p>Dynasty: 18th Dynasty</p>
+                        <p>Size: Height: 239 cm – Width: 86 cm – Length/Depth: 52 cm</p>
+                        <p>Material: Sandston</p>
+                        <p>Place of discovery: Karnak Temple</p>
+                    </div>
+                </div>
+            </a>
+            <a href="#!" class="card card-5 reveal">
+                <div class="front" style="background-image: url('The Egyptian Museum/5.jpeg');" >
+                    <p>Scribe statue CG 36</p>
+                </div>
+                <div class="back">
+                    <div>
+                        <p>Period: Old Kingdom</p>
+                        <p>Dynasty: Dynasty 5 (ca. 2465-2323 BC)</p>
+                        <p>Size: Height 51 cm</p>
+                        <p> Place of discovery: Saqqara</p>
+                        <p> Material: Painted Limestone; Eyes: Rock Crystal, Calcite, Copper</p>
+                    </div>
+                </div>
+            </a>
+            <a href="#!" class="card card-6 reveal">
+                <div class="front" style="background-image: url('The Egyptian Museum/6.jpeg');" >
+                    <p>Diorite Statue of Tuthmose III, Kneeling with Nu-Jars in his Hands</p>
+                </div>
+                <div class="back">
+                    <div>
+                        <p>Period: New Kingdom, reign of Thutmose III</p>
+                        <p>Dynasty: 18th Dynasty</p>
+                        <p>Size: H. 135 cm</p>
+                        <p>Place of discovery: Karnak Cachette</p>
+                        <p>Material: Diorite</p>
+                    </div>
+                </div>
+            </a>
+            <a href="#!" class="card card-7 reveal">
+                <div class="front" style="background-image: url('The Egyptian Museum/7.jpeg');" >
+                    <p>Funerary golden mask of King </p>
+                </div>
+                <div class="back">
+                    <div>
+                        <p>Period: New Kingdom</p>
+                        <p>Dynasty: 18th Dynasty, Reign of Tutankhamun
+                            <br>(1327-1318 BC)</p>
+                        <p>Size: Height: 54 cm, Width: 39.3 cm, Weight: 11kg</p>
+                        <p>Place of discovery: Valley of the Kings – Thebes</p>
+                        <p>Material: Gold, lapis lazuli, glass paste, obsidian, turquoise</p>
+                    </div>
+                </div>
+            </a>
+            <a href="#!" class="card card-8 reveal">
+                <div class="front" style="background-image: url('The Egyptian Museum/8.jpeg');" >
+                    <p>Head-of-Hatshepsut</p>
+                </div>
+                <div class="back">
+                    <div>
+                        <p>Period: New Kingdom</p>
+                        <p>Dynasty: Dynasty 18, reign of Hatshepsut</p> 
+                        <p>(1479-1458 BC)</p>
+                        <p>Size: Height: 61 cm, Width: 55 cm</p>
+                        <p>Place of discovery: Thebes, Deir el-Bahari, Mortuary Temple of Hatshepsut</p>
+                    </div>
+                </div>
+            </a>
+            <a href="#!" class="card card-9 reveal">
+                <div class="front" style="background-image: url('The Egyptian Museum/9.jpeg');" >
+                    <p>Statue of goddess Isis</p>
+                </div>
+                <div class="back">
+                    <div>
+                        <p>Period: Late Period</p>
+                        <p>Dynasty: 26th Dynasty, reign of Ahmose II (Amasis) Khnumibre, (c. 570-526 BC)</p>
+                        <p>Size: H 89.00 cm W 21.00 cm D/L 46.00 cm</p>
+                        <p>Place of discovery: Memphite Region, Saqqara: North, Horemheb Area, Psamtek</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </section>
+    <section id="Activities" style="background-image: url('The Egyptian Museum/Background1.jpg'); background-size: cover; background-position: center;">
+        <div class="cont">
+            <h2 class="heading reveal">Activities</h2>
+            <div class="card-container "> 
+            <div class="cor reveal">
+                <div class="cot ">
+                    <h1 class="i">The Director-General of UNESCO at the Egyptian Museum</h1>
+                    <h3 class="l">In April 2021, Ms. Audrey Azoulay, the Director-General of UNESCO, 
+                        paid a field visit to Old Cairo, one of the World Heritage Sites, 
+                        including the Egyptian Museum in Cairo, as part of a two-day mission to Egypt.</h3>
+                </div>
+                <div class="flap"></div>
+            </div>
+            <div class="cora reveal">
+                <div class="cota ">
+                    <h1 class="ia">The Permanent Exhibition "The Hidden Treasures: The Coffins</h1>
+                    <h3 class="la">In August 2021, the permanent exhibition "The Hidden Treasures: The Coffins" was opened in celebration of the 118th anniversary of the Egyptian Museum's
+                         opening on November 17, 2020. This exhibition was organized after the transfer of the mummies to permanent display at the National Museum of Egyptian Civilization. 
+                         The mummy hall and its corridor were completely renovated to display the wooden coffins found in the Deir el-Bahari cache, the Cache of the Priests of Amun, 
+                         and the Cache of the Priests of Montu. The exhibition also includes a collection of funerary artifacts, ritual offerings,
+                         funerary and religious papyri, and other tomb relics.</h3>
+                </div>
+                <div class="flapa"></div>
+            </div>
+            </div>
+        </div> 
+    </section>
+    <section id="Appointments">
+        <div class="conta">
+            <h2 class="heading reveal">Tickets & Opening Hours </h2>
+            <div class="admission-prices reveal">
+                <h2 class="hi">Ticket Prices</h2>
+                <p>Free Admission: Children under 6 years old</p>
+                <p>Egyptian & Arab Visitors:</p>
+                <table>
+                    <tr>
+                        <td>Adults</td>
+                        <td>EGP 30</td>
+                    </tr>
+                    <tr>
+                        <td>Student</td>
+                        <td>EGP 10</td>
+                    </tr>
+                </table>
+                    <p>Foreigners Visitors:</p>
+                        <table>
+                        <tr>
+                            <td>Adults</td>
+                            <td>EGP 550</td>
+                        </tr>
+                        <tr>
+                            <td>Student</td>
+                            <td>EGP 275</td>
+                        </tr>
+                    </table>
+            </div>
+            <div class="opening-hours reveal">
+                <h2 class="hi">Opening Hours</h2>
+                <p>Visitors</p>
+                <table>
+                    <tr>
+                        <td>Every day</td>
+                        <td>9:00 a.m. – 5:00 p.m.</td>
+                    </tr>
+                </table>
+                    <p>Ticket Office</p>
+                <table>
+                    <tr>
+                        <td>Every day</td>
+                        <td>8:30 a.m. – 4:00 p.m.</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </section>
+    <section id="Contacts" style="background-image: url('The Egyptian Museum/Background2.png'); " > 
+         <h2 class="heading reveal">Contact</h2>
+         <center>
+
+            <div class="Contact reveal" id="contact">
+                <h1 class="title">Contact us</h1>
+                <div class="icon">
+                <i class="fa fa-map-marker fa-2x"></i>    
+                </div>
+                    <div class="info">
+                        <p>Tahrir Square, Downtown, Cairo - Egypt</p>
+                        </div>
+                <div class="Contact reveal" >
+                <div class="icon">
+            <i class="fa fa-phone fa-2x"></i>    
+            </div>
+                    <div class="info">
+                        <h3>Phone</h3>
+                        <p>+20 2 25796948</p>
+                    </div>
+                    
+                    <div class="Contact reveal">
+                        <div class="icon">
+                            <i class="fa fa-envelope fa-2x"></i>
+                        </div>
+                        
+                        <div class="info">
+                        <h3> Email </h3>
+                            <a href="mailto:egyptianmuseum@moantiq.gov.eg">egyptianmuseum@moantiq.gov.eg</a>
+                        </div>  
+                </div>
+            </div>
+            <div>
+                <ul class="social-media-list ">
+                    
+                    <li>
+                        <a href="https://www.facebook.com/EgyptianMuseumCairo/" target="_blank" class="co-icon">
+                            <i class="fa fa-facebook"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/egyptianmuseumincairo/" target="_blank" class="co-icon">
+                        <i class="fa fa-instagram" aria-hidden="true"></i></a>
+                      </li>
+                    <li><a href="https://x.com/egyptianmuseumc" target="_blank" class="co-icon">
+                      <i class="fa fa-twitter" aria-hidden="true"></i></a>
+                    </li>
+                       
+                    <li><a href="https://www.pinterest.com/egyptianmuseum/" target="_blank" class="co-icon">
+                        <i class="fa fa-pinterest" aria-hidden="true"></i></a>
+                      </li>    
+                  </ul>
+            </div> 
+            </div> 
+        </center>
+      </section> 
+      <script src="MuseumScript.js"></script>
+</body>
+</html>

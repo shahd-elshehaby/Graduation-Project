@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mummification Museum</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="MuseumDesign.css">
+    <link rel="icon" href="Icon.png" type="image/png">
+
+    <style>
+.flap::before,
+.flap::after {
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 50%;
+    background: url("Mummification Museum/Act1.jpg") no-repeat;
+    background-size: cover; /* Ensure the image covers the area */
+    transition: transform 1s; /* Use transform for smoother animation */
+}
+
+.flap::before {
+    left: 0; /* Position to the left */
+    background-position: 0px; /* Adjust background position */
+}
+
+.flap::after {
+    right: 0; /* Position to the right */
+    background-position: -250px; /* Adjust background position */
+}
+
+.cor:hover .flap::after {
+    transform: translateX(300px);
+}
+
+.cor:hover .flap::before {
+    transform: translateX(-300px);
+}
+
+
+.flapa::before,
+.flapa::after {
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 50%;
+    background: url("Mummification Museum/Act2.jpg") no-repeat;
+    background-size: cover; /* Ensure the image covers the area */
+    transition: transform 1s; /* Use transform for smoother animation */
+}
+
+.flapa::before {
+    left: 0; /* Position to the left */
+    background-position: 0px; /* Adjust background position */
+}
+
+.flapa::after {
+    right: 0; /* Position to the right */
+    background-position: -250px; /* Adjust background position */
+}
+
+.cora:hover .flapa::after {
+    transform: translateX(300px);
+}
+
+.cora:hover .flapa::before {
+    transform: translateX(-300px);
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="Icon.png" height="50px" width="35px">
+        <div class="logo">Mummification Museum</div>
+        </div>
+        <nav class="navigation">
+            <a href="#Home">Home</a>
+            <a href="#Most-Popular-Pieces">Most Popular Pieces</a>
+            <a href="#Activities">Activities</a>
+            <a href="#Appointments">Tickets & Opening Hours </a>
+            <a href="#Contacts">Contacts</a>
+        </nav>
+    </header>
+    <section id="Home">
+    <div class="slider">
+        <div class="list">
+            <div class="item">
+                <img src="Mummification Museum/Slide1.jpg" alt="Mummification Museum">
+                <div class="content">
+                    <div class="title" style="white-space: nowrap;">Mummification Museum</div>
+                    <div class="type"> in Luxor</div>
+                    <div class="description"  style="padding-top: 3%;">
+                       <h4>Located on the Nile Corniche near Luxor Temple, this museum showcases ancient Egyptian mummification techniques used for humans and animals like cats, fish, and crocodiles</h4>
+                    </div>
+                    <div class="button">
+                        <a href="https://egymonuments.gov.eg/ar/museums/mummification-museum">
+                            <button class="see-more-button">SEE MORE</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="Mummification Museum/Slide2.jpg" alt="Mummification Museum">
+                <div class="content">
+                    <div class="title" style="white-space: nowrap;">Mummification Museum</div>
+                    <div class="type"> in Luxor</div>
+                    <div class="description" style="padding-top: 3%;">
+                        <h4>Opened in 1997, it spans 2,035 square meters and includes an exhibition hall with artifacts, a lecture hall, a video room, and a cafeteria.</h4>
+                    </div>
+                    <div class="button">
+                        <a href="https://egymonuments.gov.eg/ar/museums/mummification-museum">
+                            <button class="see-more-button">SEE MORE</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="Mummification Museum/Slide3.JPG" alt="Mummification Museum">
+                <div class="content">
+                    <div class="title" style="white-space: nowrap;">Mummification Museum</div>
+                    <div class="type"> in Luxor</div>
+                    <div class="description"  style="padding-top: 3%;">
+                        <h4>Exhibits focus on 11 themes, including gods, mummification tools, canopic jars, amulets, and the only human mummy—Masaharti, son of King Pinudjem I.</h4>
+                    </div>
+                    <div class="button">
+                        <a href="https://egymonuments.gov.eg/ar/museums/mummification-museum">
+                            <button class="see-more-button">SEE MORE</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="Mummification Museum/Slide4.jpg" alt="Mummification Museum">
+                <div class="content">
+                    <div class="title" style="white-space: nowrap;">Mummification Museum</div>
+                    <div class="type"> in Luxor</div>
+                    <div class="description"  style="padding-top: 7%;">
+                        <h4>The museum provides a fascinating glimpse into the rituals and materials of ancient Egyptian embalming.</h4>
+                    </div>
+                    <div class="button">
+                        <a href="https://egymonuments.gov.eg/ar/museums/mummification-museum">
+                            <button class="see-more-button">SEE MORE</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="thumbnail">
+            <div class="item">
+                <img src="Mummification Museum/Slide1.jpg" alt="Thumbnail of Mummification Museum">
+            </div>
+            <div class="item">
+                <img src="Mummification Museum/Slide2.jpg" alt="Thumbnail of Mummification Museum">
+            </div>
+            <div class="item">
+                <img src="Mummification Museum/Slide3.JPG" alt="Thumbnail of Mummification Museum">
+            </div>
+            <div class="item">
+                <img src="Mummification Museum/Slide4.jpg" alt="Thumbnail of Mummification Museum">
+            </div>
+        </div>
+    </div>
+        <div class="nextPrevArrows">
+            <button class="prev"> < </button>
+            <button class="next"> > </button>
+        </div>
+    </div>
+    </section>
+    <section id="Most-Popular-Pieces">
+        <br><br>
+        <div class="con">
+            <h2 class="heading reveal">Most Popular Pieces</h2>
+            <a href="#!" class="card card-1 reveal">
+                <div class="front" style="background-image: url('Mummification Museum/1.jpg');" >
+                    <p>Canopic Jars</p>
+                </div>
+                <div class="back">
+                    <div>
+                        <p>A set of four canopic jars belonging to Wah-Ib-Re-Neferu, son of Psamtik. These jars were used to store the embalmed organs of the deceased and had lids shaped like the Four Sons of Horus. They are called canopic jars, named after the city of Canopus, 
+                            one of the ancient towns in Abu Qir, Alexandria.</p>
+                    </div>
+                </div>
+            </a>
+            <a href="#!" class="card card-2 reveal">
+                <div class="front" style="background-image: url('Mummification Museum/2.jpg');" >
+                    <p>Mummified Ram</p>
+                </div>
+                <div class="back">
+                    <div>
+                        <p>This mummified ram is wrapped in linen and features a cartonnage mask with a gilded face. The ram was a symbol of the god Khnum, who was believed to shape each newborn on a potter’s wheel. 
+                            His cult center was located on Elephantine Island.</p>
+                    </div>
+                </div>
+            </a>
+            <a href="#!" class="card card-3 reveal">
+                <div class="front" style="background-image: url('Mummification Museum/3.jpg');" >
+                    <p>Statue of Osiris</p>
+                </div>
+                <div class="back">
+                    <div>
+                        <p>Osiris was regarded as the god of the afterlife and, since prehistoric times, was linked to the annual Nile flood, 
+                            making him also the god of agriculture, fertility, and resurrection</p>
+                    </div>
+                </div>
+            </a>
+            <a href="#!" class="card card-4 reveal">
+                <div class="front" style="background-image: url('Mummification Museum/4.jpg');" >
+                    <p>The statue of the goddess Nephthys</p>
+                </div>
+                <div class="back">
+                    <div>
+                        <p>Nephthys is considered one of the most important protective goddesses of the deceased.</p>
+                    </div>
+                </div>
+            </a>
+            <a href="#!" class="card card-5 reveal">
+                <div class="front" style="background-image: url('Mummification Museum/5.jpg');" >
+                    <p>The mummy of a Nile tilapia fish</p>
+                </div>
+                <div class="back">
+                    <div>
+                        <p>Found in a worker’s tomb in Esna, this mummified Nile tilapia, called "Akha" by ancient Egyptians, was sacred in Esna (Latopolis, meaning "City of Fish"). 
+                            Its consumption was forbidden, and it appears in tomb art, especially in Meidum and Faiyum.</p>
+                    </div>
+                </div>
+            </a>
+            <a href="#!" class="card card-6 reveal">
+                <div class="front" style="background-image: url('Mummification Museum/6.jpg');" >
+                    <p>Statue and Mummified Cat</p>
+                </div>
+                <div class="back">
+                    <div>
+                        <p>In ancient Egypt, cats symbolized the goddess Bastet, whose popularity grew during the Late Period, 
+                            especially in Tell Basta (Zagazig). The statue is made of sycamore wood.</p>
+                    </div>
+                </div>
+            </a>
+            <a href="#!" class="card card-7 reveal">
+                <div class="front" style="background-image: url('Mummification Museum/7.jpg');" >
+                    <p>The Djed pillar</p>
+                </div>
+                <div class="back">
+                    <div>
+                        <p>A symbol of stability and continuity, originally represented the pillars that held up the heavens in the Old Kingdom. Over time, it also came to symbolize the backbone of the god Osiris, reflecting themes of resurrection and eternal strength. 
+                            This iconic symbol remains a powerful representation of endurance and divine support in ancient Egyptian culture.</p>
+                    </div>
+                </div>
+            </a>
+            <a href="#!" class="card card-8 reveal">
+                <div class="front" style="background-image: url('Mummification Museum/8.jpg');" >
+                    <p>The crocodile mummy</p>
+                </div>
+                <div class="back">
+                    <div>
+                        <p>It represents the worship of Sobek, the god of water and fertility, particularly revered in Kom Ombo. Found in the Kom Ombo Temple, it reflects the ancient Egyptian practice of mummifying sacred animals to honor deities, 
+                            showcasing Sobek's role as a protector and symbol of the Nile's vitality.</p>
+                    </div>
+                </div>
+            </a>
+            <a href="#!" class="card card-9 reveal">
+                <div class="front" style="background-image: url('Mummification Museum/9.jpg');" >
+                    <p>The mummy of Masaharti</p>
+                </div>
+                <div class="back">
+                    <div>
+                        <p>The mummy of Masaharti, son of King Pinedjem I of the 21st Dynasty, is a highlight of the museum. Discovered in 1881 in the Deir el-Bahri cache, it represents the peak of mummification artistry. Masaharti, High Priest of Amun and Commander of the Army, died young in his father's 25th regnal year. The well-preserved mummy shows signs of obesity, with a red-coated face, extended hands, and a gold cover on one finger. His coffin, adorned with funerary scenes, titles him as High Priest of Amun-Ra and Supreme Army Commander, 
+                            reflecting his religious and military legacy.</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </section>
+    <section id="Activities" style="background-image: url('Mummification Museum/Background1.png'); background-size: cover; background-position: center;">
+        <div class="cont">
+            <h2 class="heading reveal">Activities</h2>
+            <div class="card-container "> 
+            <div class="cor reveal">
+                <div class="cot ">
+                    <h3 class="l"  style="padding:6.5%;">The Mummification Museum welcomed a group from the Ma'at Initiative for Archaeological Awareness and provided explanations about:
+                       <br> - The journey of the deceased in the afterlife.
+                       <br> - The harmony and beauty of colors in the 21st Dynasty.
+                       <br> - Amulets in Ancient Egypt.</h3>
+                </div>
+                <div class="flap"></div>
+            </div>
+            <div class="cora reveal">
+                <div class="cota ">
+                    <h3 class="la" style="padding:5%;">Continuing the effective role of the Educational Department, a guided tour was conducted for visitors covering the following topics:
+                        <br> - Burial ceremonies after death.
+                        <br> - Methods and customs of burial.
+                        <br> - The beauty and harmony of colors in the 21st Dynasty.
+                        <br> - The journey of the deceased to Abydos, the burial place of the god 'Osiris'.</h3>
+                </div>
+                <div class="flapa"></div>
+            </div>
+            </div>
+        </div> 
+    </section>
+    <section id="Appointments">
+        <div class="conta">
+            <h2 class="heading reveal">Tickets & Opening Hours </h2>
+            <div class="admission-prices reveal">
+                <h2 class="hi">Ticket Prices</h2>
+                <p>Egyptian & Arab Visitors:</p>
+                <table>
+                    <tr>
+                        <td>Adults</td>
+                        <td>EGP 20</td>
+                    </tr>
+                    <tr>
+                        <td>Student</td>
+                        <td>EGP 5</td>
+                    </tr>
+                </table>
+                    <p>Foreign Visitors:</p>
+                        <table>
+                        <tr>
+                            <td>Adults</td>
+                            <td>EGP 220</td>
+                        </tr>
+                        <tr>
+                            <td>Student</td>
+                            <td>EGP 110</td>
+                        </tr>
+                    </table>
+            </div>
+            <div class="opening-hours reveal">
+                <h2 class="hi">Opening Hours</h2>
+                <p style="padding: 2.5%;">Visitors</p>
+                <table >
+                    <tr>
+                        <td>Everyday</td>
+                        <td>9:00 a.m. – 2:00 p.m.</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </section>
+    <section id="Contacts" style="background-image: url('Mummification Museum/Background2.png'); " > 
+         <h2 class="heading reveal">Contact</h2>
+         <center>
+
+            <div class="Contact reveal" id="contact">
+                <h1 class="title">Contact us</h1>
+                <div class="icon">
+                <i class="fa fa-map-marker fa-2x"></i>    
+                </div>
+                    <div class="info">
+                        <p>Nile Corniche, Luxor City, Luxor - Egypt</p>
+                        </div>
+                <div class="Contact reveal" >
+                <div class="icon">
+            <i class="fa fa-phone fa-2x"></i>    
+            </div>
+                    <div class="info">
+                        <h3>Phone</h3>
+                        <p>095 2370 062</p>
+                    </div>    
+            </div>
+            <div>
+                <ul class="social-media-list ">
+                    
+                    <li>
+                        <a href="https://www.facebook.com/share/1FA4NnDRnk/" target="_blank" class="co-icon">
+                            <i class="fa fa-facebook"></i>
+                        </a>
+                    </li>  
+                  </ul>
+            </div> 
+            </div> 
+        </center>
+      </section> 
+      <script src="MuseumScript.js"></script>
+</body>
+</html>

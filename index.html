@@ -1,0 +1,2870 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Land of Pharaohs</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0&family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,1,0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="icon" href="Icon.png" type="image/png">
+  <link rel="stylesheet" href="Main.css">
+</head>
+<body>
+ <header class="header">
+  <div class="logo-container">
+    <img src="Icon.png" height="50px" width="35px">
+    <a href="#Home" class="header__logo">Land of Pharaohs</a>
+</div>
+
+<div class="search">
+  <label class="input-container closed">
+      <div class="shadow"></div>
+      <div class="center">
+          <input id="search" type="search" placeholder="Search...🔍" autocomplete="off">
+      </div>
+      <div class="sticks"></div>
+  </label>
+  <div id="suggestionList" class="suggestion-list"></div>
+</div>
+
+
+  <div id="menu">
+    <div id="menu-bar" onclick="menuOnClick()">
+      <div id="bar1" class="bar"></div>
+      <div id="bar2" class="bar"></div>
+      <div id="bar3" class="bar"></div>
+    </div>
+    <nav class="nav" id="nav" >
+      <ul >
+        <li><a href="#Home">Home</a></li>
+        <li><a href="#Monuments">Monuments</a></li>
+        <li><a href="#Sunken">Sunken Monuments </a></li>
+        <li><a href="#Famous">Kings & Queens</a></li>
+        <li><a href="#Abroad">Egyptian Monuments<br> abroad</a></li>
+        <li><a href="#Symbols">Pharaonic Symbols</a></li>
+        <li><a href="#Do-U-Know">Do You Know</a></li>
+        <li><a href="#Translation">Translation</a></li>
+        <li><a href="Login.html">Log in</a></li>
+
+      </ul>
+    </nav>
+  </div>
+  <div class="menu-bg" id="menu-bg"></div>
+</header>
+<section id="Home">
+  <div class="slider">
+    <div class="slider__slides">
+      <div class="slide s--active">
+        <div class="slide__inner" style="background-image: url('Main/The Citadel of Salah El-Din Al-Ayyubi.jpg');">
+          <div class="slide__content">
+            <h2 class="slide__heading">The Citadel of <br>Salah El-Din Al-Ayyubi</h2>
+            <p class="slide__text"> (Salah Salem Street, Khalifa, Cairo)</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="slide">
+        <div class="slide__inner" style="background-image: url('Main/Al-Azhar Mosque.jpg');">
+          <div class="slide__content">
+            <h2 class="slide__heading">Al-Azhar Mosque </h2>
+            <p class="slide__text">(Al-Azhar Street, Al-Darb Al-Ahmar, Cairo)</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="slide">
+        <div class="slide__inner" style="background-image: url('Main/Bab Zuweila.jpg');">
+          <div class="slide__content">
+            <h2 class="slide__heading">Bab Zuweila </h2>
+            <p class="slide__text"> (Tahat Al-Rab'a Street, Al-Darb Al-Ahmar, Cairo)</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="slide">
+        <div class="slide__inner" style="background-image: url('Main/Al-Muizz Li-Din Allah Al-Fatimi Street.jpg');">
+          <div class="slide__content">
+            <h2 class="slide__heading">Al-Muizz Li-Din Allah <br> Al-Fatimi Street </h2>
+            <p class="slide__text"> (Al-Muizz Street, Al-Gamaleya, Cairo)</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="slide">
+        <div class="slide__inner" style="background-image: url('Main/Baron Palace.jpg');">
+          <div class="slide__content">
+            <h2 class="slide__heading">Baron Palace </h2>
+            <p class="slide__text">(Al-Orouba Street, Heliopolis, Cairo)</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="slide">
+        <div class="slide__inner" style="background-image: url('Main/Sultan Al-Zahir Baybars Mosque.jpg');">
+          <div class="slide__content">
+            <h2 class="slide__heading">Sultan Al-Zahir Baybars Mosque </h2>
+            <p class="slide__text">(Al-Zahir Square, Sakakini, Cairo)</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="slide">
+        <div class="slide__inner" style="background-image: url('Main/The Pyramids of Giza.jpg');">
+          <div class="slide__content">
+            <h2 class="slide__heading">The Pyramids of Giza </h2>
+            <p class="slide__text">(Nazlet Al-Semman, Haram, Giza)</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="slide">
+        <div class="slide__inner" style="background-image: url('Main/Saqqara Archaeological Area.jpg');">
+          <div class="slide__content">
+            <h2 class="slide__heading">Saqqara Archaeological Area</h2>
+            <p class="slide__text"> (Saqqara, Badrasheen, Giza)</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="slide">
+        <div class="slide__inner" style="background-image: url('Main/Qarun Palace.jpg');">
+          <div class="slide__content">
+            <h2 class="slide__heading">Qarun Palace </h2>
+            <p class="slide__text">(Qarun Village, Youssef Al-Siddiq, Fayoum)</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="slide">
+        <div class="slide__inner" style="background-image: url('Main/Temple of Merit Amun.jpg');">
+          <div class="slide__content">
+            <h2 class="slide__heading">Temple of Merit Amun  </h2>
+            <p class="slide__text">(Akhmim City, Sohag)</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="slide">
+        <div class="slide__inner" style="background-image: url('Main/Dendera Temple.jpg');">
+          <div class="slide__content">
+            <h2 class="slide__heading">Dendera Temple </h2>
+            <p class="slide__text">(Dendera Village, Qena) </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="slide">
+        <div class="slide__inner" style="background-image: url('Main/Karnak Temples.jpg');">
+          <div class="slide__content">
+            <h2 class="slide__heading">Karnak Temples</h2>
+            <p class="slide__text"> (East Bank, Luxor)</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="slide">
+        <div class="slide__inner" style="background-image: url('Main/Avenue of Sphinxes.jpg');">
+          <div class="slide__content">
+            <h2 class="slide__heading">Avenue of Sphinxes</h2>
+            <p class="slide__text"> (East Bank, Luxor) </p>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="slide">
+        <div class="slide__inner" style="background-image: url('Main/Luxor Temple.jpg');">
+          <div class="slide__content">
+            <h2 class="slide__heading">Luxor Temple</h2>
+            <p class="slide__text"> (East Bank, Luxor)</p>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="slide">
+        <div class="slide__inner" style="background-image: url('Main/Valley of the Queens.jpg');">
+          <div class="slide__content">
+            <h2 class="slide__heading">Valley of the Queens </h2>
+            <p class="slide__text"> (West Bank, Qurna, Luxor)</p>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="slide">
+        <div class="slide__inner" style="background-image: url('Main/Deir El-Bahari.jpg');">
+          <div class="slide__content">
+            <h2 class="slide__heading">Deir El-Bahari</h2>
+            <p class="slide__text">  (West Bank, Qurna, Luxor)</p>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="slide">
+        <div class="slide__inner" style="background-image: url('Main/Valley of the Kings.jpg');">
+          <div class="slide__content">
+            <h2 class="slide__heading">Valley of the Kings</h2>
+            <p class="slide__text">  (West Bank, Qurna, Luxor)</p>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="slide">
+        <div class="slide__inner" style="background-image: url('Main/Esna Temple.jpg');">
+          <div class="slide__content">
+            <h2 class="slide__heading">Esna Temple</h2>
+            <p class="slide__text">(Esna City, Luxor)</p>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="slide">
+        <div class="slide__inner" style="background-image: url('Main/Edfu Temple.jpg');">
+          <div class="slide__content">
+            <h2 class="slide__heading">Edfu Temple</h2>
+            <p class="slide__text">(West Bank, Edfu, Aswan)</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="slide">
+        <div class="slide__inner" style="background-image: url('Main/Kom Ombo Temple.jpg');">
+          <div class="slide__content">
+            <h2 class="slide__heading">Kom Ombo Temple</h2>
+            <p class="slide__text">(East Bank, Kom Ombo, Aswan)</p>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="slide">
+        <div class="slide__inner" style="background-image: url('Main/Abu Simbel Temples.jpg');">
+          <div class="slide__content">
+            <h2 class="slide__heading">Abu Simbel Temples</h2>
+            <p class="slide__text">(Abu Simbel City, Aswan)</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="slide">
+        <div class="slide__inner" style="background-image: url('Main/Saint Catherine is Monastery.jpg');">
+          <div class="slide__content">
+            <h2 class="slide__heading">Saint Catherine's Monastery </h2>
+            <p class="slide__text">(Sacred Valley, Saint Catherine City, Sinai)</p>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="slide">
+        <div class="slide__inner" style="background-image: url('Main/Salah El-Din Citadel.jpg');">
+          <div class="slide__content">
+            <h2 class="slide__heading">Salah El-Din Citadel</h2>
+            <p class="slide__text">(Pharaoh's Island, Taba, Sinai)</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="slide">
+        <div class="slide__inner" style="background-image: url('Main/Bibliotheca Alexandrina.jpg');">
+          <div class="slide__content">
+            <h2 class="slide__heading">Bibliotheca Alexandrina</h2>
+            <p class="slide__text"> (Azarita, Bab Sharqi, Alexandria)</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="slide s--prev">
+        <div class="slide__inner" style="background-image: url('Main/Qaitbay Citadel.jpg');">
+          <div class="slide__content">
+            <h2 class="slide__heading">Qaitbay Citadel</h2>
+            <p class="slide__text"> (Anfoushi, El Gomrok, Alexandria)</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="slider__control">
+      <div class="slider__control-line"></div>
+      <div class="slider__control-line"></div>
+    </div>
+    <div class="slider__control slider__control--right m--right">
+      <div class="slider__control-line"></div>
+      <div class="slider__control-line"></div>
+    </div>
+  </div>
+</section>
+
+
+<section id="Monuments" class="animate-section">
+  <h1 class="services_taital">Monuments <hr class="custom-hr"></h1>
+
+  <div class="cd-containerr">
+    <div class="containerr active">
+      <div class="wrapperr">
+        <div class="banner-image" style="background-image: url(Monuments/0.jpg);"></div>
+        <h1>Salah El-Din <br>Al-Ayyubi Citadel </h1>
+        <p>It is considered one of the most important landmarks of Islamic Cairo.</p>
+      </div>
+      <div class="button-wrapperr">
+        <button class="btn outline" onclick="window.location.href='Pages/Salah El-Din Citadel.html';">DETAILS</button>
+      </div>
+    </div> 
+    <div class="containerr active">
+      <div class="wrapperr">
+        <div class="banner-image " style="background-image: url(Monuments/1.jpg);"></div>
+        <h1>The Mosque of Al-Zahir Baybars </h1>
+        <p>It is one of the historical mosques in Cairo, 
+          established by King <br>Al-Zahir Baybars Al-Bunduqdari in the year 665 AH.</p>
+      </div>
+      <div class="button-wrapperr">
+        <button class="btn outline " onclick="window.location.href='Pages/Sultan Al-Zahir Baybars Mosque.html';">DETAILS</button>
+      </div>
+    </div>
+    <div class="containerr active">
+      <div class="wrapperr">
+        <div class="banner-image" style="background-image: url(Monuments/2.jpg);"></div>
+        <h1>Al-Azhar Mosque</h1>
+        <p>It is one of the most important mosques in Egypt <br> and a historic stronghold for the dissemination and teaching of Islam.</p>
+      </div>
+      <div class="button-wrapperr" >
+        <button class="btn outline" onclick="window.location.href='Pages/Al-Azhar Mosque.html';">DETAILS</button>
+      </div>
+    </div>
+    <div class="containerr">
+      <div class="wrapperr">
+        <div class="banner-image" style="background-image: url(Monuments/3.jpg);"></div>
+        <h1>Al-Muizz li-Din Allah Al-Fatimi Street</h1>
+        <p >It is a street that represents the heart of Old Cairo 
+          and has been developed to become an open museum of Islamic architecture and monuments.</p>
+      </div>
+      <div class="button-wrapperr">
+        <button class="btn outline" onclick="window.location.href='Pages/Al-Muizz li-Din Allah Al-Fatimi Street.html';">DETAILS</button>
+      </div>
+    </div>
+    <div class="containerr">
+      <div class="wrapperr">
+        <div class="banner-image" style="background-image: url(Monuments/4.jpg);"></div>
+        <h1>The Egyptian Museum in Tahrir </h1>
+        <p>is one of the largest and most famous museums in the world, located in the heart of Cairo.</p>
+      </div>
+      <div class="button-wrapperr">
+        <button class="btn outline" onclick="window.location.href='Museums/The Egyptian Museum.html';">DETAILS</button>
+      </div>
+    </div>
+    <div class="containerr">
+      <div class="wrapperr">
+        <div class="banner-image" style="background-image: url(Monuments/5.jpg);"></div>
+        <h1>The National Museum of Egyptian Civilization</h1>
+        <p>A museum located in the city of Fustat in Cairo, covering an area of 33.5 acres.</p>
+      </div>
+      <div class="button-wrapperr">
+        <button class="btn outline" onclick="window.location.href='Museums/NMEC.html';">DETAILS</button>
+      </div>
+    </div>
+    <div class="containerr">
+      <div class="wrapperr">
+        <div class="banner-image" style="background-image: url(Monuments/6.jpg);"></div>
+        <h1>The National Police Museum</h1>
+        <p >Located in the Salah El-Din Citadel in Cairo alongside the Military Museum, 
+          it houses numerous artifacts from Egyptian security apparatuses, both historical and modern.</p>
+      </div>
+      <div class="button-wrapperr">
+        <button class="btn outline" onclick="window.location.href='Museums/National Police Museum.html';">DETAILS</button>
+      </div>
+    </div>
+
+    <div class="containerr">
+      <div class="wrapperr">
+        <div class="banner-image" style="background-image: url(Monuments/7.jpg);"></div>
+        <h1>The Museum of Islamic Art </h1>
+        <p>It is considered the largest Islamic museum in the world, featuring a diverse collection of Islamic arts from India, China, Iran, 
+          as well as the arts of the Arabian Peninsula, the Levant, Egypt, North Africa, and Andalusia.</p>
+      </div>
+      <div class="button-wrapperr">
+        <button class="btn outline" onclick="window.location.href='Museums/Museum of Islamic Art .html';">DETAILS</button>
+      </div>
+    </div>
+    <div class="containerr">
+      <div class="wrapperr">
+        <div class="banner-image" style="background-image: url(Monuments/8.jpg);"></div>
+        <h1>The Coptic Museum</h1>
+        <p >It is one of the largest museums of Coptic antiquities in the world, 
+          housing a diverse and rare collection of Coptic art.</p>
+      </div>
+      <div class="button-wrapperr">
+        <button class="btn outline" onclick="window.location.href='Museums/The Coptic Museum.html';">DETAILS</button>
+      </div>
+    </div>
+    <div class="containerr">
+      <div class="wrapperr">
+        <div class="banner-image" style="background-image: url(Monuments/9.jpg);"></div>
+        <h1 style="font-size: 1.7rem;">The Royal Carriages Museum</h1>
+        <p >The museum features an exquisite collection of royal carriages of various sizes and types, 
+          dating back to the era of the Muhammad Ali dynasty in Egypt.</p>
+      </div>
+      <div class="button-wrapperr">
+        <button class="btn outline" onclick="window.location.href='Museums/The Royal Carriages Museum.html';">DETAILS</button>
+      </div>
+    </div>
+    <div class="containerr">
+      <div class="wrapperr">
+        <div class="banner-image" style="background-image: url(Monuments/10.jpg);"></div>
+        <h1>The Pyramids of Giza</h1>
+        <p >It is an archaeological site on the Giza Plateau, encompassing the pyramids, 
+          the Great Sphinx, several tombs, a workers' village, and an industrial complex.</p>
+      </div>
+      <div class="button-wrapperr">
+        <button class="btn outline" onclick="window.location.href='Pages/The pyramids.html';" >DETAILS</button>
+      </div>
+    </div>
+    <div class="containerr">
+      <div class="wrapperr">
+        <div class="banner-image" style="background-image: url(Monuments/11.jpg);"></div>
+        <h1>The Saqqara Necropolis</h1>
+        <p>It is part of the Memphis necropolis and contains a large number of ancient Egyptian monuments.</p>
+      </div>
+      <div class="button-wrapperr">
+        <button class="btn outline" onclick="window.location.href='Pages/Saqqara.html';">DETAILS</button>
+      </div>
+    </div>
+    <div class="containerr">
+      <div class="wrapperr">
+        <div class="banner-image" style="background-image: url(Monuments/12.jpg);"></div>
+        <h1 style="font-size: 1.7rem;">The Grand Egyptian Museum</h1>
+        <p >It is being constructed to become the largest museum of antiquities in the world, 
+          designed to accommodate 5 million visitors annually.</p>
+      </div>
+      <div class="button-wrapperr">
+        <button class="btn outline" onclick="window.location.href='Museums/Grand Egyptian Museum.html';">DETAILS</button>
+      </div>
+    </div>
+    <div class="containerr">
+      <div class="wrapperr">
+        <div class="banner-image" style="background-image: url(Monuments/13.jpg);"></div>
+        <h1>The Dendera Temple</h1>
+        <p>It's a well-preserved Ptolemaic-Roman temple, is located in Dendera village, 
+          about 5 km northwest of Qena and 60 km north of Luxor, and was part of ancient Egypt's sixth nome.</p>
+      </div>
+      <div class="button-wrapperr">
+        <button class="btn outline"onclick="window.location.href='Pages/Dendera Temple.html';">DETAILS</button>
+      </div>
+    </div>
+    <div class="containerr">
+      <div class="wrapperr">
+        <div class="banner-image" style="background-image: url(Monuments/14.jpg);"></div>
+        <h1>The Valley of the Queens</h1>
+        <p>It's known in ancient times as "Ta-Set-Neferu" meaning 
+          "Place of the Pharaoh's Children" or "Place of Beauty," was the burial site for queens in ancient Egypt.</p>
+      </div>
+      <div class="button-wrapperr">
+        <button class="btn outline" onclick="window.location.href='Pages/The Valley of the Queens.html';">DETAILS</button>
+      </div>
+    </div>
+    <div class="containerr">
+      <div class="wrapperr">
+        <div class="banner-image" style="background-image: url(Monuments/15.jpg);"></div>
+        <h1>The Valley of the Kings</h1>
+        <p>It's also known as "Biban el-Muluk," is a valley in Egypt 
+          used for over 500 years from the 16th to the 11th century BCE.</p>
+      </div>
+      <div class="button-wrapperr">
+        <button class="btn outline" onclick="window.location.href='Pages/The Valley of the Kings.html';">DETAILS</button>
+      </div>
+    </div>
+    <div class="containerr">
+      <div class="wrapperr">
+        <div class="banner-image" style="background-image: url(Monuments/16.jpg);"></div>
+        <h1>Deir</br> El-Bahri</h1>
+        <p>It's a complex of temples and pharaonic tombs located on the west bank of the Nile, opposite the city of Luxor.</p>
+      </div>
+      <div class="button-wrapperr">
+        <button class="btn outline" onclick="window.location.href='Pages/Deir El-Bahri.html';">DETAILS</button>
+      </div>
+    </div>
+    <div class="containerr">
+      <div class="wrapperr">
+        <div class="banner-image" style="background-image: url(Monuments/17.jpg);"></div>
+        <h1>Luxor Temple</h1>
+        <p> It is a large, complex ancient Egyptian temple on the east bank of the Nile in Luxor, 
+          dating back to 1400 BC and built to worship the Theban triad: Amun-Ra, his wife Mut, and their son Khonsu.</p>
+      </div>
+      <div class="button-wrapperr">
+        <button class="btn outline" onclick="window.location.href='Pages/Luxor Temple.html';">DETAILS</button>
+      </div>
+    </div>
+    <div class="containerr">
+      <div class="wrapperr">
+        <div class="banner-image" style="background-image: url(Monuments/18.jpg);"></div>
+        <h1>Avenue of Sphinxes</h1>
+        <p>It's originally a royal road connecting the "Luxor Temple" with the "Karnak Temple,"
+           spanning a length of 2700 meters.</p>
+      </div>
+      <div class="button-wrapperr">
+        <button class="btn outline"onclick="window.location.href='Pages/Avenue of Sphinxes.html';" >DETAILS</button>
+      </div>
+    </div>
+    <div class="containerr">
+      <div class="wrapperr">
+        <div class="banner-image" style="background-image: url(Monuments/19.jpg);"></div>
+        <h1 style="font-size: 1.9rem;">The Karnak Temple Complex</h1>
+        <p>It's famously known as the Karnak Temple, is a vast collection of temples, buildings, and columns, 
+          with construction and expansion spanning from the Middle Kingdom through the Roman period in Luxor.</p>
+      </div>
+      <div class="button-wrapperr">
+        <button class="btn outline"onclick="window.location.href='Pages/Karnak Temple.html';">DETAILS</button>
+      </div>
+    </div>
+    <div class="containerr">
+      <div class="wrapperr">
+        <div class="banner-image" style="background-image: url(Monuments/20.jpg);"></div>
+        <h1>The Luxor Museum</h1>
+        <p>It's  located on the Nile corniche in central Luxor, southern Egypt (ancient Thebes), 
+          was inaugurated in 1975 by former President Anwar Sadat and French President Valéry Giscd d'Estaing.</p>
+      </div>
+      <div class="button-wrapperr">
+        <button class="btn outline" onclick="window.location.href='Museums/Luxor Museum.html';">DETAILS</button>
+      </div>
+    </div>
+    <div class="containerr">
+      <div class="wrapperr">
+        <div class="banner-image" style="background-image: url(Monuments/21.jpg);"></div>
+        <h1 style="font-size: 1.9rem;">The Mummification Museum</h1>
+        <p >It is an archaeological museum in Luxor, Upper Egypt, dedicated to the art of ancient Egyptian mummification.</p>
+      </div>
+      <div class="button-wrapperr">
+        <button class="btn outline" onclick="window.location.href='Museums/Mummification Museum.html';">DETAILS</button>
+      </div>
+    </div>
+    <div class="containerr">
+      <div class="wrapperr">
+        <div class="banner-image" style="background-image: url(Monuments/22.jpg);"></div>
+        <h1>Abu Simbel Temple </h1>
+        <p style="margin: 15px;">It's an archaeological site on Lake Nasser's western bank, 290 km southwest of Aswan, 
+          and part of the UNESCO-listed Nubian Monuments.</p>
+      </div>
+      <div class="button-wrapperr">
+        <button class="btn outline" onclick="window.location.href='Pages/Abu Simbel Temples.html';">DETAILS</button>
+      </div>
+    </div>
+    <div class="containerr">
+      <div class="wrapperr">
+        <div class="banner-image" style="background-image: url(Monuments/23.jpg);"></div>
+        <h1>The Kom Ombo Temple</h1>
+        <p>It's located in Kom Ombo city, Aswan Governorate, southern Egypt, 
+          was built during the reign of Ptolemy VI for the worship of Sobek and Horus, and has recently undergone restoration.</p>
+      </div>
+      <div class="button-wrapperr">
+        <button class="btn outline" onclick="window.location.href='Pages/Kom Ombo Temple.html';">DETAILS</button>
+      </div>
+    </div>
+    <div class="containerr">
+      <div class="wrapperr">
+        <div class="banner-image" style="background-image: url(Monuments/24.jpg);"></div>
+        <h1>The Edfu</br> Temple</h1>
+        <p>It's dedicated to Horus, is Egypt's second-largest ancient temple, 
+          located in Edfu on the Nile's west bank, showcasing the Ptolemies' architectural legacy.</p>
+      </div>
+      <div class="button-wrapperr">
+        <button class="btn outline" onclick="window.location.href='Pages/Edfu Temple.html';">DETAILS</button>
+      </div>
+    </div>
+    <div class="containerr">
+      <div class="wrapperr">
+        <div class="banner-image" style="background-image: url(Monuments/25.jpg);"></div>
+        <h1>Philae Temple</h1>
+        <p>
+          The Philae Temple in Aswan, dedicated to the goddess Isis, was moved to Agilkia Island to save it from flooding. 
+          Known for its unique design, it is one of Egypt's top tourist destinations.
+        </p>
+      </div>
+      <div class="button-wrapperr">
+        <button class="btn outline" onclick="window.location.href='Pages/Philae Temple.html';">DETAILS</button>
+      </div>
+    </div>
+    <div class="containerr">
+      <div class="wrapperr">
+        <div class="banner-image" style="background-image: url(Monuments/26.jpg);"></div>
+        <h1>The Nubian Museum</h1>
+        <p>It was established by UNESCO, showcases artifacts from ancient Nubian civilization, 
+          its history from prehistoric times to the present,and highlights Nubian traditions, customs, 
+          and the ancient Nubian language.</p>
+      </div>
+      <div class="button-wrapperr">
+        <button class="btn outline" onclick="window.location.href='Museums/Nubia Museum.html';">DETAILS</button>
+      </div>
+    </div>
+    <div class="containerr">
+      <div class="wrapperr">
+        <div class="banner-image" style="background-image: url(Monuments/27.jpg);"></div>
+        <h1>The Citadel of Qaitbay</h1>
+        <p>It's one of the most important defensive fortresses on the Mediterranean coast, 
+          built by the Mamluk Sultan Al-Ashraf Abu Nasr Qaitbay between 882-884 AH </br>(1477-1479 CE).</p>
+      </div>
+      <div class="button-wrapperr">
+        <button class="btn outline" onclick="window.location.href='Pages/Qaitbay Citadel.html';">DETAILS</button>
+      </div>
+    </div>
+    <div class="containerr">
+      <div class="wrapperr">
+        <div class="banner-image" style="background-image: url(Monuments/28.jpg);"></div>
+        <h1>The Bibliotheca Alexandrina</h1>
+        <p >It's a modern revival of the ancient Library of Alexandria, 
+          inaugurated on October 16, 2002, in a project by Egypt in collaboration with the United Nations.</p>
+      </div>
+      <div class="button-wrapperr">
+        <button class="btn outline" onclick="window.location.href='Pages/Bibliotheca Alexandrina.html';">DETAILS</button>
+      </div>
+    </div>
+    <div class="containerr">
+      <div class="wrapperr">
+        <div class="banner-image" style="background-image: url(Monuments/29.jpg);"></div>
+        <h1>The Royal Jewelry Museum</h1>
+        <p> It's located in Alexandria showcases the jewelry of Egypt's royal families.</p>
+      </div>
+      <div class="button-wrapperr">
+        <button class="btn outline" onclick="window.location.href='Museums/Royal Jewelry Museum.html';">DETAILS</button>
+      </div>
+    </div>
+    <div class="containerr">
+      <div class="wrapperr">
+        <div class="banner-image" style="background-image: url(Monuments/30.jpg);"></div>
+        <h1 style="font-size: 1.7rem;">The Greco-Roman Museum</h1>
+        <p>It's located in Alexandria displays a wide range of artifacts from the Ptolemaic and later Roman periods, 
+          dating from the founding of Alexandria in the 3rd century BC to the 3rd century AD.</p>
+      </div>
+      <div class="button-wrapperr">
+        <button class="btn outline" onclick="window.location.href='Museums/Graeco-Roman Museum.html';">DETAILS</button>
+      </div>
+    </div>
+    <div class="containerr">
+      <div class="wrapperr">
+        <div class="banner-image" style="background-image: url(Monuments/31.jpg);"></div>
+        <h1 style="font-size: 1.7rem;">The Salah </br> Al-Din Al-Ayyubi Castle</h1>
+        <p style="margin: 19px;"> It's located on Pharaoh Island at the northwestern tip of the Gulf of Aqaba in Egypt and consists of two parts.</p>
+      </div>
+      <div class="button-wrapperr">
+        <button class="btn outline" onclick="window.location.href='Pages/The Salah Al-Din Al-Ayyubi Castle.html';">DETAILS</button>
+      </div>
+    </div>
+    <div class="containerr">
+      <div class="wrapperr">
+        <div class="banner-image" style="background-image: url(Monuments/32.jpg);"></div>
+        <h1>Saint Catherine's Monastery </h1>
+        <p>It is an Eastern Orthodox monastery located in the Sinai Peninsula, at the foot of Mount Sinai, 
+          near the city of Saint Catherine, Egypt, and is named after Saint Catherine of Alexandria.</p>
+      </div>
+      <div class="button-wrapperr">
+        <button class="btn outline" onclick="window.location.href='Pages/Saint Catherine\'s Monastery.html';">DETAILS</button>
+      </div>
+    </div>   
+  </div>
+
+  
+
+  <div class="nnavigation-buttons">
+    <button class="nn-btn" id="prevBtn">←</button>
+    <button class="nn-btn" id="nextBtn">→</button>
+  </div>
+
+
+</section>
+
+<section id="Sunken" class="animate-section">
+  <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background-color: rgba(0, 0, 0, 0.5); z-index: 0;"></div>
+  <h1 class="services_taital" style="position: relative; z-index: 1; color: #e2e2e2; margin-bottom: 550px;">Sunken Monuments <hr class="custom-hr"></h1>
+  
+  <div class="Carddd">
+    <input type="radio" name="select" id="slidde_1" checked>
+    <input type="radio" name="select" id="slidde_2">
+    <input type="radio" name="select" id="slidde_3">
+    <input type="radio" name="select" id="slidde_4">
+    <input type="radio" name="select" id="slidde_5">
+
+    <input type="checkbox" id="sliddeImg">
+
+    <div class="sliddeerr">
+        <label for="slidde_1" class="slidde slidde_1"></label>
+        <label for="slidde_2" class="slidde slidde_2"></label>
+        <label for="slidde_3" class="slidde slidde_3"></label>
+        <label for="slidde_4" class="slidde slidde_4"></label>
+        <label for="slidde_5" class="slidde slidde_5"></label>
+    </div>
+
+    <div class="inner_part">
+        <label for="sliddeImg" class="img">
+            <img class="img_1" src="Sunken Monuments/Abu Qir Bay.jpg" alt="Abu Qir Bay">
+        </label>
+        <div class="conteent conteent_1">
+            <div class="tittle">Abu Qir Bay</div>
+            <div class="texxt">The cities of Canopus and Heracleion, located in Abu Qir Bay, 
+                thrived before Alexandria's founding, benefiting from taxes on goods transported to nearby ports. 
+                Recent discoveries revealed temple ruins and statues, indicating their collapse and submersion in the 4th century BCE. 
+                The exact cause of their disappearance remains a mystery, with theories suggesting an earthquake or flood.
+            </div>
+            <a href="https://egymonuments.gov.eg/ar/sunken-monuments/abu-qir-bay">
+            <button>Read More</button>
+          </a>
+        </div>
+    </div>
+
+    <div class="inner_part">
+        <label for="sliddeImg" class="img">
+            <img class="img_2" src="Sunken Monuments/Saadana Island.jpg" alt="Saadana Island">
+        </label>
+        <div class="conteent conteent_2">
+            <div class="tittle">Saadana Island</div>
+            <div class="texxt">
+                Saadana Island, located on the Red Sea coast near Safaga, houses the wreck of an 18th-century trading ship, 
+                offering a rare glimpse into maritime commerce. The ship, measuring 50 meters, likely sank around 1760 due to shallow waters and coral reefs. 
+                Its discovery highlights the challenges of navigation and trade in this historically significant region.
+            </div>
+            <a href="https://egymonuments.gov.eg/ar/sunken-monuments/saadana-island">
+            <button>Read More</button>
+          </a>
+        </div>
+    </div>
+
+    <div class="inner_part">
+        <label for="sliddeImg" class="img">
+            <img class="img_3" src="Sunken Monuments/Al-Shatby.jpg" alt="Al-Shatby">
+        </label>
+        <div class="conteent conteent_3">
+            <div class="tittle">Al-Shatby</div>
+            <div class="texxt">
+                The Shatby site in Alexandria, near the modern library, has revealed remnants of the Temple of Isis or Cleopatra VII's palace and late Roman pottery. 
+                These discoveries underscore its historical significance as part of Alexandria's royal and religious past.      
+            </div>
+            <a href="https://egymonuments.gov.eg/ar/sunken-monuments/shatby">
+            <button>Read More</button>
+          </a>
+        </div>
+    </div>
+
+    <div class="inner_part">
+        <label for="sliddeImg" class="img">
+            <img class="img_4" src="Sunken Monuments/Wadi El-Jarf Port.jpg" alt="Wadi El-Jarf Port">
+        </label>
+        <div class="conteent conteent_4">
+            <div class="tittle">Wadi El-Jarf Port</div>
+            <div class="texxt">
+                In 1962, artifacts were recovered from the Qaitbay Citadel site near Pharos Island in Alexandria. 
+                Excavations since 1994 have revealed over 3,000 architectural pieces, including granite, 
+                marble, and quartzite, as well as seven sphinx statues and ancient shipwrecks. 
+                These discoveries showcase Alexandria's rich maritime and architectural heritage.      
+            </div>
+            <a href="https://egymonuments.gov.eg/ar/sunken-monuments/wadi-al-jarf-port">
+            <button>Read More</button>
+        </a>
+      </div>
+    </div>
+
+    <div class="inner_part">
+        <label for="sliddeImg" class="img">
+            <img class="img_5" src="Sunken Monuments/Location of Qaitbay Citadel.jpg" alt="Location of Qaitbay Citadel">
+        </label>
+        <div class="conteent conteent_5">
+            <div class="tittle">Location of Qaitbay Citadel</div>
+            <div class="texxt">In 1962, artifacts were recovered from the Qaitbay Citadel site in Alexandria, 
+                near Pharos Island. Excavations since 1994 have uncovered over 3,000 architectural pieces, 
+                including granite, marble, and quartzite, as well as seven sphinx statues and ancient shipwrecks. 
+                These findings highlight Alexandria's rich maritime and architectural history.
+            </div>
+            <a href="https://egymonuments.gov.eg/ar/sunken-monuments/qaitbay-fort-site">
+            <button>Read More</button>
+          </a>
+        </div>
+    </div>
+</div>
+</section>
+
+
+<h1 class="services_taital" style=" padding-top: 100px;">The most famous kings & queens <hr class="custom-hr" style="width: 240px;"></h1>
+
+
+<section id="Famous" class="animate-section" style="margin-top: -150px;" >
+
+  <div class="first_page">
+    <div class="wwrapper">
+      <div class="sliidder">
+        <div class="sliidde acttivve">
+          <div class="hheaader hheaader_home">King Narmer </div>
+          <div class="contteeent contteeent_home">he is an Egyptian king, considered the first ruler of unified Egypt. 
+            He is famous for unifying Egypt without wars at the beginning of the First Dynasty 
+            (3150–2613 BCE) and is regarded as the last king of the Predynastic Period (6000–3150 BCE). 
+            Initially thought to precede King Menes, evidence now suggests Narmer and Menes might be the same person. 
+            Narmer is credited with diverting the Nile and founding Memphis, 
+            the ancient capital. He reportedly ruled for 62 years and died fighting a hippopotamus.</div>
+          <div class="photoo" style="background-image: url('Kings,Queens/1.jpg');"></div>
+        </div>
+        <div class="sliidde">
+          <div class="hheaader hheaader_home">King Zoser</div>
+          <div class="contteeent contteeent_home">He is the second ruler of Egypt’s Third Dynasty (2650–2575 BCE), 
+            reigned for 19 years and is renowned for building the first significant stone structure in Egypt, 
+            the Step Pyramid of Saqqara. His reign marked a period of prosperity, particularly in Memphis, 
+            which became a political and cultural hub under his permanent residence and architectural focus. 
+            Djoser is also celebrated for ending a seven-year famine by constructing a temple for Khnum, the god of the Nile’s source. 
+            A successful leader, he secured Egypt’s borders and expanded his kingdom into Sinai. His mummy and tomb were looted, 
+            but some artifacts, including part of his mummified foot, were recovered. 
+            Djoser’s legacy includes pioneering pyramid construction and exploration of precious metals like turquoise and copper.</div>
+          <div class="photoo" style="background-image: url('Kings,Queens/2.jpg');"></div>
+        </div>
+        <div class="sliidde">
+          <div class="hheaader hheaader_home">King Sneferu </div>
+          <div class="contteeent contteeent_home">He is the first pharaoh of Egypt’s Fourth Dynasty (c. 2613–2589 BCE), 
+            is renowned for revolutionizing pyramid construction. He built three major pyramids—Meidum, Bent, 
+            and Red—marking the transition from step pyramids to smooth-sided true pyramids. His reign saw significant architectural innovations, 
+            including the Red Pyramid, the first successful true pyramid, which set the standard for future monuments like the Great Pyramid of Giza. 
+            Sneferu also expanded Egypt’s borders through military campaigns and secured resources like cedar wood and turquoise. 
+            His legacy as a prolific builder and visionary ruler cemented his place as one of Egypt’s most influential pharaohs.</div>
+          <div class="photoo" style="background-image: url('Kings,Queens/3.jpg');"></div>
+        </div>
+        <div class="sliidde">
+          <div class="hheaader hheaader_home">King Khufu</div>
+          <div class="contteeent contteeent_home">He is also known as Cheops, is one of the most famous pharaohs of ancient Egypt. 
+            He ruled during the Fourth Dynasty in the Old Kingdom around 2580 BC. Khufu is best known for building the Great Pyramid of Giza,
+             which is one of the Seven Wonders of the Ancient World. This pyramid showcases the architectural brilliance of ancient Egyptian engineering. 
+             It is believed that Khufu played a significant role in developing the administrative and economic systems of Egypt. 
+            His reign is considered a landmark in the history of Egyptian civilization.</div>
+          <div class="photoo" style="background-image: url('Kings,Queens/4.jpg');"></div>
+        </div>
+        <div class="sliidde">
+          <div class="hheaader hheaader_home">King Khafre</div>
+          <div class="contteeent contteeent_home">He is also known as Chephren, is one of the prominent pharaohs of ancient Egypt.
+            He ruled during the Fourth Dynasty, succeeding his father Khufu, and is believed to have ascended the throne around 2570 BC. 
+            Khafre is known for building the second pyramid at Giza, which is also referred to as the Pyramid of Khafre. 
+            This pyramid is notable for the Great Sphinx, which is believed to represent the king himself. 
+            Khafre was known for promoting the arts and architecture during his reign, contributing to the flourishing of Egyptian civilization. 
+            His reign is considered an important part of ancient Egyptian history.</div>
+          <div class="photoo" style="background-image: url('Kings,Queens/5.jpg');"></div>
+        </div>
+        <div class="sliidde">
+            <div class="hheaader hheaader_home">King Menkaure</div>
+            <div class="contteeent contteeent_home">He is also known as Mykerinos, is one of the prominent pharaohs of ancient Egypt. 
+              He ruled during the Fourth Dynasty, succeeding his brother Khafre, and is believed to have ascended the throne around 2510 BC. 
+              Menkaure is known for building the third pyramid at Giza, which is referred to as the Pyramid of Menkaure. 
+              This pyramid is smaller in size compared to the preeevvious two but features a unique design. 
+              Menkaure was known for promoting worship and religion, playing a significant role in temple construction. 
+              His reign is considered an important part of the history of Egyptian civilization.</div>
+            <div class="photoo" style="background-image: url('Kings,Queens/6.jpg');"></div>
+          </div>
+          <div class="sliidde">
+            <div class="hheaader hheaader_home">King Pepi II</div>
+            <div class="contteeent contteeent_home">He is also known as Pepi II, is one of the prominent pharaohs of ancient Egypt. 
+              He ascended to the throne at a young age, believed to have ruled from around 2278 BC to 2184 BC. 
+              Pepi II is considered one of the longest-reigning pharaohs in Egyptian history, with a reign lasting over 90 years. 
+              He was known for promoting trade and diplomatic relations with neighboring countries, contributing to Egypt's prosperity. 
+              He also built many temples and pyramids, reflecting his interest in religion and worship. 
+              His reign is regarded as a significant transitional period in ancient Egyptian history.</div>
+            <div class="photoo" style="background-image: url('Kings,Queens/7.jpg');"></div>
+          </div>
+          <div class="sliidde">
+            <div class="hheaader hheaader_home">King Senusret I</div>
+            <div class="contteeent contteeent_home">He was a pharaoh of the 12th Dynasty in ancient Egypt, 
+              ruling from approximately 1971 to 1926 BCE. He was known for leading successful military campaigns to expand Egypt’s southern borders into Nubia. 
+              He focused on architectural development, constructing the famous Temple of Amun at Karnak and the "White Chapel." 
+              His reign saw cultural and artistic flourishing, with advancements in literature and religious art. 
+              His pyramid complex at El-Lisht remains one of the most significant monuments from his era. 
+              He left a legacy of stability and prosperity, 
+              cementing his status as one of the greatest kings of the Middle Kingdom.</div>
+            <div class="photoo" style="background-image: url('Kings,Queens/8.jpg');"></div>
+          </div>
+          <div class="sliidde">
+            <div class="hheaader hheaader_home">King Mentuhotep II</div>
+            <div class="contteeent contteeent_home">He is one of the prominent pharaohs of ancient Egypt and is considered the founder of the Eleventh Dynasty. 
+              He ruled during the First Intermediate Period, believed to have ascended the throne around 2050 BC. 
+              Mentuhotep II is known for his ability to unify Egypt after a time of chaos and division. 
+              He established a new capital in Thebes, which contributed to the enhancement of culture and economy. 
+              His mortuary temple at Deir el-Bahari is one of the most notable architectural landmarks of his era. 
+              His reign is regarded as the beginning of a new era of prosperity in ancient Egyptian history.</div>
+            <div class="photoo" style="background-image: url('Kings,Queens/9.jpg');"></div>
+          </div>
+          <div class="sliidde">
+            <div class="hheaader hheaader_home">King Senusret III</div>
+            <div class="contteeent contteeent_home">He is one of the greatest pharaohs of ancient Egypt and is considered a pioneer in the development of the Egyptian state. 
+              He ruled from 1878 to 1839 BC and achieved significant accomplishments in architecture and warfare. Senusret III is known for expanding Egypt's borders to the south, 
+              conducting successful military campaigns against the Nubians. He also established many temples and construction projects, 
+              including his mortuary temple at Deir el-Bahari. His reign is regarded as the beginning of an era of stability and prosperity in Egypt. 
+              Senusret III left an unforgettable cultural and architectural legacy.</div>
+            <div class="photoo" style="background-image: url('Kings,Queens/10.jpg');"></div>
+          </div>
+          <div class="sliidde">
+            <div class="hheaader hheaader_home">King Ahmose I</div>
+            <div class="contteeent contteeent_home">He is one of the most prominent kings in ancient Egyptian history, 
+              leading the Egyptians in their war against the Hyksos and expelling them from the country. 
+              He ascended to the throne after the death of his brother and initiated a series of military campaigns that restored control over Egypt. 
+              Ahmose I is known for developing the Egyptian army, introducing chariots and advanced weaponry. He also implemented internal reforms, 
+              including improvements to the tax and irrigation systems. He is also known for establishing Thebes as a new capital. 
+              Ahmose I is regarded as the founder of the modern state in Egypt.</div>
+            <div class="photoo" style="background-image: url('Kings,Queens/11.jpg');"></div>
+          </div>
+          <div class="sliidde">
+            <div class="hheaader hheaader_home">King Thutmose III</div>
+            <div class="contteeent contteeent_home">He is one of the greatest pharaohs of ancient Egypt and is often referred to as the "Napoleon of Egypt" due to his military achievements. 
+              He ruled from around 1479 to 1425 BC and achieved significant victories in numerous military campaigns, 
+              expanding Egypt's borders to their greatest extent. He is known for improving the Egyptian army and developing new strategies in warfare. 
+              Thutmose III also played a major role in promoting the arts and architecture, building magnificent temples such as the Temple of Karnak. 
+              His reign is considered the peak of Egyptian power during the New Kingdom. 
+              Thutmose III left a great legacy in Egyptian history.</div>
+            <div class="photoo" style="background-image: url('Kings,Queens/12.jpg');"></div>
+          </div>
+          <div class="sliidde">
+            <div class="hheaader hheaader_home">King Amenhotep III</div>
+            <div class="contteeent contteeent_home">He is one of the greatest pharaohs of ancient Egypt, 
+              ruling from around 1386 to 1349 BC. His reign is considered a time of great flourishing in arts and architecture, 
+              as he built magnificent temples and statues. He was also known for his strong diplomatic relations with neighboring countries, 
+              which enhanced trade. Amenhotep III played a prominent role in developing Egyptian culture, supporting the arts and writing. 
+              His reign is regarded as one of the most glorious periods in ancient Egyptian history. 
+              Amenhotep III left a great cultural legacy that is still celebrated today.</div>
+            <div class="photoo" style="background-image: url('Kings,Queens/13.jpg');"></div>
+          </div>
+          <div class="sliidde">
+            <div class="hheaader hheaader_home">King Amenhotep IV</div>
+            <div class="contteeent contteeent_home">He is also known as Akhenaten, is one of the most controversial pharaohs of ancient Egypt. 
+              He ruled from around 1353 to 1336 BC and is known for his religious reforms that led to the worship of a single god, Aten. 
+              He established a new city called Akhetaten, which became the center for the worship of Aten. His reign was marked by radical changes in Egyptian art, 
+              becoming more abstract and innovative. After his death, most of his reforms were reversed, and Egypt returned to traditional practices.
+               Amenhotep IV is considered a pivotal figure in ancient Egyptian history.</div>
+            <div class="photoo" style="background-image: url('Kings,Queens/14.jpg');"></div>
+          </div>
+          <div class="sliidde">
+            <div class="hheaader hheaader_home">King Tutankhamun</div>
+            <div class="contteeent contteeent_home">He is also known as "King Tut," is one of the most famous pharaohs of ancient Egypt. 
+              He ruled from around 1332 to 1323 BC and ascended to the throne at a young age. 
+              He is known for his tomb discovered in the Valley of the Kings in 1922, which contained priceless treasures. 
+              Tutankhamun died at the age of nineteen, and the causes of his death remain unknown. 
+              He is considered a symbol of wealth and art in ancient Egypt. 
+              His influence on Egyptian culture is still felt today.</div>
+            <div class="photoo" style="background-image: url('Kings,Queens/15.jpg');"></div>
+          </div>
+          <div class="sliidde">
+            <div class="hheaader hheaader_home">King Horemheb</div>
+            <div class="contteeent contteeent_home">He is one of the Egyptian pharaohs who ruled during the Third Intermediate Period. 
+              He ascended to the throne after King Ay and is considered one of the kings who helped restore stability to Egypt. 
+              He was known for his military and administrative reforms, working to strengthen the army and rebuild temples. 
+              It is believed that he played a significant role in restoring Egyptian influence in the region. Horemheb ruled for a short period, 
+              but his impact on Egyptian history was substantial. He is regarded as a symbol of strength and justice in governance.</div>
+            <div class="photoo" style="background-image: url('Kings,Queens/16.jpg');"></div>
+          </div>
+          <div class="sliidde">
+            <div class="hheaader hheaader_home">King Seti I</div>
+            <div class="contteeent contteeent_home">He is one of the Egyptian pharaohs who ruled during the Nineteenth Dynasty. 
+              He is considered the founder of this dynasty and contributed to expanding Egypt's borders and strengthening its military power. 
+              He was known for his administrative and economic reforms, working to improve agriculture and trade. 
+              He also built many temples that reflect the grandeur of his reign. Seti I is regarded as a symbol of strength and prosperity in ancient Egypt. 
+              He ruled for a long period, which helped stabilize the country.</div>
+            <div class="photoo" style="background-image: url('Kings,Queens/17.jpg');"></div>
+          </div>
+          <div class="sliidde">
+            <div class="hheaader hheaader_home">King Ramses II</div>
+            <div class="contteeent contteeent_home">He is also known as Ramses the Great, is one of the greatest pharaohs in ancient Egyptian history. 
+              He ascended to the throne in the Nineteenth Dynasty and is considered a symbol of strength and prosperity. 
+              He is famous for his military campaigns, particularly the Battle of Kadesh against the Hittites, 
+              which is regarded as one of the largest battles in ancient history. He constructed many monumental temples, 
+              including the Temple of Abu Simbel, which is considered one of the wonders of Egyptian architecture. 
+              He was also known for his achievements in arts and architecture, leaving a vast cultural legacy. 
+              Ramses II is one of the longest-reigning pharaohs, 
+              ruling for over 60 years, contributing to the stability and prosperity of the country.</div>
+            <div class="photoo" style="background-image: url('Kings,Queens/18.jpg');"></div>
+          </div>
+          <div class="sliidde">
+            <div class="hheaader hheaader_home">King Merneptah </div>
+            <div class="contteeent contteeent_home">He is one of the Egyptian pharaohs who ruled during the Nineteenth Dynasty and was the son of Ramses II. 
+              He ascended to the throne around 1213 BC and is considered the fourth king of the dynasty. 
+              Merneptah is known for his battles against invading peoples, including the Libyans, 
+              where he achieved significant victories. He is also recognized as the first Egyptian king mentioned in historical texts as evidence of his existence. 
+              He is known for constructing a temple in Thebes, leaving an important cultural legacy.
+              His reign is considered a period of relative stability in Egypt.</div>
+            <div class="photoo" style="background-image: url('Kings,Queens/19.jpg');"></div>
+          </div>
+          <div class="sliidde">
+            <div class="hheaader hheaader_home">King Ramses III</div>
+            <div class="contteeent contteeent_home">He is one of the most famous pharaohs of ancient Egypt, 
+              ruling during the Twentieth Dynasty from around 1186 to 1155 BC. He is considered the last great king of Egypt, 
+              facing numerous challenges, including invasions from the Sea Peoples. 
+              He was also known for rebuilding temples and promoting the arts. 
+              His reign is seen as a period of cultural and economic prosperity. 
+              Ramses III left a significant legacy, including the Medinet Habu temple in Thebes. 
+              He died under mysterious circumstances, 
+              raising many questions about his reign.</div>
+            <div class="photoo" style="background-image: url('Kings,Queens/20.jpg');"></div>
+          </div>
+          <div class="sliidde">
+            <div class="hheaader hheaader_home">Queen Meryt-Neith</div>
+            <div class="contteeent contteeent_home">She is one of the prominent queens of ancient Egypt, living during the Eighteenth Dynasty. 
+              She is considered the wife of King Amenhotep II and played an important role in political and religious life. 
+              She was known for her influence in promoting the worship of the goddess Isis. Her artifacts were found in the Karnak Temple, 
+              indicating her high status.She is believed to have been titled "Great Royal Wife." Meryt-Neith left a significant cultural legacy in Egyptian history.</div>
+            <div class="photoo" style="background-image: url('Kings,Queens/21.jpg');"></div>
+          </div>
+          <div class="sliidde">
+            <div class="hheaader hheaader_home">Queen Hetepheres</div>
+            <div class="contteeent contteeent_home">She is believed to be the mother of Khufu, builder of the Great Pyramid, 
+              and hence the wife of Sneferu. This is indicated by the discovery in her tomb of curtains from her tent, 
+              which was shaped as a cube, and a box containing the tent's fabric. Other artifacts bear Sneferu's name. 
+              On this basis, it is thought that she was Sneferu's wife. She held the title "Sat Netjer" meaning "daughter of the god", 
+              a title which during the Old Kingdom was only held by the mother of the king.</div>
+            <div class="photoo" style="background-image: url('Kings,Queens/22.jpg');"></div>
+          </div>
+          <div class="sliidde">
+            <div class="hheaader hheaader_home">Queen Sobekneferu</div>
+            <div class="contteeent contteeent_home">She is one of the Egyptian pharaohs who ruled during the Twelfth Dynasty and is considered the first woman to ascend the throne in Egypt. 
+              She was known for her intelligence and wisdom, ruling for a short period after the death of her father, 
+              King Senusret II. Sobekneferu sought to enhance stability in the country and was interested in the development of arts and architecture. 
+              She is believed to have been highly regarded by the people, as she was depicted in many inscriptions. 
+              She left a significant cultural legacy, making her one of the prominent figures in ancient Egyptian history. 
+              Sobekneferu is considered a symbol of female power in Egyptian civilization.</div>
+            <div class="photoo" style="background-image: url('Kings,Queens/23.jpg');"></div>
+          </div>
+          <div class="sliidde">
+            <div class="hheaader hheaader_home">Queen Hatshepsut </div>
+            <div class="contteeent contteeent_home">She is one of the most famous queens of ancient Egypt, 
+              ruling during the 18th Dynasty around 1479–1458 BC. She is considered one of Egypt’s most skilled rulers, 
+              focusing on internal development and trade rather than wars. 
+              Her most renowned achievement was her expedition to the Land of Punt, 
+              which brought immense wealth. She built her unique mortuary temple at Deir el-Bahari, an architectural masterpiece. 
+              She ruled as a full pharaoh, adopting male royal attire to legitimize her authority. 
+              Her successor, Thutmose III, attempted to erase her legacy, 
+              but her monuments remain a testament to her greatness.</div>
+            <div class="photoo" style="background-image: url('Kings,Queens/24.jpg');"></div>
+          </div>
+          <div class="sliidde">
+            <div class="hheaader hheaader_home">Queen Tiye</div>
+            <div class="contteeent contteeent_home">She is the Great Royal Wife of Amenhotep III (reigned 1386–1349 BC), 
+              is a symbol of power and influence in ancient Egypt. She played a prominent diplomatic role by negotiating with kingdoms like Mitanni and Babylon to strengthen political and trade alliances. 
+              She was granted a unique religious status, depicted with divine attributes such as the horns of the goddess Hathor. 
+              Her husband built a temple in her honor in Sedenga (Sudan) to worship her as the embodiment of the goddess Tefnut. 
+              After Amenhotep III’s death, she remained an advisor to her son Akhenaten during his controversial reign. 
+              Her mummy was discovered in the tomb of Amenhotep II (KV35) in 1898, and DNA tests in 2010 confirmed her identity, 
+              solidifying her legacy as one of the most influential figures in Egyptian history.</div>
+            <div class="photoo" style="background-image: url('Kings,Queens/25.jpg');"></div>
+          </div>
+          <div class="sliidde">
+            <div class="hheaader hheaader_home">Queen Nefertiti</div>
+            <div class="contteeent contteeent_home">She is wife of Pharaoh Akhenaten, ruled Egypt during the 14th century BCE. 
+              She is renowned for her exceptional beauty, immortalized in her iconic bust discovered in Amarna. 
+              She supported her husband’s religious revolution to worship the god Aten and held the title "Great Royal Wife." 
+              She played a pivotal role in promoting arts and culture during the Amarna Period. Her sudden disappearance from historical records later sparked mystery about her fate. 
+              She remains a symbol of beauty and female empowerment in Egyptian civilization.</div>
+            <div class="photoo" style="background-image: url('Kings,Queens/26.jpg');"></div>
+          </div>
+          <div class="sliidde">
+            <div class="hheaader hheaader_home">Queen Ankhesenamun</div>
+            <div class="contteeent contteeent_home">She was the daughter of Pharaoh Akhenaten and Queen Nefertiti, 
+              and she married King Tutankhamun. She is known for supporting her husband during his short and turbulent reign. 
+              After Tutankhamun’s death, she married his successor, Ay, raising questions about her political influence. 
+              Her name was found in Tutankhamun’s tomb, highlighting her significant status. 
+              The disappearance of records after Ay’s death left her fate shrouded in mystery. 
+              She is regarded as a symbol of powerful women in the New Kingdom era.</div>
+            <div class="photoo" style="background-image: url('Kings,Queens/27.jpg');"></div>
+          </div>
+          <div class="sliidde">
+            <div class="hheaader hheaader_home">Queen Nefertari</div>
+            <div class="contteeent contteeent_home">Was the chief wife of Ramses II, is considered the most famous queen of Egypt’s 19th Dynasty. 
+              Known for her beauty and intelligence, she was Ramses’ partner in governance and diplomacy. 
+              He built her a magnificent temple at Abu Simbel nexxtt to his own, symbolizing his love and reverence. 
+              Her name is inscribed in numerous monuments, such as the Luxor Temple. She died young, 
+              but her tomb in the Valley of the Queens (QV66) is among the most beautifully decorated. 
+              Nefertari remains a symbol of love and culture in Egyptian history.</div>
+            <div class="photoo" style="background-image: url('Kings,Queens/28.jpg');"></div>
+          </div>
+          <div class="sliidde">
+            <div class="hheaader hheaader_home">Queen Cleopatra VII</div>
+            <div class="contteeent contteeent_home">She was the last ruler of Ptolemaic Egypt, 
+              reigning from 51 BC to 30 BC. She was renowned for her political intelligence and diplomatic skills, 
+              forming alliances with Julius Caesar and later Mark Antony to protect Egypt. She mastered multiple languages, 
+              aiding her communication with neighboring nations. She worked to strengthen Egypt’s economy through maritime trade and tax reforms. 
+              Her reign ended with her suicide following Antony’s defeat at the Battle of Actium, leading to Egypt’s annexation by the Roman Empire. 
+              Cleopatra remains a symbol of power and beauty in ancient history.</div>
+            <div class="photoo" style="background-image: url('Kings,Queens/29.jpg');"></div>
+          </div>
+          <div class="sliidde">
+            <div class="hheaader hheaader_home">Queen Arsinoe II</div>
+            <div class="contteeent contteeent_home">She was the daughter of Ptolemy I and ruled Egypt during the 3rd century BCE. 
+              She married King Lysimachus of Thrace and later returned to Egypt to marry her brother Ptolemy II. 
+              She played a significant political and military role in strengthening Ptolemaic influence. 
+              She was given the title "Philadelphus" (sibling-loving) for promoting familial bonds. 
+              She founded cities and temples, contributing to Hellenistic cultural prosperity. 
+              She is regarded as a symbol of female power in the Ptolemaic era.</div>
+            <div class="photoo" style="background-image: url('Kings,Queens/30.jpg');"></div>
+          </div>
+      </div>
+      <button class="preeevv" onclick="preeevvSlide()">&#10094;</button>
+      <button class="nexxtt" onclick="nexxttSlide()">&#10095;</button>
+    </div>
+  </div>
+</section>
+
+<section id="Abroad" class="animate-section">
+  <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background-color: rgba(0, 0, 0, 0.5); z-index: 0;"></div>
+  <h1 class="services_taital" style="position: relative; z-index: 1; color: #e2e2e2; margin-top: 65px;">Egyptian antiquities abroad <hr class="custom-hr " style="width: 240px;"></h1>
+  <div class="carrdd-ccontainerr">
+    <div class="carrrdd animate-section">
+      <div class="posteerr"><img src="Cards/0.jpg"></div>
+      <div class="ddetails">
+        <h1>A Statue of King Ramses II</h1>
+        <p class="ddescc">It's One of the most stunning artistic treasures , the highlight of the Egyptian Museum in Turin, Italy. 
+          It depicts Ramses seated with strength and majesty, wearing the Blue Crown and holding the royal scepter "Heka." Beneath his feet are the nine bows, 
+          symbolizing conquered enemies, with Queen Nefertari by his side. 
+          This masterpiece reflects the power and grandeur of ancient Egypt through the artistry of Ramses II's portrayal.</p>
+      </div>
+    </div>
+    <div class="carrrdd animate-section">
+      <div class="posteerr"><img src="Cards/1.jpg"></div>
+      <div class="ddetails">
+        <h1>The bust of Queen Nefertiti</h1>
+        <p class="ddescc">It's displayed in Berlin, is a renowned ancient Egyptian artifact discovered in 1912 in Amarna, Egypt. 
+          Dating back to 1345 BC, it symbolizes the 18th Dynasty's artistry. While it is a cultural icon in Berlin, its presence there is controversial, with Egypt advocating for its return.
+          Adolf Hitler once called it a "unique masterpiece," and it remains a focal point in debates over cultural ownership and repatriation.</p>
+      </div>
+    </div>
+    <div class="carrrdd animate-section">
+      <div class="posteerr"><img src="Cards/2.jpg"></div>
+      <div class="ddetails">
+        <h1>The Rosetta Stone</h1>
+        <p class="ddescc" >It's one of the most significant archaeological discoveries, 
+          played a key role in deciphering ancient Egyptian hieroglyphs. Discovered in 1799 by French soldiers under Napoleon Bonaparte near Rosetta, Egypt, 
+          the stone features the same text in three scripts: hieroglyphic, Demotic, and ancient Greek, enabling scholars to decode hieroglyphs. After the French defeat, 
+          it was transferred to Britain under the Treaty of Alexandria in 1801 and has been displayed at the British Museum since 1802, except during World War I for safety. Today, it remains a major attraction at the museum but is a subject of cultural ownership debates, 
+          with Egypt persistently calling for its return as a symbol of its heritage.</p>
+      </div>
+    </div>
+    <div class="carrrdd ">
+      <div class="posteerr"><img src="Cards/3.jpg"></div>
+      <div class="ddetails">
+        <h1>The Mummy of Pacheri</h1>
+        <p class="ddescc">Discovered in 1919 in Egypt's Valley of the Kings by Howard Carter, 
+          the mummy of Pacheri remains unique as scientists have never dared to remove its linen wrappings, 
+          fearing they could never restore them to their original state. A testament to the ancient Egyptians' mastery of mummification, 
+          Pacheri showcases their intricate techniques, particularly the precise linen wrapping process. Unlike other mummies, 
+          it has resisted modern scientific exploration, preserving its secrets. Today, it is displayed at the Louvre Museum in Paris, 
+          captivating visitors with its enduring mystery and the brilliance of ancient Egyptian craftsmanship.</p>
+      </div>
+    </div>
+    <div class="carrrdd">
+      <div class="posteerr"><img src="Cards/4.jpg"></div>
+      <div class="ddetails">
+        <h1>Cleopatra's Needle</h1>
+        <p class="ddescc">It's located in London, a 3,500-year-old obelisk from Pharaoh Thutmose III's reign, 
+          stands on the Thames near Embankment. Gifted by Egypt's Muhammad Ali Pasha in the 19th century, 
+          it was moved to London in 1878 after logistical delays. Now a historic landmark, 
+          it bridges ancient Egypt and the modern world, captivating visitors with its rich history.</p>
+      </div>
+    </div>
+    <div class="carrrdd">
+      <div class="posteerr"><img src="Cards/5.jpg"></div>
+      <div class="ddetails">
+        <h1>A Statue of Sphinx</h1>
+        <p class="ddescc">At the Louvre Museum in Paris, 
+          a 4-meter-tall granite sphinx stands as one of the largest outside Egypt.
+          Discovered in 1825 at the Temple of Amun in Tanis, it was brought to France by Jean-François Champollion, 
+          the decipherer of hieroglyphs. Though inscribed with the names of three Egyptian kings, 
+          it likely dates to the Old Kingdom (circa 2600 BC), making it one of the oldest known sphinxes. 
+          This masterpiece reflects Egypt's rich history and the global journey of its artifacts, 
+          captivating visitors with its timeless allure.</p>
+      </div>
+    </div>
+    <div class="carrrdd">
+      <div class="posteerr"><img src="Cards/6.jpg"></div>
+      <div class="ddetails">
+        <h1>The Ebers Papyrus </h1>
+        <p class="ddescc">It's dating to around 1550 BC, is the oldest known medical text, 
+          likely copied from earlier manuscripts. At 20 meters long, 
+          it contains 110 pages with nearly 400 remedies and 877 treatments for various ailments. Acquired by Georg Ebers in Luxor (1873-1874), 
+          it is now housed at the University of Leipzig in Germany, 
+          serving as a cornerstone of ancient Egyptian medical knowledge.</p>
+      </div>
+    </div>
+    <div class="carrrdd">
+      <div class="posteerr"><img src="Cards/7.jpg"></div>
+      <div class="ddetails">
+        <h1>A statue of Hours</h1>
+        <p class="ddescc">It's a 27 cm-tall silver and gold-inlaid , the falcon god, 
+          is displayed at the Egyptian Museum in Berlin. Wearing the double crown of Upper and Lower Egypt, 
+          Horus symbolizes kingship and legitimacy as the heir of Osiris. According to myth, 
+          Horus sacrificed his eye to resurrect Osiris, making the Eye of Horus a powerful amulet representing life and divine protection. 
+          This statue reflects Horus's central role in ancient Egyptian religion and mythology.</p>
+      </div>
+    </div>
+    <div class="carrrdd">
+      <div class="posteerr"><img src="Cards/8.jpg"  ></div>
+      <div class="ddetails">
+        <h1>The funerary coffin of Princess Henuttawy</h1>
+        <p class="ddescc">It's showcased at the Louvre Abu Dhabi, dates to the 22nd Dynasty (circa 950-900 BC). Henuttawy, 
+          daughter of King Shoshenq, was buried in three nested coffins, with the innermost one made of gilded wood and measuring 163 cm. 
+          It features a gold-plated mask with striking black glass-paste eyes and intricate protective symbols of Egyptian deities. 
+          The coffins highlight her royal status and titles, 
+          reflecting the artistry and spiritual depth of ancient Egyptian burial traditions.</p>
+      </div>
+    </div>
+    <div class="carrrdd ">
+      <div class="posteerr"><img src="Cards/9.jpg"  ></div>
+      <div class="ddetails">
+        <h1>The Seated Scribe</h1>
+        <p class="ddescc">It's a masterpiece of ancient Egyptian art, showcases the creativity and skill of its creators. 
+          This statue depicts a scribe seated at work, capturing the essence of his role with remarkable detail. 
+          Dating to the Old Kingdom, either the Fourth Dynasty (2620-2500 BC) or the Fifth Dynasty (2450-2325 BC), 
+          it is now housed in the Louvre Museum in Paris. 
+          The Seated Scribe remains a celebrated example of ancient Egyptian artistry and cultural significance.</p>
+      </div>
+    </div>
+    <div class="carrrdd">
+      <div class="posteerr"><img src="Cards/10.jpg"  ></div>
+      <div class="ddetails">
+        <h1>The Dispute Between a Man and His Ba </h1>
+        <p class="ddescc">It's an ancient Egyptian papyrus from Senusret II's reign (12th Dynasty), 
+          is preserved in the Berlin Museum. It features a dialogue between a man disillusioned by life and his soul ("Ba"), 
+          which warns him against suicide, threatening to abandon him and deny him eternity. The text reflects his despair over widespread corruption, 
+          injustice, and the absence of kindness, while envisioning the afterlife as a realm where the righteous become godlike, 
+          knowing all truths and repaying evil with justice.</p>
+      </div>
+    </div>
+    <div class="carrrdd">
+      <div class="posteerr"><img src="Cards/11.jpg"  ></div>
+      <div class="ddetails">
+        <h1>A statue of King Amenhotep III</h1>
+        <p class="ddescc">The statue shows him seated on a throne, wearing a short kilt, 
+          nemes headdress, and false beard. His eyes feature distinctive upper eyelid framing, and the throne displays lotus and papyrus motifs symbolizing Egypt's unity. 
+          Ruling for 38 years during the 18th Dynasty's golden age, over 1,000 statues were made in his honor. 
+          His massive mortuary temple in Thebes was the largest of its kind. 
+          This granodiorite statue, from Kom el-Hetan, is now in the British Museum, London.</p>
+      </div>
+    </div>
+    <div class="carrrdd ">
+      <div class="posteerr"><img src="Cards/12.jpg"  ></div>
+      <div class="ddetails">
+        <h1>A Statue of Sekhmetl</h1>
+        <p class="ddescc">A Statue depicts Sekhmet, She was the ancient Egyptian goddess of war and healing. 
+          Carved from black granite, she represents the protector of pharaohs and embodies the destructive power of the sun. 
+          Holding the ankh, the symbol of life, the statue is housed in the Metropolitan Museum of Art in New York, 
+          surrounded by colorful Egyptian murals and artifacts that vividly reflect the essence of ancient Egyptian culture.</p>
+      </div>
+    </div>
+    <div class="carrrdd">
+      <div class="posteerr"><img src="Cards/13.jpg"  ></div>
+      <div class="ddetails">
+        <h1>The statue of Yuni</h1>
+        <p class="ddescc">He was a chief scribe and priest overseer from Asyut, 
+          depicts him kneeling in a pleated robe, holding a shrine of Osiris, with his wife Renenutet behind him. 
+          Dating to Seti I's reign (19th Dynasty), 
+          it was found near Amenhotep's tomb in Asyut and is now displayed at the Metropolitan Museum of Art in New York.</p>
+      </div>
+    </div>
+    <div class="carrrdd" >
+      <div class="posteerr"><img src="Cards/14.jpg"  ></div>
+      <div class="ddetails">
+        <h1>The Greenfield Papyrus</h1>
+        <p class="ddescc">It's part of the Book of the Dead, belongs to Nes-ta-nebet, a princess and priestess of Amun-Ra in Thebes. 
+          It features an artistic depiction of Nut, the sky goddess, bending her body into an arch, 
+          with her four limbs touching the four corners of the universe, symbolizing the boundaries of the cosmos.</p>
+      </div>
+    </div>
+    <div class="carrrdd ">
+      <div class="posteerr"><img src="Cards/15.jpg"  ></div>
+      <div class="ddetails">
+        <h1>A statue of King Horemheb</h1>
+        <p class="ddescc">This statue depicts King Horemheb in the guise of a scribe
+          It was  created before his ascension to the throne, as portraying individuals as scribes symbolized wisdom and dignity. 
+          The granite statue, standing 113 cm tall, shows Horemheb on a square base inscribed with prayers to deities Sekhmet, 
+          Thoth, Ptah-Sokar, and Osiris. He wears a robe with transverse folds and subtle chest ddetails, 
+          reflecting the statue's elegance and his high status. Horemheb, who served as army commander during the reigns of Tutankhamun and Ay, 
+          is now housed in the Metropolitan Museum of Art.</p>
+      </div>
+    </div>
+    <div class="carrrdd">
+      <div class="posteerr"><img src="Cards/16.jpg"  ></div>
+      <div class="ddetails">
+        <h1>A Statue of Menkaure</h1>
+        <p class="ddescc">It's housed in the Museum of Fine Arts, Boston, USA, depicts King Menkaure alongside his queen, 
+          Kha-merer-nebty. Discovered in 1910 by archaeologist George Reisner during a joint expedition by the Boston Museum and Harvard University, 
+          the statue is a remarkable artifact. However, during the transportation of Menkaure's sarcophagus, 
+          a severe storm caused the ship carrying it to sink, resulting in the loss of the sarcophagus.</p>
+      </div>
+    </div>
+    <div class="carrrdd">
+      <div class="posteerr"><img src="Cards/17.jpg"  ></div>
+      <div class="ddetails">
+        <h1>A Statue Of God Amum</h1>
+        <p class="ddescc">This rare statue of the god "Amun," housed in the Metropolitan Museum, is crafted from solid pure gold, 
+          representing an exceptionally stunning and artistic archaeological masterpiece.</p>
+      </div>
+    </div>
+    <div class="carrrdd ">
+      <div class="posteerr"><img src="Cards/18.jpg"  ></div>
+      <div class="ddetails">
+        <h1>The Statue of Ra-Hor-Ka and Meresankh</h1>
+        <p class="ddescc">It was discovered in 1902 in Giza, 
+          this statue depicts Ra-Hor-Ka, chief scribe of Anubis, 
+          and his wife Meresankh, a royal palace manager during the Fourth Dynasty. 
+          Ra-Hor-Ka, shown in traditional red with detailed musculature, stands slightly ahead, 
+          symbolizing his leadership. Meresankh, in elegant attire, embraces him tenderly from behind, 
+          reflecting their deep bond and partnership.A symbol of love and devotion, the statue is now housed in the Louvre Museum, 
+          Paris.</p>
+      </div>
+    </div>
+    <div class="carrrdd">
+      <div class="posteerr"><img src="Cards/19.jpg"  ></div>
+      <div class="ddetails">
+        <h1>An Eyeliner Jar </h1>
+        <p class="ddescc">It's engraved with the names of King Amenhotep III and Queen Tiye, 
+          made of Egyptian ceramics from the Second Intermediate Period, 
+          the era of the Eighteenth Dynasty, on display at the Louvre Museum in Paris, France.</p>
+      </div>
+    </div>
+    <div class="carrrdd">
+      <div class="posteerr"><img src="Cards/20.jpg"  ></div>
+      <div class="ddetails">
+        <h1>The Seated Statue of Amenhotep IV (Akhenaten)</h1>
+        <p class="ddescc">It dates back to the New Kingdom period, 
+          specifically to the 18th Dynasty during the reign of Amenhotep IV/Akhenaten, around the 14th century BCE. 
+          This statue, carved from yellow stone, is considered a masterpiece that reflects the artistic and religious changes that occurred during Akhenaten's rule. 
+          It is currently displayed at the Louvre Museum in Paris.</p>
+      </div>
+    </div>
+    
+  </div>
+
+  <div class="navvigation-buuttons">
+    <button class="nnavv-btnn" id="PrevvBtnn" >←</button>
+    <button class="nnavv-btnn" id="NextBtnn">→</button>
+  </div>
+</section>
+
+  <h1 class="services_taital animate-section" style="margin-top:55px"> Pharaonic Symbols <hr class="custom-hr" style="  width: 10%; "></h1>
+  <section id="Symbols" >
+  <div class="grid-container">
+    <!-- Card 1 -->
+    <div class="card-container animate-section" >
+        <div class="card ">
+            <div class="img-content">
+                <img src="Symbols/1.jpg" alt="Image 1">
+            </div>
+            <div class="content">
+                <h2 class="heading">The Ankh</h2>
+                <p class="p">
+                  For thousands of years, the Ankh, or Key of Life, has symbolized new life, strength, and rebirth, cherished by ancient Egyptian priests and kings. Representing the first breath of life ("Sep Tepi") and often linked to the Nile, it was seen as a map of Egypt and a symbol of resurrection. Worn to convey power and control, its shape has been interpreted as a union of masculinity and femininity or a woman’s womb, symbolizing renewal. Today, it continues to inspire hope and positivity.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="card-container animate-section">
+        <div class="card">
+            <div class="img-content">
+                <img src="Symbols/2.jpg" alt="Image 2">
+            </div>
+            <div class="content">
+                <h2 class="heading">The Eye of Horus and the Eye of Ra</h2>
+                <p class="p">
+                  The Eye of Horus and the Eye of Ra are ancient symbols with significant importance in Egyptian culture, each carrying distinct meanings. The Eye of Horus, known as "Udjat," symbolizes protection, healing, and divine power, often used as an amulet for warding off evil. Conversely, the Eye of Ra represents solar power, wisdom, and divine protection, sometimes depicted as a cobra on pharaohs' foreheads. While some scholars confuse the two, they differ in meaning and function, with Horus's eye focusing on personal protection and Ra's on divine authority. In ancient belief, these eyes were associated with the unique attributes of their respective deities.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="card-container animate-section">
+        <div class="card">
+            <div class="img-content">
+                <img src="Symbols/3.jpg" alt="Image 3">
+            </div>
+            <div class="content">
+                <h2 class="heading">The Scarab beetle</h2>
+                <p class="p">
+                  It's known as "Kheper" in ancient Egyptian culture, was a powerful symbol of renewal, resurrection, and eternal life. Associated with the sun god Khepri, who was believed to push the sun across the sky each day, the scarab's rolling of dung balls mirrored the sun's journey. Egyptians used scarab amulets, often made of stone, pottery, or metal, for protection in life and the afterlife, placing them on mummies to ensure eternal life. Scarabs also appeared in religious texts, art, and practical items like seals and rings, reflecting their deep symbolic and cultural significance in ancient Egyptian society.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Card 4 -->
+    <div class="card-container">
+        <div class="card">
+            <div class="img-content">
+                <img src="Symbols/4.jpg" alt="Image 4">
+            </div>
+            <div class="content">
+                <h2 class="heading">The lotus flower</h2>
+                <p class="p">
+                  It was deeply sacred in ancient Egypt, symbolizing life, rebirth, beauty, and morality. Linked to the sun god, its daily bloom and closure represented renewal. It was associated with love, held by princesses and deities, and used in perfumes and medicine for ailments like anxiety and insomnia, reflecting its revered status.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Card 5 -->
+    <div class="card-container">
+        <div class="card">
+            <div class="img-content">
+                <img src="Symbols/5.jpg" alt="Image 5">
+            </div>
+            <div class="content">
+                <h2 class="heading">The djed pillar</h2>
+                <p class="p">
+                  It's one of ancient Egypt's oldest religious symbols, represents strength and stability, linked to the gods Ptah and Osiris. Known as the "backbone of Osiris," it was commonly crafted into amulets for both the living and the dead. Additionally, coffins were often adorned with djed pillar engravings at the base, aligned with the deceased's spine. Pictured is the djed pillar of Queen Nefertari, displayed in the Turin Museum.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Card 6 -->
+    <div class="card-container">
+        <div class="card">
+            <div class="img-content">
+                <img src="Symbols/6.jpg" alt="Image 6">
+            </div>
+            <div class="content">
+                <h2 class="heading">The Uraeus</h2>
+                <p class="p">
+                  It's a golden cobra symbol on King Tutankhamun’s throne, represented divine authority, royal protection, and the pharaoh’s connection to the gods, especially Ra. Crowned with solar discs, it symbolized the king’s divine right to rule and eternal safeguarding. A powerful Middle Kingdom emblem, it reflected the pharaoh’s role as a mediator between gods and humans, while its intricate artistry highlighted Egypt’s cultural and spiritual legacy.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Card 7 -->
+    <div class="card-container">
+        <div class="card">
+            <div class="img-content">
+                <img src="Symbols/7.jpg" alt="Image 7">
+            </div>
+            <div class="content">
+                <h2 class="heading">The Shen ring</h2>
+                <p class="p">
+                  It's an ancient Egyptian symbol resembling a circle with a tangent line, represents protection and eternity. In ancient Egyptian culture, the word "Shen" means "to encircle," and the ring was used as an amulet to create a protective magical circle, safeguarding the wearer from harm. It also symbolizes continuity and immortality, reflecting the ancient belief in eternal life and renewal, particularly in funerary rituals to protect the deceased in the afterlife. Today, designers like Azza Fahmy draw inspiration from the Shen ring, incorporating its timeless meanings into modern jewelry that celebrates Egypt's ancient heritage.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Card 8 -->
+    <div class="card-container">
+        <div class="card">
+            <div class="img-content">
+                <img src="Symbols/8.jpg" alt="Image 8">
+            </div>
+            <div class="content">
+                <h2 class="heading">The "Maat" symbol</h2>
+                <p class="p">
+                  It's represented by an ostrich feather, held profound significance in ancient Egyptian culture. It carried multiple meanings: as a biliteral sign, it was pronounced "shu" and symbolized "air," while as a triliteral sign, it was pronounced "ma’a" and represented "balance." Additionally, it often appeared at the end of words to convey other meanings. Maat embodied truth, justice, and cosmic order, personified as a goddess depicted with the feather atop her head. This symbol is prominently featured in the "Khonsu Mes" papyrus, reflecting its enduring role in Egyptian spirituality and governance.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Card 9 -->
+    <div class="card-container">
+        <div class="card">
+            <div class="img-content">
+                <img src="Symbols/9.jpg" alt="Image 9">
+            </div>
+            <div class="content">
+                <h2 class="heading">The "Tiet" or Knot of Isis</h2>
+                <p class="p">
+                  It is a prominent symbol in ancient Egyptian culture, representing protection, rebirth, and eternity. Associated with the goddess Isis, it symbolized her magical power and role in resurrecting Osiris. Often made of gold or silver, it was placed in tombs or depicted on coffins to safeguard the deceased in the afterlife. This sacred knot also appeared in temple art, reflecting its significance in Egyptian spirituality and its connection to divine power and renewal.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Show More Button -->
+    <div class="show-more-button ">
+        <button onclick="showMoreCards()">
+            See More
+            <span class="arrow-down">▼</span>
+        </button>
+    </div>
+
+    <!-- Show Less Button -->
+    <div class="show-less-button" >
+        <button onclick="showLessCards()">
+            See Less
+            <span class="arrow-up">▲</span>
+        </button>
+    </div>
+</div>
+</section>
+
+
+<section id="Do-U-Know">
+  <!-- Overlay div for the black transparent layer -->
+  <div style="
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Black transparent layer */
+    z-index: 0; /* Ensure it's above the background image but below content */
+  "></div>
+
+  <!-- Content -->
+  <h1 class="services_taital" style="position: relative; z-index: 1; color: white; margin-top: 35px;">
+    Do You Know
+    <hr class="custom-hr" style="width: 120px;">
+  </h1>
+
+  <main style="position: relative; z-index: 1;">
+    <!-- First 3 cards -->
+    <div class="ca animate-section" style="background-image: url('Do-U-Know/1.jpg');">
+        <div class="information" style="color: #170e09;">
+            <h1 class="ti">The Great Pyramid</h1>
+            <p class="descriptionn">
+              1. Introduction:
+             <br>The Great Pyramid of Giza, also known as the Pyramid of Khufu, is one of the greatest engineering achievements in human history. Built over 4,500 years ago during the Fourth Dynasty of ancient Egypt, this colossal structure continues to baffle scientists and engineers to this day. The Great Pyramid is renowned for its extraordinary astronomical and geometric precision, making it one of the Seven Wonders of the Ancient World and the only one still standing today. 
+             
+              <br>2. The Great Pyramid’s Connection to Astronomy:
+              <br>- Alignment with Cardinal Directions: The Great Pyramid exhibits remarkable astronomical precision, with its four sides aligned to the cardinal directions (north, south, east, west) with an error margin of less than 0.15 degrees. This accuracy indicates the ancient Egyptians' deep understanding of astronomy. Scholars believe they used stars, particularly the North Star, to determine directions with such precision.
+              <br>- Equinox Phenomenon: During the spring and autumn equinoxes (when day and night are equal in length), the Great Pyramid casts no shadow at noon. This phenomenon demonstrates the ancient Egyptians' understanding of the sun's movement and the Earth's rotation.
+              <br>- Stars and the Sun: The Great Pyramid is believed to be connected to significant stars in the sky, such as those in the Orion constellation, which represented the god Osiris in ancient Egyptian beliefs. Some theories suggest that the pyramid was used as an astronomical observatory or a tool to track the movement of the sun and stars.
+              
+              <br>3. Why Is the Great Pyramid Considered One of the Seven Wonders?
+              <br>- Geometric Precision: The Great Pyramid was built with unparalleled geometric accuracy. For example, if you measure the pyramid's perimeter and divide it by twice its height, you will find the approximate value of π (3.14), indicating the ancient Egyptians' advanced knowledge of mathematics. The stones used in its construction were cut and fitted with millimeter precision, making it impossible to slide a razor blade between them.
+              <br>- Massive Scale: The Great Pyramid originally stood about 146.6 meters tall (it was taller before losing its capstone) and covers an area of approximately 13 acres. Over 2.3 million stones were used in its construction, with each stone weighing an average of 2.5 tons, and some weighing up to 80 tons.
+              <br>- Mystery Surrounding Its Construction: To this day, scholars are not entirely sure how the Great Pyramid was built. Numerous theories exist about the methods the ancient Egyptians used to lift and position the massive stones with such precision. Some believe they used mud ramps or primitive cranes, but these theories remain debated.
+              <br>- Religious and Astronomical Symbolism: The Great Pyramid was not just a tomb for Pharaoh Khufu but also a symbol of ascension to the heavens and connection with the gods. Its pyramidal shape is thought to represent the sun's rays reaching the Earth. Some theories suggest it was used as an astronomical observatory or a tool to track celestial movements.
+              
+              <br>4. Secrets of the Great Pyramid:
+              <br>- Hidden Passages: Inside the Great Pyramid, there are hidden passages and chambers that have not been fully explored. In 2017, scientists discovered a large void within the pyramid using modern technology, but its purpose remains unknown.
+              <br>- The Golden Capstone: It is believed that the pyramid's apex was once covered by a capstone called the "pyramidion," made of gold or gold-plated limestone. This capstone reflected sunlight at night, making the pyramid shine like a star in the darkness.
+              
+              <br>5. Conclusion:
+              <br>The Great Pyramid is not just a massive stone structure; it is a testament to the ingenuity of the ancient Egyptians in engineering, astronomy, and mathematics. Its astronomical precision, colossal scale, and the mysteries surrounding its construction have made it one of the Seven Wonders of the Ancient World and the only one still standing today. The Great Pyramid remains a symbol of ancient Egyptian civilization and its achievements, which continue to amaze the world.</p>
+        </div>
+    </div>
+
+    <div class="ca animate-section" style="background-image: url('Do-U-Know/2.jpg');">
+        <div class="information">
+            <h1 class="ti">Mummification in Ancient Egypt</h1>
+            <p class="descriptionn">
+              1. Introduction:
+              <br>Mummification is one of the most remarkable aspects of ancient Egyptian civilization. The ancient Egyptians believed in the concept of life after death, and to ensure the body's preservation for use in the afterlife, they developed advanced mummification techniques that have kept bodies intact for thousands of years. However, many secrets and methods of mummification remain partially or entirely undiscovered.
+              
+              <br>2. The Mummification Process:
+              <br>- Removal of Internal Organs: The first step in mummification was the removal of internal organs such as the liver, lungs, stomach, and intestines. These organs were preserved in special containers called "canopic jars," while the heart was left in the body as it was considered the center of the soul and intellect.
+              <br>- Drying the Body: After removing the organs, the body was filled with natron (a natural salt mixture) to dry it out and prevent decomposition. This process took approximately 40 days.
+              <br>- Wrapping the Body in Linen: Once dried, the body was wrapped in linen strips soaked in resin to ensure its cohesion. Amulets and spells were placed between the layers of linen to protect the deceased on their journey to the afterlife.
+              
+              <br>3. Secrets of Mummification:
+              <br>- Chemical Substances Used: While some materials used in mummification, such as natron and resins, are known, the exact chemical compositions and mixtures employed by the ancient Egyptians remain unclear. Recent studies suggest they may have used complex blends of oils and natural resins.
+              <br>- Preservation of Soft Tissues: The ancient Egyptians achieved remarkable preservation of soft tissues like skin and muscles. However, the precise methods they used to maintain these tissues without deterioration remain a mystery.
+              
+              <br>4. What Remains Undiscovered:
+              <br>- Sacred Texts and Rituals: Egyptian priests followed sacred texts during the mummification process, but some of these texts have not been fully deciphered. This means there are still religious and spiritual secrets related to mummification that remain uncovered.
+              <br>- Advanced Mummification Techniques: Evidence suggests that some mummies were preserved using more advanced techniques than others, indicating the existence of sophisticated methods that are not yet fully understood. For example, some mummies retain surprising flexibility even after thousands of years.
+              
+              <br>5. Conclusion:
+              <br>Mummification in ancient Egypt stands as a testament to their scientific and religious sophistication. Despite significant progress in understanding this practice, many of its secrets remain shrouded in mystery. Ongoing research and archaeological discoveries may, in the future, reveal more details about this ancient and fascinating tradition.</p>
+        </div>
+    </div>
+
+    <div class="ca animate-section " style="background-image: url('Do-U-Know/3.jpg');">
+        <div class="information">
+            <h1 class="ti">Egyptian Antiquities Abroad and Their Presence in Global Museums</h1>
+            <p class="descriptionn">
+              1. Introduction:
+              <br>Egyptian antiquities are among the most significant cultural and historical treasures in the world, reflecting the grandeur of ancient Egyptian civilization. Many of these artifacts have been transported outside Egypt through archaeological discoveries or illegal sales and smuggling. Today, thousands of Egyptian artifacts are housed in museums around the globe.
+              
+              <br>2. Egyptian Antiquities in Global Museums:
+              <br>- The British Museum (London, UK): Houses over 100,000 artifacts, including the famous Rosetta Stone.
+              <br>- The Neues Museum (Berlin, Germany): Contains around 80,000 artifacts, most notably the bust of Nefertiti.
+              <br>- The Louvre Museum (Paris, France): Holds approximately 50,000 artifacts, such as the Seated Scribe statue.
+              <br>- The Museum of Fine Arts (Boston, USA): Features 45,000 artifacts, including rare statues.
+              <br>- The Kelsey Museum (Ann Arbor, USA): Holds 45,000 artifacts, including manuscripts and small statues.
+              <br>- The Penn Museum (Philadelphia, USA): Contains 42,000 artifacts, such as mummies and inscriptions.
+              <br>- The Ashmolean Museum (Oxford, UK): Houses 40,000 artifacts, including statues and carvings.
+              <br>- The Egyptian Museum of Turin (Turin, Italy): Holds 32,000 artifacts, including mummies and statues.
+              <br>- The Oriental Institute (Chicago, USA): Features 30,000 artifacts, including hieroglyphic texts.
+              <br>- The Metropolitan Museum of Art (New York, USA): Contains 26,000 artifacts, such as the Temple of Dendur.
+              <br>- The Royal Ontario Museum (Toronto, Canada): Holds 25,000 artifacts, including mummies.
+              <br>- The Louvre Abu Dhabi (Abu Dhabi, UAE): Features 10,000 artifacts, including rare artistic pieces.
+              
+              <br>3. How Egyptian Antiquities Were Transferred Abroad:
+              <br>Most of these artifacts were transferred through illegal means, such as smuggling or unlawful sales. Some pieces were gifted by the Egyptian royal family in earlier periods.
+              
+              <br>4. Egypt’s Efforts to Reclaim Antiquities:
+              <br>Egypt is making significant efforts to recover artifacts that were taken illegally. In recent years, it has successfully reclaimed thousands of pieces.
+              
+              <br>5. Conclusion:
+              <br>Egyptian antiquities in global museums are a testament to the greatness of ancient Egyptian civilization. However, they remain a part of Egypt’s cultural heritage. Efforts continue to bring more of these treasures back to their homeland.</p>
+        </div>
+    </div>
+
+    <!-- Hidden cards -->
+    <div class="ca hidden" style="background-image: url('Do-U-Know/4.jpg');">
+        <div class="information">
+            <h1 class="ti">Egyptians and Astronomy</h1>
+            <p class="descriptionn">
+              1. Introduction:
+              <br>The ancient Egyptians made significant contributions to astronomy, which was closely linked to their daily lives, particularly in agriculture and religion. Their astronomical knowledge enabled them to determine seasons and predict the annual flooding of the Nile, which greatly influenced the development of their civilization.
+
+              <br>2. Achievements in Astronomy:
+              <br>- Solar Calendar:
+              
+              The ancient Egyptians developed an accurate solar calendar consisting of 365 days divided into 12 months, each with 30 days, plus an additional 5 days at the end of the year. This calendar was crucial for predicting the Nile's flooding.
+              <br>- Seasonal Division:
+              
+              They divided the year into three main seasons related to the Nile's cycle and agriculture:
+              <br>Flooding Season (Akhet)
+              <br>Sowing Season (Peret)
+              <br>Harvest Season (Shemu)
+              
+              <br>- Stars and Constellations:
+              
+              The Egyptians observed the movement of stars and used them for navigation and timekeeping. They recognized several constellations and associated them with their deities and myths.
+              <br>- Timekeeping Devices:
+              
+              They invented sundials to measure time during the day and used water clocks (clepsydra) for nighttime timekeeping.
+              <br>- Religious Connections:
+              
+              Astronomy was intertwined with their religious beliefs, as they viewed stars and planets as manifestations of their gods.
+              <br>3. The Great Pyramid of Giza and Astronomy:
+              The Great Pyramid of Giza, built around 2560 BC, is a testament to the ancient Egyptians' advanced understanding of astronomy and engineering. Its design reflects a deep connection to celestial phenomena:
+              
+              <br>- Precise Alignment:
+              
+              The pyramid's four sides are aligned with the cardinal directions (north, south, east, west) with an accuracy of less than 0.15 degrees, demonstrating their sophisticated astronomical knowledge.
+              <br>- Astronomical Features:
+              
+              The northern shaft of the pyramid points to the star Thuban (the North Star at the time), while the southern shaft aligns with the stars of Orion's Belt, associated with the god Osiris.
+              <br>- Winter Solstice:
+              
+              During the winter solstice, sunlight illuminates the main burial chamber, highlighting the pyramid's connection to astronomical events.
+              <br>- Stellar Representation:
+              
+              The arrangement of the three pyramids of Giza (Khufu, Khafre, and Menkaure) is believed to mirror the stars of Orion's Belt, reflecting their belief in the pharaohs' divine connection to the heavens.
+              <br>- Scientific Debate:
+              Some theories suggest the pyramid served as an astronomical observatory or a timekeeping device, though these remain subjects of debate.
+              Regardless, the pyramid's precise engineering and astronomical alignments confirm the ancient Egyptians' advanced knowledge of mathematics and astronomy.
+              
+              <br>4.Conclusion:
+              <br>The Great Pyramid of Giza embodies the ancient Egyptians' genius in integrating astronomy with architecture. Its precise alignments and celestial connections underscore their advanced knowledge and spiritual beliefs. The mysteries of this monumental structure continue to captivate scholars, affirming the ancient Egyptian civilization as a beacon of science and knowledge.</p>
+        </div>
+    </div>
+
+    <div class="ca hidden" style="background-image: url('Do-U-Know/5.jpg');">
+        <div class="information">
+            <h1 class="ti">Ancient Egyptian Medicine</h1>
+            <p class="descriptionn">
+              1. Medical Papyri:
+
+              <br>- Ebers Papyrus (1550 BCE): Contains 877 prescriptions for ophthalmology, gynecology, and dentistry. It also documents early cancer treatments.
+              
+              <br>- Edwin Smith Papyrus (1600 BCE): The oldest surgical text, detailing 48 trauma cases. It emphasizes scientific observation over magic.
+              
+              <br>- Kahun Papyrus (1800 BCE): Focuses on women’s health, including pregnancy diagnosis and fertility tests.
+              
+              <br>2. Brain Surgery:
+              
+              <br>- Trepanation: Skull-drilling surgeries were performed to relieve pressure, with evidence of healed skulls showing patient survival.
+              
+              <br>- Head Injuries: The Edwin Smith Papyrus describes treatments for skull fractures, including wound closure and bandaging.
+              
+              <br>- Surgical Tools: Copper scalpels, bone drills, and linen sutures were used for precision.
+              
+              <br>3. Cosmetic Surgery:
+              
+              <br>- Dentistry: Treated dental abscesses with honey and created prosthetic teeth using gold wire.
+              
+              <br>- Prosthetics: Designed artificial toes (e.g., Cairo Toe, 950 BCE) and stone eyes for rituals or burials.
+              
+              <br>- Skin Care: Developed ointments for burns and scars using aloe and animal fats.
+              
+              <br>4. Evidence of Surgery:
+              
+              <br>- Healed skulls with precise holes confirm successful surgeries.
+              
+              <br>- Papyri detail surgical steps like wound stitching and bandaging.
+              
+              <br>- Surgical tools, including scalpels and scissors, have been found in tombs.
+              
+              <br>5. Legacy:
+              
+              <br>- Specialization: Doctors were specialized, such as “Swnw” for general medicine and “Iry” for eye care.
+              
+              <br>- Global Influence: Greek and Roman medicine borrowed heavily from Egyptian practices.
+              
+              <br>- Pharmacology: 37% of their herbal remedies, like garlic for infections, are still used today.
+              
+              <br>6. Fetal Gender Test:
+              
+              <br>- Pregnant women moistened barley and wheat with urine.
+              
+              <br>- Barley growth indicated a male fetus; wheat growth indicated a female fetus.
+              
+              <br>- No growth suggested a false pregnancy.
+              
+              <br>7. Medical Innovations:
+              
+              <br>- Birthing Chair: Used 3500 years ago, similar to modern devices, depicted in temple carvings.
+              
+              <br>- Imhotep: The first physician, later deified as a symbol of medical wisdom.
+              
+              <br>8. Conclusion:
+              
+              <br>Ancient Egyptians excelled in medicine, blending science and spirituality. Their surgical and pharmacological advancements laid the foundation for modern medicine, leaving a lasting legacy.</p>
+        </div>
+    </div>
+
+    <div class="ca hidden" style="background-image: url('Do-U-Know/6.jpg');">
+        <div class="information">
+            <h1 class="ti">From the Pyramids to the Sky: The Ancient Egyptians' Creations That Changed History</h1>
+            <p class="descriptionn">
+              The ancient Egyptians are considered among the earliest civilizations to excel in the field of engineering, leaving behind monumental architectural wonders such as the pyramids, temples, and tombs, which still stand as testaments to their engineering prowess. Although modern aviation was unknown at the time, there are indications and legends suggesting that the ancient Egyptians had an interest in flight, whether symbolically or through designs resembling flying objects.
+
+              <br>1. The Engineering Achievements of the Ancient Egyptians
+              
+              <br>- The Pyramids: The pyramids, particularly the Great Pyramid of Giza (Khufu), are the greatest evidence of the ancient Egyptians' architectural ingenuity. They were constructed using precise techniques for calculating angles and distances, making them one of the Seven Wonders of the Ancient World.
+              
+              <br>- Temples and Tombs: The ancient Egyptians designed massive temples such as the Karnak Temple and Abu Simbel, reflecting their deep understanding of mathematics and engineering. They also used advanced construction methods to ensure the stability of these structures for thousands of years.
+              
+              <br>- Canals and Waterways: They excelled in designing canal networks to distribute Nile water to agricultural lands, showcasing their knowledge of hydraulics and water engineering.
+              
+              <br>2. The Ancient Egyptians and Aviation: Fact and Legend
+              
+              <br> Although there is no direct scientific evidence of the ancient Egyptians' ability to fly, there are intriguing indications:
+              
+              <br>- Ancient Kites: Wooden models resembling modern aircraft were found in Egyptian tombs dating back to 2000 BCE. For example, the "Saqqara Glider," discovered in a tomb in Saqqara in 1898, is believed to have had a religious or symbolic purpose but bears a striking resemblance to modern aircraft components such as wings and a tail.
+              
+              <br>- Flight Myths: In ancient Egyptian mythology, gods were sometimes depicted flying in the sky. For instance, the god Horus was represented as a falcon, and the goddess Isis was described as having the ability to fly in some stories.
+              
+              <br>- Cosmic Energy: The ancient Egyptians are thought to have relied on spiritual and cosmic concepts to understand the world around them, and flight may have been part of their cosmic vision.
+              
+              <br>3. How Did They Design Massive Structures?
+              
+              <br>- Use of Ramps and Levers: The ancient Egyptians relied on simple yet effective techniques such as ramps and levers to transport heavy stones.
+              
+              <br>- Collective Collaboration: Teamwork was key to completing these massive projects. They employed a well-organized system of laborers and farmers to carry out engineering tasks.
+              
+              <br>- Astronomy and Geometry: The ancient Egyptians used astronomical knowledge to determine precise directions, helping them align temples and pyramids with the movement of the sun and stars.
+              
+              <br>4. The Global Influence of the Ancient Egyptians
+              
+              <br>- Egyptian Engineering as a Model for the World: Later civilizations, such as the Greeks and Romans, benefited from Egyptian engineering knowledge. For example, the Greeks adopted the use of columns from Egyptian temples.
+              
+              <br>- Inspiration for Modern Science: Even today, the engineering achievements of the ancient Egyptians continue to inspire scientists and engineers, particularly in the design of massive structures and construction techniques.
+              
+              <br>5. Conclusion
+              
+              <br>The ancient Egyptians were not only exceptional architects but also pioneers in utilizing natural resources and human energy to achieve monumental engineering feats. Although aviation was beyond their technical capabilities, their interest in designs resembling flying objects and their flight-related myths reflect their curiosity and creativity. Their engineering and intellectual legacy remains a source of inspiration for humanity, proving that the ancient Egyptians were capable of achieving the impossible with the resources available to them.</p>
+        </div>
+    </div>
+  </main>
+
+  <div class="showmorebutton" style="position: relative; z-index: 1;padding-left: 60px;">
+    <button onclick="showMoreCard()">
+        See More
+        <span class="arrowdown">▼</span>
+    </button>
+  </div>
+
+  <div class="showlessbutton" style="position: relative; z-index: 1;padding-left: 60px;">
+    <button onclick="showLessCard()">
+        See Less
+        <span class="arrowup">▲</span>
+    </button>
+  </div>
+</section>
+
+
+<center><section id="Translation" class="animate-section" style="padding-top: 90px;">
+  <h1 class="services_taital">Translation <hr class="custom-hr"></h1>
+  <div class="translate">
+  <p>
+    The hieroglyphic script is the oldest form of Egyptian writing, derived from two Greek words meaning "sacred carving." It consists of pictorial and phonetic signs divided into three groups: uniliteral, biliteral, and triliteral, along with non-phonetic grammatical markers.
+</p>
+<div class=" coontain">
+    <h1 class="Large">Translation into Hieroglyphics</h1>
+    <textarea class="textareea" id="input-text" placeholder="Write the text in English here..."></textarea>
+    <button class= "translate-btn" onclick="translateToHieroglyphs()">Translate</button>
+    <div class="output" id="translated-text">The translated text will appear here...</div>
+</div></div>
+</section></center>
+
+<section id="Footer" >
+  <footer class="site-footer">
+    <div class="ccoontainer">
+        <div class="row">
+            <div class="footer-col about">
+                <h3>About Us</h3>
+                <p style="text-transform: capitalize;">We are a professional team dedicated to providing high-quality services and products to our valued customers.</p>
+                <ul class="social-icons">
+                    <li><a href="https://www.facebook.com/tourismandantiq"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="https://x.com/TourismandAntiq"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="https://www.instagram.com/ministry_tourism_antiquities"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="https://www.linkedin.com/company/ministry-of-tourism-and-antiquities-egypt/"><i class="fab fa-linkedin-in"></i></a></li>
+                </ul>
+                <p style="text-transform: capitalize; padding-top: 30px;">For feedback and rating </p>
+                <ul class="social-icons">
+                  <li><a href="https://www.facebook.com/shahd.elshehaby11"><i class="fab fa-facebook-f"></i></a></li>
+                  <li><a href="https://www.instagram.com/salmaelhabashy43/"><i class="fab fa-instagram"></i></a></li>
+              </ul>
+            </div>
+
+            <div class="footer-col links" style="text-transform: capitalize;">
+                <h3>Quick Links</h3>
+                <ul>
+                  <li><a href="#Home">Home</a></li>
+                  <li><a href="#Monuments">Monuments</a></li>
+                  <li><a href="#Sunken">Sunken Monuments </a></li>
+                  <li><a href="#Famous">Kings & Queens</a></li>
+                  <li><a href="#Abroad">Egyptian Monuments Abroad</a></li>
+                  <li><a href="#Symbols">Pharaonic Symbols</a></li>
+                  <li><a href="#Do-U-Know">Do You Know</a></li>
+                  <li><a href="#Translation">Translation</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col contact">
+                <h3>Contact Us</h3>
+                <ul class="contact-info">
+                    <li><i class="fas fa-map-marker-alt"></i> The New Administrative Capital, Government District, Cairo</li>
+                    <li><i class="fas fa-phone"></i> 19654 </li>
+                    <li><i class="fas fa-envelope"></i> <a href="mailto:moa.portal@mota.gov.eg">moa.portal@mota.gov.eg</a> </li>
+                </ul>
+            </div>
+
+            <div class="footer-col newsletter">
+              <h3>Subscribe to Our Newsletter</h3>
+              <form action="#" method="post">
+                  <input type="email" placeholder="Enter your email" required>
+                  <button type="submit">Subscribe</button>
+              </form>
+          </div>
+      </div>
+  </div>
+
+    <div class="footer-bottom">
+        <div class="ccoontainer">
+            <p>&copy; 2025 <a href="#">Land of Pharaohs</a>. All rights reserved.</p>
+        </div>
+    </div>
+</footer></section>
+
+<section class="ai" style="font-family: 'Inter', sans-serif;">
+  <!-- Chatbot Toggler -->
+  <button id="chatbot-toggler">
+    <span class="material-symbols-rounded">mode_comment</span>
+    <span class="material-symbols-rounded">close</span>
+  </button>
+  <div class="chatbot-popup">
+    <!-- Chatbot Header -->
+    <div class="chat-header">
+      <div class="header-info">
+        <svg class="chatbot-logo"  width="50" height="50" viewBox="0 0 1024 1024">
+          <path
+            d="M738.3 287.6H285.7c-59 0-106.8 47.8-106.8 106.8v303.1c0 59 47.8 106.8 106.8 106.8h81.5v111.1c0 .7.8 1.1 1.4.7l166.9-110.6 41.8-.8h117.4l43.6-.4c59 0 106.8-47.8 106.8-106.8V394.5c0-59-47.8-106.9-106.8-106.9zM351.7 448.2c0-29.5 23.9-53.5 53.5-53.5s53.5 23.9 53.5 53.5-23.9 53.5-53.5 53.5-53.5-23.9-53.5-53.5zm157.9 267.1c-67.8 0-123.8-47.5-132.3-109h264.6c-8.6 61.5-64.5 109-132.3 109zm110-213.7c-29.5 0-53.5-23.9-53.5-53.5s23.9-53.5 53.5-53.5 53.5 23.9 53.5 53.5-23.9 53.5-53.5 53.5zM867.2 644.5V453.1h26.5c19.4 0 35.1 15.7 35.1 35.1v121.1c0 19.4-15.7 35.1-35.1 35.1h-26.5zM95.2 609.4V488.2c0-19.4 15.7-35.1 35.1-35.1h26.5v191.3h-26.5c-19.4 0-35.1-15.7-35.1-35.1zM561.5 149.6c0 23.4-15.6 43.3-36.9 49.7v44.9h-30v-44.9c-21.4-6.5-36.9-26.3-36.9-49.7 0-28.6 23.3-51.9 51.9-51.9s51.9 23.3 51.9 51.9z"
+          />
+        </svg>
+        <h2 class="logo-text">Chatbot</h2>
+      </div>
+      <button id="close-chatbot" class="material-symbols-rounded">keyboard_arrow_down</button>
+    </div>
+    <!-- Chatbot Body -->
+    <div class="chat-body" >
+      <div class="message bot-message">
+        <svg class="bot-avatar" width="50" height="50" viewBox="0 0 1024 1024">
+          <path
+            d="M738.3 287.6H285.7c-59 0-106.8 47.8-106.8 106.8v303.1c0 59 47.8 106.8 106.8 106.8h81.5v111.1c0 .7.8 1.1 1.4.7l166.9-110.6 41.8-.8h117.4l43.6-.4c59 0 106.8-47.8 106.8-106.8V394.5c0-59-47.8-106.9-106.8-106.9zM351.7 448.2c0-29.5 23.9-53.5 53.5-53.5s53.5 23.9 53.5 53.5-23.9 53.5-53.5 53.5-53.5-23.9-53.5-53.5zm157.9 267.1c-67.8 0-123.8-47.5-132.3-109h264.6c-8.6 61.5-64.5 109-132.3 109zm110-213.7c-29.5 0-53.5-23.9-53.5-53.5s23.9-53.5 53.5-53.5 53.5 23.9 53.5 53.5-23.9 53.5-53.5 53.5zM867.2 644.5V453.1h26.5c19.4 0 35.1 15.7 35.1 35.1v121.1c0 19.4-15.7 35.1-35.1 35.1h-26.5zM95.2 609.4V488.2c0-19.4 15.7-35.1 35.1-35.1h26.5v191.3h-26.5c-19.4 0-35.1-15.7-35.1-35.1zM561.5 149.6c0 23.4-15.6 43.3-36.9 49.7v44.9h-30v-44.9c-21.4-6.5-36.9-26.3-36.9-49.7 0-28.6 23.3-51.9 51.9-51.9s51.9 23.3 51.9 51.9z"
+          />
+        </svg>
+        <!-- prettier-ignore -->
+        <div class="message-text" style="font-family: 'Inter', sans-serif;"> Hey there  <br /> How can I help you today? </div>
+      </div>
+    </div>
+    <!-- Chatbot Footer -->
+    <div class="chat-footer">
+      <form action="#" class="chat-form">
+        <textarea placeholder="Message..." class="message-input" required style="font-family: 'Inter', sans-serif;"></textarea>
+        <div class="chat-controls">
+          <button type="button" id="emoji-picker" class="material-symbols-outlined">sentiment_satisfied</button>
+          <div class="file-upload-wrapper">
+            <input type="file" accept="image/*" id="file-input" hidden />
+            <img src="#" />
+            <button type="button" id="file-upload" class="material-symbols-rounded">attach_file</button>
+            <button type="button" id="file-cancel" class="material-symbols-rounded">close</button>
+          </div>
+          <button type="submit" id="send-message" class="material-symbols-rounded">arrow_upward</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+<section class="jump_Button" id="jump_Button">
+  <button id="jumpButton">Look 👀</button></section>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/emoji-mart@latest/dist/browser.js"></script>
+
+
+  <script>
+
+ 
+
+    (function() {
+      var $slides = document.querySelectorAll('.slide');
+      var $controls = document.querySelectorAll('.slider__control');
+      var numOfSlides = $slides.length;
+      var slidingAT = 1300; 
+      var slidingBlocked = false;
+
+      [].slice.call($slides).forEach(function($el, index) {
+        var i = index + 1;
+        $el.classList.add('slide-' + i);
+        $el.dataset.slide = i;
+      });
+
+      [].slice.call($controls).forEach(function($el) {
+        $el.addEventListener('click', controlClickHandler);
+      });
+
+      function controlClickHandler() {
+        if (slidingBlocked) return;
+        slidingBlocked = true;
+
+        var $control = this;
+        var isRight = $control.classList.contains('m--right');
+        var $curActive = document.querySelector('.slide.s--active');
+        var index = +$curActive.dataset.slide;
+        (isRight) ? index++ : index--;
+        if (index < 1) index = numOfSlides;
+        if (index > numOfSlides) index = 1;
+        var $newActive = document.querySelector('.slide-' + index);
+
+        $control.classList.add('a--rotation');
+        $curActive.classList.remove('s--active', 's--active-prev');
+        document.querySelector('.slide.s--prev').classList.remove('s--prev');
+
+        $newActive.classList.add('s--active');
+        if (!isRight) $newActive.classList.add('s--active-prev');
+
+        var prevIndex = index - 1;
+        if (prevIndex < 1) prevIndex = numOfSlides;
+
+        document.querySelector('.slide-' + prevIndex).classList.add('s--prev');
+
+        setTimeout(function() {
+          $control.classList.remove('a--rotation');
+          slidingBlocked = false;
+        }, slidingAT * 0.75);
+      }
+      setInterval(function() {
+    if (!slidingBlocked) {
+      var $controls = document.querySelectorAll('.slider__control');
+      var $rightControl = $controls[1]; // الزر الأيمن
+      $rightControl.click(); // تنفيذ النقر على الزر الأيمن
+    }
+  }, 3000); // 3000 مللي ثانية = 3 ثواني
+})();
+
+function menuOnClick() {
+    const header = document.querySelector('.header');
+    header.classList.toggle('show-menu'); // إضافة أو إزالة كلاس show-menu
+
+    document.getElementById("menu-bar").classList.toggle("change");
+    document.getElementById("nav").classList.toggle("change");
+    document.getElementById("menu-bg").classList.toggle("change-bg");
+}
+
+    let originalHeight;
+
+        function showMoreCards() {
+            // Select all hidden cards
+            const hiddenCards = document.querySelectorAll('.card-container:nth-child(n+4)');
+            // Show each hidden card with animation
+            hiddenCards.forEach(card => {
+                card.classList.add('show');
+                card.style.display = 'block';
+            });
+            // Hide the "Show More" button
+            document.querySelector('.show-more-button').style.display = 'none';
+            // Show the "Show Less" button
+            document.querySelector('.show-less-button').style.display = 'block';
+            // Adjust section height
+            adjustSectionHeight();
+        }
+
+        function showLessCards() {
+            // Select all hidden cards
+            const hiddenCards = document.querySelectorAll('.card-container:nth-child(n+4)');
+            // Add hide animation to each card
+            hiddenCards.forEach(card => {
+                card.classList.add('hide');
+                // Hide the card after the animation ends
+                card.addEventListener('animationend', () => {
+                    card.style.display = 'none';
+                    card.classList.remove('hide');
+                }, { once: true });
+            });
+            // Show the "Show More" button
+            document.querySelector('.show-more-button').style.display = 'block';
+            // Hide the "Show Less" button
+            document.querySelector('.show-less-button').style.display = 'none';
+            // Restore original section height
+            restoreOriginalHeight();
+        }
+
+        function adjustSectionHeight() {
+            const section = document.getElementById('Symbols');
+            const gridContainer = document.querySelector('.grid-container');
+            section.style.height = `${gridContainer.scrollHeight}px`; // ضبط الارتفاع بناءً على المحتوى
+        }
+
+        function restoreOriginalHeight() {
+            const section = document.getElementById('Symbols');
+            section.style.height = `${originalHeight}px`; // استعادة الارتفاع الأصلي
+        }
+
+        // حفظ الارتفاع الأصلي عند تحميل الصفحة
+        window.onload = () => {
+            const section = document.getElementById('Symbols');
+            originalHeight = section.scrollHeight; // حفظ الارتفاع الأصلي
+        };
+
+        document.addEventListener("DOMContentLoaded", function() {
+  const sections = document.querySelectorAll(".animate-section");
+
+  const checkVisibility = () => {
+    sections.forEach((section) => {
+      const rect = section.getBoundingClientRect();
+      const isVisible = (rect.top < window.innerHeight * 0.8) && (rect.bottom >= 0);
+      if (isVisible) {
+        section.classList.add("visible");
+      } else {
+        section.classList.remove("visible");
+      }
+    });
+  };
+
+  window.addEventListener("scroll", checkVisibility);
+  checkVisibility(); 
+});
+    
+
+
+
+function showMoreCard() {
+            const hiddenCards = document.querySelectorAll('.ca.hidden');
+            hiddenCards.forEach(card => {
+                card.classList.remove('hidden');
+                card.classList.add('show');
+            });
+            document.querySelector('.showmorebutton').style.display = 'none';
+            document.querySelector('.showlessbutton').style.display = 'block';
+        }
+
+        function showLessCard() {
+            const allCards = document.querySelectorAll('.ca');
+            allCards.forEach((card, index) => {
+                if (index >= 3) {
+                    card.classList.add('hide'); // Add hide animation
+                    card.addEventListener('animationend', () => {
+                        card.classList.remove('show', 'hide');
+                        card.classList.add('hidden');
+                    }, { once: true });
+                }
+            });
+            document.querySelector('.showmorebutton').style.display = 'block';
+            document.querySelector('.showlessbutton').style.display = 'none';
+        }
+
+        // Initially hide all cards beyond the first 3
+        document.addEventListener('DOMContentLoaded', () => {
+            const allCards = document.querySelectorAll('.ca');
+            allCards.forEach((card, index) => {
+                if (index >= 3) {
+                    card.classList.add('hidden');
+                }
+            });
+        });
+
+        const containerrs = document.querySelectorAll('.containerr');
+    const prevBtn = document.getElementById('prevBtn');
+    const nextBtn = document.getElementById('nextBtn');
+    let currentGroup = 0;
+    const groupSize = 3;
+
+    function showGroup(groupIndex) {
+      containerrs.forEach((containerr, index) => {
+        if (index >= groupIndex * groupSize && index < (groupIndex + 1) * groupSize) {
+          containerr.classList.add('active');
+        } else {
+          containerr.classList.remove('active');
+        }
+      });
+    }
+
+    prevBtn.addEventListener('click', () => {
+      if (currentGroup > 0) {
+        currentGroup--;
+        showGroup(currentGroup);
+      }
+    });
+
+    nextBtn.addEventListener('click', () => {
+      if (currentGroup < Math.ceil(containerrs.length / groupSize) - 1) {
+        currentGroup++;
+        showGroup(currentGroup);
+      }
+    });
+
+    showGroup(currentGroup);
+
+
+const chatBody = document.querySelector(".chat-body");
+const messageInput = document.querySelector(".message-input");
+const sendMessage = document.querySelector("#send-message");
+const fileInput = document.querySelector("#file-input");
+const fileUploadWrapper = document.querySelector(".file-upload-wrapper");
+const fileCancelButton = fileUploadWrapper.querySelector("#file-cancel");
+const chatbotToggler = document.querySelector("#chatbot-toggler");
+const closeChatbot = document.querySelector("#close-chatbot");
+// API setup
+const API_KEY = "AIzaSyCIuGy-zwfm3R0obgHfoQeewxPSwkyrOhU";
+const API_URL = `https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=${API_KEY}`;
+// Initialize user message and file data
+const userData = {
+  message: null,
+  file: {
+    data: null,
+    mime_type: null,
+  },
+};
+// Store chat history
+const chatHistory = [];
+const initialInputHeight = messageInput.scrollHeight;
+// Create message element with dynamic classes and return it
+const createMessageElement = (content, ...classes) => {
+  const div = document.createElement("div");
+  div.classList.add("message", ...classes);
+  div.innerHTML = content;
+  return div;
+};
+// Generate bot response using API
+const generateBotResponse = async (incomingMessageDiv) => {
+  const messageElement = incomingMessageDiv.querySelector(".message-text");
+  // Add user message to chat history
+  chatHistory.push({
+    role: "user",
+    parts: [{ text: userData.message }, ...(userData.file.data ? [{ inline_data: userData.file }] : [])],
+  });
+  // API request options
+  const requestOptions = {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({
+      contents: chatHistory,
+    }),
+  };
+  try {
+    // Fetch bot response from API
+    const response = await fetch(API_URL, requestOptions);
+    const data = await response.json();
+    if (!response.ok) throw new Error(data.error.message);
+    // Extract and display bot's response text
+    const apiResponseText = data.candidates[0].content.parts[0].text.replace(/\*\*(.*?)\*\*/g, "$1").trim();
+    messageElement.innerText = apiResponseText;
+    // Add bot response to chat history
+    chatHistory.push({
+      role: "model",
+      parts: [{ text: apiResponseText }],
+    });
+  } catch (error) {
+    // Handle error in API response
+    console.log(error);
+    messageElement.innerText = error.message;
+    messageElement.style.color = "#ff0000";
+  } finally {
+    // Reset user's file data, removing thinking indicator and scroll chat to bottom
+    userData.file = {};
+    incomingMessageDiv.classList.remove("thinking");
+    chatBody.scrollTo({ top: chatBody.scrollHeight, behavior: "smooth" });
+  }
+};
+// Handle outgoing user messages
+const handleOutgoingMessage = (e) => {
+  e.preventDefault();
+  userData.message = messageInput.value.trim();
+  messageInput.value = "";
+  messageInput.dispatchEvent(new Event("input"));
+  fileUploadWrapper.classList.remove("file-uploaded");
+  // Create and display user message
+  const messageContent = `<div class="message-text"></div>
+                          ${userData.file.data ? `<img src="data:${userData.file.mime_type};base64,${userData.file.data}" class="attachment" />` : ""}`;
+  const outgoingMessageDiv = createMessageElement(messageContent, "user-message");
+  outgoingMessageDiv.querySelector(".message-text").innerText = userData.message;
+  chatBody.appendChild(outgoingMessageDiv);
+  chatBody.scrollTo({ top: chatBody.scrollHeight, behavior: "smooth" });
+  // Simulate bot response with thinking indicator after a delay
+  setTimeout(() => {
+    const messageContent = `<svg class="bot-avatar" xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 1024 1024">
+            <path
+              d="M738.3 287.6H285.7c-59 0-106.8 47.8-106.8 106.8v303.1c0 59 47.8 106.8 106.8 106.8h81.5v111.1c0 .7.8 1.1 1.4.7l166.9-110.6 41.8-.8h117.4l43.6-.4c59 0 106.8-47.8 106.8-106.8V394.5c0-59-47.8-106.9-106.8-106.9zM351.7 448.2c0-29.5 23.9-53.5 53.5-53.5s53.5 23.9 53.5 53.5-23.9 53.5-53.5 53.5-53.5-23.9-53.5-53.5zm157.9 267.1c-67.8 0-123.8-47.5-132.3-109h264.6c-8.6 61.5-64.5 109-132.3 109zm110-213.7c-29.5 0-53.5-23.9-53.5-53.5s23.9-53.5 53.5-53.5 53.5 23.9 53.5 53.5-23.9 53.5-53.5 53.5zM867.2 644.5V453.1h26.5c19.4 0 35.1 15.7 35.1 35.1v121.1c0 19.4-15.7 35.1-35.1 35.1h-26.5zM95.2 609.4V488.2c0-19.4 15.7-35.1 35.1-35.1h26.5v191.3h-26.5c-19.4 0-35.1-15.7-35.1-35.1zM561.5 149.6c0 23.4-15.6 43.3-36.9 49.7v44.9h-30v-44.9c-21.4-6.5-36.9-26.3-36.9-49.7 0-28.6 23.3-51.9 51.9-51.9s51.9 23.3 51.9 51.9z"/></svg>
+          <div class="message-text">
+            <div class="thinking-indicator">
+              <div class="dot"></div>
+              <div class="dot"></div>
+              <div class="dot"></div>
+            </div>
+          </div>`;
+    const incomingMessageDiv = createMessageElement(messageContent, "bot-message", "thinking");
+    chatBody.appendChild(incomingMessageDiv);
+    chatBody.scrollTo({ top: chatBody.scrollHeight, behavior: "smooth" });
+    generateBotResponse(incomingMessageDiv);
+  }, 600);
+};
+// Adjust input field height dynamically
+messageInput.addEventListener("input", () => {
+  messageInput.style.height = `${initialInputHeight}px`;
+  messageInput.style.height = `${messageInput.scrollHeight}px`;
+  document.querySelector(".chat-form").style.borderRadius = messageInput.scrollHeight > initialInputHeight ? "15px" : "32px";
+});
+// Handle Enter key press for sending messages
+messageInput.addEventListener("keydown", (e) => {
+  const userMessage = e.target.value.trim();
+  if (e.key === "Enter" && !e.shiftKey && userMessage && window.innerWidth > 768) {
+    handleOutgoingMessage(e);
+  }
+});
+// Handle file input change and preview the selected file
+fileInput.addEventListener("change", () => {
+  const file = fileInput.files[0];
+  if (!file) return;
+  const reader = new FileReader();
+  reader.onload = (e) => {
+    fileInput.value = "";
+    fileUploadWrapper.querySelector("img").src = e.target.result;
+    fileUploadWrapper.classList.add("file-uploaded");
+    const base64String = e.target.result.split(",")[1];
+    // Store file data in userData
+    userData.file = {
+      data: base64String,
+      mime_type: file.type,
+    };
+  };
+  reader.readAsDataURL(file);
+});
+// Cancel file upload
+fileCancelButton.addEventListener("click", () => {
+  userData.file = {};
+  fileUploadWrapper.classList.remove("file-uploaded");
+});
+// Initialize emoji picker and handle emoji selection
+const picker = new EmojiMart.Picker({
+  theme: "light",
+  skinTonePosition: "none",
+  previewPosition: "none",
+  onEmojiSelect: (emoji) => {
+    const { selectionStart: start, selectionEnd: end } = messageInput;
+    messageInput.setRangeText(emoji.native, start, end, "end");
+    messageInput.focus();
+  },
+  onClickOutside: (e) => {
+    if (e.target.id === "emoji-picker") {
+      document.body.classList.toggle("show-emoji-picker");
+    } else {
+      document.body.classList.remove("show-emoji-picker");
+    }
+  },
+});
+document.querySelector(".chat-form").appendChild(picker);
+sendMessage.addEventListener("click", (e) => handleOutgoingMessage(e));
+document.querySelector("#file-upload").addEventListener("click", () => fileInput.click());
+closeChatbot.addEventListener("click", () => document.body.classList.remove("show-chatbot"));
+chatbotToggler.addEventListener("click", () => document.body.classList.toggle("show-chatbot"));
+        
+
+
+const button = document.getElementById('jumpButton');
+
+// جعل الزر يقفز تلقائيًا كل ثانيتين
+const jumpInterval = setInterval(() => {
+  button.classList.add('jump-animation');
+
+  // إزالة تأثير القفز بعد انتهاء الرسوم المتحركة
+  button.addEventListener('animationend', () => {
+    button.classList.remove('jump-animation');
+  }, { once: true });
+}, 1000); // 2000 مللي ثانية = 2 ثواني
+
+// إخفاء الزر والانتقال إلى صفحة أخرى عند النقر
+button.addEventListener('click', () => {
+  clearInterval(jumpInterval); // إيقاف القفز التلقائي
+
+  // الانتقال إلى صفحة أخرى بعد 0.3 ثانية (زمن الانتقال)
+  setTimeout(() => {
+    window.location.href = "Report.html"; // استبدل بالرابط المطلوب
+  }, 100);
+});
+
+
+
+
+
+
+let CurrenttSlide = 0;
+const sliiddes = document.querySelectorAll('.sliidde');
+
+function showSlide(index) {
+  sliiddes.forEach((sliidde, i) => {
+    sliidde.classList.toggle('acttivve', i === index);
+  });
+}
+
+function nexxttSlide() {
+  CurrenttSlide = (CurrenttSlide + 1) % sliiddes.length;
+  showSlide(CurrenttSlide);
+}
+
+function preeevvSlide() {
+  CurrenttSlide = (CurrenttSlide - 1 + sliiddes.length) % sliiddes.length;
+  showSlide(CurrenttSlide);
+}
+
+showSlide(CurrenttSlide);
+
+
+
+
+document.addEventListener('DOMContentLoaded', () => {
+  const carrrdds = document.querySelectorAll('.carrrdd'); // جميع الكروت
+  const PrevvBtnn = document.getElementById('PrevvBtnn'); // زر السابق
+  const NextBtnn = document.getElementById('NextBtnn'); // زر التالي
+  let CurrentGroupp = 0; // الفهرس الحالي للمجموعة
+  const GroupSizee = 3; // عدد الكروت في كل مجموعة
+
+  // دالة لعرض المجموعة الحالية من الكروت
+  function showGroup(groupIndex) {
+    // إخفاء جميع الكروت
+    carrrdds.forEach(carrrdd => {
+      carrrdd.style.display = 'none';
+    });
+
+    // عرض الكروت التي تنتمي إلى المجموعة الحالية
+    const startIndex = groupIndex * GroupSizee;
+    const endIndex = startIndex + GroupSizee;
+
+    for (let i = startIndex; i < endIndex && i < carrrdds.length; i++) {
+      carrrdds[i].style.display = 'block';
+    }
+  }
+
+  // زر التالي
+  NextBtnn.addEventListener('click', () => {
+    if (CurrentGroupp < Math.ceil(carrrdds.length / GroupSizee) - 1) {
+      CurrentGroupp++;
+      showGroup(CurrentGroupp);
+    }
+  });
+
+  // زر السابق
+  PrevvBtnn.addEventListener('click', () => {
+    if (CurrentGroupp > 0) {
+      CurrentGroupp--;
+      showGroup(CurrentGroupp);
+    }
+  });
+
+  // عرض المجموعة الأولى عند تحميل الصفحة
+  showGroup(CurrentGroupp);
+});
+
+
+
+
+
+
+
+
+
+
+const hieroglyphMap = {
+            'A': '𓄿', 'a': '𓄿',
+            'B': '𓃀', 'b': '𓃀',
+            'C': '𓎡', 'c': '𓎡',
+            'D': '𓂧', 'd': '𓂧',
+            'E': '𓇌', 'e': '𓇌',
+            'F': '𓆑', 'f': '𓆑',
+            'G': '𓎼', 'g': '𓎼',
+            'H': '𓉔', 'h': '𓉔',
+            'I': '𓇋', 'i': '𓇋',
+            'J': '𓆓', 'j': '𓆓',
+            'K': '𓎡', 'k': '𓎡',
+            'L': '𓃭', 'l': '𓃭',
+            'M': '𓅓', 'm': '𓅓',
+            'N': '𓈖', 'n': '𓈖',
+            'O': '𓅱', 'o': '𓅱',
+            'P': '𓊪', 'p': '𓊪',
+            'Q': '𓏘', 'q': '𓏘',
+            'R': '𓂋', 'r': '𓂋',
+            'S': '𓋴', 's': '𓋴',
+            'T': '𓏏', 't': '𓏏',
+            'U': '𓅱', 'u': '𓅱',
+            'V': '𓆑', 'v': '𓆑',
+            'W': '𓅱𓏏', 'w': '𓅱𓏏',
+            'X': '𓎡𓊪', 'x': '𓎡𓊪',
+            'Y': '𓇋𓏏', 'y': '𓇋𓏏',
+            'Z': '𓊃', 'z': '𓊃'
+        };
+
+        // دالة لتحويل النص إلى هيروغليفية
+        function translateToHieroglyphs() {
+            const inputText = document.getElementById('input-text').value.trim();
+            if (!inputText) {
+                alert('Please enter text to translate');
+                return;
+            }
+            let translatedText = '';
+            for (const char of inputText) {
+                if (char.match(/[a-z]/i)) {
+                    translatedText += hieroglyphMap[char] || '?'; // استبدال الحرف غير الموجود بـ "?"
+                } else if (char === ' ') {
+                    translatedText += ' '; // إضافة مساحة بين الرموز
+                }
+            }
+            // عرض النص المترجم باستخدام قالب النص (Template Literals)
+            document.getElementById('translated-text').innerHTML = `<div class="hieroglyphs">${translatedText}</div>`;
+        }
+
+
+
+
+
+
+        document.addEventListener('DOMContentLoaded', () => {
+    const searchInput = document.getElementById('search');
+    const suggestionList = document.getElementById('suggestionList');
+    let highlightedElements = [];
+    let lastSearchTerm = '';
+
+    const sections = {
+        "Home": { id: "#Home", content: getSectionContent('#Home') },
+        "Monuments": { id: "#Monuments", content: getSectionContent('#Monuments') },
+        "Sunken Monuments": { id: "#Sunken", content: getSectionContent('#Sunken') },
+        "Kings & Queens": { id: "#Famous", content: getSectionContent('#Famous') },
+        "Egyptian Monuments Abroad": { id: "#Abroad", content: getSectionContent('#Abroad') },
+        "Pharaonic Symbols": { id: "#Symbols", content: getSectionContent('#Symbols') },
+        "Do You Know": { id: "#Do-U-Know", content: getSectionContent('#Do-U-Know') },
+        "Translation": { id: "#Translation", content: getSectionContent('#Translation') },
+        "Footer": { id: "#Footer", content: getSectionContent('#Footer') }
+    };
+
+    const sectionOrder = [
+        "Home", "Monuments", "Sunken Monuments", "Kings & Queens",
+        "Egyptian Monuments Abroad", "Pharaonic Symbols", "Do You Know",
+        "Translation", "Footer"
+    ];
+
+    const customSearchTerms = {
+        "The Egyptian Museum": "Museums/The Egyptian Museum.html",
+        "Narmer Palette": "Museums/The Egyptian Museum.html",
+        "A statue of the god Osiris, god of the afterlife": "Museums/The Egyptian Museum.html",
+        "Triad of Menkaure between Hathor and the Theban god": "Museums/The Egyptian Museum.html",
+        "Colossus of Amenhotep IV/Akhenaten in the Khat and Double Crown": "Museums/The Egyptian Museum.html",
+        "Scribe statue CG 36": "Museums/The Egyptian Museum.html",
+        "Diorite Statue of Tuthmose III, Kneeling with Nu-Jars in his Hands": "Museums/The Egyptian Museum.html",
+        "Funerary golden mask of King": "Museums/The Egyptian Museum.html",
+        "Head-of-Hatshepsut": "Museums/The Egyptian Museum.html",
+        "Statue of goddess Isis": "Museums/The Egyptian Museum.html",
+
+        "Graeco-Roman Museum": "Museums/Graeco-Roman Museum.html",
+        "The statue of the god Nilus": "Museums/Graeco-Roman Museum.html",
+        "Bust of the God Serapis": "Museums/Graeco-Roman Museum.html",
+        "Marble Statue of Marcus Aurelius": "Museums/Graeco-Roman Museum.html",
+        "Colossal Head of Octavius": "Museums/Graeco-Roman Museum.html",
+        "The statue of the Apis": "Museums/Graeco-Roman Museum.html",
+        "Statue of King Ptolemy XII": "Museums/Graeco-Roman Museum.html",
+        "The statue depicts a Ptolemaic king": "Museums/Graeco-Roman Museum.html",
+        "Head of Emperor Vespasian": "Museums/Graeco-Roman Museum.html",
+        "The statue of the goddess Aphrodite": "Museums/Graeco-Roman Museum.html",
+
+        "Grand Egyptian Museum": "Museums/Grand Egyptian Museum.html",
+        "Statue of Ramses II with Ptah and Sekhmet": "Museums/Grand Egyptian Museum.html",
+        "The Magnificent Statue of Ra-Horakhty": "Museums/Grand Egyptian Museum.html",
+        "Large Kneeling Statue of Hatshepsut": "Museums/Grand Egyptian Museum.html",
+        "High Priest Ramessesnakht": "Museums/Grand Egyptian Museum.html",
+        "The statue of King Senwosret I": "Museums/Grand Egyptian Museum.html",
+        "Statue of Mitri": "Museums/Grand Egyptian Museum.html",
+        "The Statue of Ramesses II": "Museums/Grand Egyptian Museum.html",
+        "Statue of Ptah": "Museums/Grand Egyptian Museum.html",
+        "Statue of Akhenaten": "Museums/Grand Egyptian Museum.html",
+
+        "Luxor Museum": "Museums/Luxor Museum.html",
+        "Statue of King Thutmose III": "Museums/Luxor Museum.html",
+        "statue of King Horemheb": "Museums/Luxor Museum.html",
+        "The ceremonial axe of Ahmose": "Museums/Luxor Museum.html",
+        "Statue of King Amenhotep III": "Museums/Luxor Museum.html",
+        "The statue depicts Sobek, the crocodile god of the Nile, fertility,and royal protection, presenting the ankh to King Amenhotep III": "Museums/Luxor Museum.html",
+        "Statue of Mut": "Museums/Luxor Museum.html",
+        "The colossal head of King Amenhotep III": "Museums/Luxor Museum.html",
+        "Cartouches of King Thutmose III": "Museums/Luxor Museum.html",
+        "The mummy of King Ahmose I": "Museums/Luxor Museum.html",
+
+        "Mummification Museum": "Museums/Mummification Museum.html",
+        "Canopic Jars": "Museums/Mummification Museum.html",
+        "Mummified Ram": "Museums/Mummification Museum.html",
+        "Statue of Osiris": "Museums/Mummification Museum.html",
+        "The statue of the goddess Nephthys": "Museums/Mummification Museum.html",
+        "The mummy of a Nile tilapia fish": "Museums/Mummification Museum.html",
+        "Statue and Mummified Cat": "Museums/Mummification Museum.html",
+        "The Djed pillar": "Museums/Mummification Museum.html",
+        "The crocodile mummy": "Museums/Mummification Museum.html",
+        "The mummy of Masaharti": "Museums/Mummification Museum.html",
+
+        "Museum of Islamic Art": "Museums/Museum of Islamic Art .html",
+        "A gold dinar": "Museums/Museum of Islamic Art .html",
+        "A wooden heater": "Museums/Museum of Islamic Art .html",
+        "A Lantern": "Museums/Museum of Islamic Art .html",
+        "A portable wooden mihrab": "Museums/Museum of Islamic Art .html",
+        "A Holy Quran": "Museums/Museum of Islamic Art .html",
+        "A helmet": "Museums/Museum of Islamic Art .html",
+        "A turban": "Museums/Museum of Islamic Art .html",
+        "The key to the Kaaba": "Museums/Museum of Islamic Art .html",
+        "Neclace": "Museums/Museum of Islamic Art .html",
+
+        "National Police Museum": "Museums/National Police Museum.html",
+        "Oil Flask": "Museums/National Police Museum.html",
+        "Deceptive Weapons": "Museums/National Police Museum.html",
+        "Model of a boat": "Museums/National Police Museum.html",
+        "Defensive Weapons": "Museums/National Police Museum.html",
+        "The Ramadan Cannon": "Museums/National Police Museum.html",
+        "The world's first manual fire engine": "Museums/National Police Museum.html",
+        "Artwork": "Museums/National Police Museum.html",
+        "A Dagger": "Museums/National Police Museum.html",
+        "A Helmet": "Museums/National Police Museum.html",
+
+        "National Museum of Egyptian Civilization": "Museums/NMEC.html",
+        "The scepter of Prince Ptahshepses made of gold, red agate, and obsidian": "Museums/NMEC.html",
+        "King Ramses II Sarcophagus": "Museums/NMEC.html",
+        "The sarcophagus of Najm Ankh": "Museums/NMEC.html",
+        "A granite statue of King Thutmose III": "Museums/NMEC.html",
+        "The outer sarcophagus of Queen Ahmose Nefertar": "Museums/NMEC.html",
+        "The mummy of King Amenhotep I": "Museums/NMEC.html",
+        "The Canopic Box of King Amenhotep II": "Museums/NMEC.html",
+        "King Thutmose I's Sarcophagus": "Museums/NMEC.html",
+        "The Canopic Jars of King Thutmose IV": "Museums/NMEC.html",
+
+        "Nubia Museum": "Museums/Nubia Museum.html",
+        "A model of a Nubian bride's henna night": "Museums/Nubia Museum.html",
+        "The statue of King Ramses II": "Museums/Nubia Museum.html",
+        "The statue of Prince Horemakhet": "Museums/Nubia Museum.html",
+        "The head of the statue of King Shebitku": "Museums/Nubia Museum.html",
+        "A model of the original structure of the Deffufa in Kerma": "Museums/Nubia Museum.html",
+        "The statue of Harwa": "Museums/Nubia Museum.html",
+        "The statue of King Khafre": "Museums/Nubia Museum.html",
+        "The lantern of Prince Qawsun": "Museums/Nubia Museum.html",
+        "The statue of Isis nursing Horus": "Museums/Nubia Museum.html",
+
+        "Royal Jewelry Museum": "Museums/Royal Jewelry Museum.html",
+        "A gold set belonging to Princess Malak Tousson": "Museums/Royal Jewelry Museum.html",
+        "The necklace belonging to Muhammad Ali Pasha": "Museums/Royal Jewelry Museum.html",
+        "The Queen Farida Set": "Museums/Royal Jewelry Museum.html",
+        "The golden chess set from King Farouk's collection": "Museums/Royal Jewelry Museum.html",
+        "The set consists of nine pieces forming a desk set, housed in a wooden box": "Museums/Royal Jewelry Museum.html",
+        "The Princess Shwikar Set": "Museums/Royal Jewelry Museum.html",
+        "The Elephant statue": "Museums/Royal Jewelry Museum.html",
+        "The collection of household items": "Museums/Royal Jewelry Museum.html",
+        "The collection of pocket watches": "Museums/Royal Jewelry Museum.html",
+
+        "The Coptic Museum": "Museums/The Coptic Museum.html",
+        "Three large keys for monasteries from Sohag": "Museums/The Coptic Museum.html",
+        "A pulpit known as the Pulpit of Anba Ermia (St. Jeremiah)": "Museums/The Coptic Museum.html",
+        "An icon depicting the journey of the Holy Family's flight from Palestine to Egypt": "Museums/The Coptic Museum.html",
+        "An apse depicting the Virgin Mary breastfeeding the infant Jesus": "Museums/The Coptic Museum.html",
+        "Scribe statue CG 36": "Museums/The Coptic Museum.html",
+        "The Icon of Anba Paula and Anba Antonios": "Museums/The Coptic Museum.html",
+        "The Book of Psalms": "Museums/The Coptic Museum.html",
+        "A gravestone from the 3rd-5th century AD": "Museums/The Coptic Museum.html",
+        "The Musician's Curtain": "Museums/The Coptic Museum.html",
+
+        "The Royal Carriages Museum": "Museums/The Royal Carriages Museum.html",
+        "A Tanouh carriage": "Museums/The Royal Carriages Museum.html",
+        "A metal lantern": "Museums/The Royal Carriages Museum.html",
+        "Stirrups": "Museums/The Royal Carriages Museum.html",
+        "A porcelain statue": "Museums/The Royal Carriages Museum.html",
+        "The Alaï Private Carriage": "Museums/The Royal Carriages Museum.html",
+        "A collection of seals": "Museums/The Royal Carriages Museum.html",
+        "An oil painting": "Museums/The Royal Carriages Museum.html",
+        "Caravan Carriage": "Museums/The Royal Carriages Museum.html",
+        "The Kumshegi's attire": "Museums/The Royal Carriages Museum.html",
+
+        "Afrocentric":"Report.html"
+    };
+
+    function getSectionContent(sectionId) {
+        const section = document.querySelector(sectionId);
+        if (!section) return '';
+        const textElements = section.querySelectorAll('h1, h2, h3, p, .descriptionn, .conteent .texxt, .card .content, .wrapperr h1, .wrapperr p, .hheaader, .contteeent, .footer-col h3, .footer-col p, .footer-col a');
+        let content = '';
+        textElements.forEach(element => content += element.textContent.trim() + ' ');
+        return content.toLowerCase();
+    }
+
+    function isArabic(text) {
+        return /[\u0600-\u06FF]/.test(text);
+    }
+
+    function highlightText(searchTerm) {
+        if (searchTerm === lastSearchTerm && highlightedElements.length > 0) return;
+        removeHighlights();
+        lastSearchTerm = searchTerm;
+        if (!searchTerm) return;
+
+        const elements = document.querySelectorAll('h1, h2, h3, p, .descriptionn, .conteent .texxt, .card .content, .wrapperr h1, .wrapperr p, .hheaader, .contteeent, .footer-col h3, .footer-col p, .footer-col a');
+        const regex = new RegExp(`(${searchTerm})`, 'gi');
+
+        elements.forEach(element => {
+            const walker = document.createTreeWalker(element, NodeFilter.SHOW_TEXT);
+            let node, nodesToReplace = [];
+            while ((node = walker.nextNode())) {
+                if (node.textContent.toLowerCase().includes(searchTerm)) nodesToReplace.push(node);
+            }
+            nodesToReplace.forEach(node => {
+                const fragment = document.createDocumentFragment();
+                const text = node.textContent;
+                let lastIndex = 0;
+                text.replace(regex, (match, p1, offset) => {
+                    if (offset > lastIndex) fragment.appendChild(document.createTextNode(text.slice(lastIndex, offset)));
+                    const span = document.createElement('span');
+                    span.className = 'highlight';
+                    span.textContent = match;
+                    fragment.appendChild(span);
+                    highlightedElements.push(span);
+                    lastIndex = offset + match.length;
+                });
+                if (lastIndex < text.length) fragment.appendChild(document.createTextNode(text.slice(lastIndex)));
+                node.parentNode.replaceChild(fragment, node);
+            });
+        });
+    }
+
+    function removeHighlights() {
+        highlightedElements.forEach(span => {
+            const parent = span.parentNode;
+            parent.replaceChild(document.createTextNode(span.textContent), span);
+            parent.normalize();
+        });
+        highlightedElements = [];
+    }
+
+    function filterSuggestions() {
+        const value = searchInput.value.toLowerCase().trim();
+        suggestionList.innerHTML = '';
+        suggestionList.classList.remove('show');
+        if (isArabic(value) || value.length < 2) {
+            searchInput.value = value.length < 2 ? value : '';
+            return;
+        }
+        if (value) {
+            suggestionList.classList.add('show');
+
+            // البحث في محتويات الأقسام
+            sectionOrder.forEach(sectionName => {
+                const section = sections[sectionName];
+                if (section.content.includes(value)) {
+                    const contentWords = section.content.split(' ');
+                    contentWords.forEach(word => {
+                        if (word.includes(value)) {
+                            const displayText = `${word} (in ${sectionName})`;
+                            addSuggestion(displayText, section.id, 'Section');
+                        }
+                    });
+                }
+            });
+
+            // البحث في المتاحف بعد الأقسام
+            Object.entries(customSearchTerms).forEach(([term, museumUrl]) => {
+                if (term.toLowerCase().includes(value)) {
+                    const displayText = term.split(' ').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ');
+                    addSuggestion(displayText, museumUrl, 'Museum');
+                }
+            });
+
+            // إذا لم يتم العثور على نتائج
+            if (suggestionList.children.length === 0) {
+                const notFoundDiv = document.createElement('div');
+                notFoundDiv.textContent = 'Not Found';
+                notFoundDiv.className = 'not-found';
+                suggestionList.appendChild(notFoundDiv);
+            }
+        }
+    }
+
+    function addSuggestion(text, target, type) {
+        const div = document.createElement('div');
+        div.textContent = text;
+        div.dataset.type = type;
+        div.dataset.target = target;
+        div.onclick = () => {
+            searchInput.value = text.split(' (in ')[0];
+            suggestionList.classList.remove('show');
+            if (type === 'Museum') {
+                window.location.href = `${target}?search=${encodeURIComponent(text.toLowerCase())}`;
+            } else {
+                window.location.hash = target;
+                document.querySelector(target).scrollIntoView({ behavior: 'smooth' });
+                triggerShowMoreIfNeeded(target, text.toLowerCase().split(' (in ')[0]);
+                highlightText(text.toLowerCase().split(' (in ')[0]);
+            }
+        };
+        suggestionList.appendChild(div);
+    }
+
+    function triggerShowMoreIfNeeded(sectionId, searchTerm) {
+        if (sectionId === '#Symbols') {
+            const hiddenCards = document.querySelectorAll('.card-container:not(.show)');
+            hiddenCards.forEach(card => {
+                if (card.textContent.toLowerCase().includes(searchTerm)) showMoreCards();
+            });
+        } else if (sectionId === '#Monuments') {
+            const containers = document.querySelectorAll('#Monuments .containerr');
+            containers.forEach(container => {
+                if (container.textContent.toLowerCase().includes(searchTerm)) {
+                    const nextBtn = document.getElementById('nextBtn');
+                    while (!container.classList.contains('active') && nextBtn) {
+                        nextBtn.click();
+                        setTimeout(() => {}, 200);
+                    }
+                }
+            });
+        } else if (sectionId === '#Do-U-Know') {
+            const hiddenCards = document.querySelectorAll('.ca.hidden');
+            hiddenCards.forEach(card => {
+                if (card.textContent.toLowerCase().includes(searchTerm)) showMoreCard();
+            });
+        } else if (sectionId === '#Famous') {
+            const slides = document.querySelectorAll('#Famous .sliidde');
+            slides.forEach(slide => {
+                if (slide.textContent.toLowerCase().includes(searchTerm)) activateSlide(slide);
+            });
+        } else if (sectionId === '#Sunken') {
+            const slides = document.querySelectorAll('#Sunken .inner_part');
+            slides.forEach(slide => {
+                if (slide.textContent.toLowerCase().includes(searchTerm)) activateSunkenSlide(slide);
+            });
+        } else if (sectionId === '#Abroad') {
+            const cards = document.querySelectorAll('#Abroad .carrrdd');
+            let found = false;
+            let cardIndex = 0;
+            while (!found && cardIndex < cards.length) {
+                const visibleCards = document.querySelectorAll('#Abroad .carrrdd[style*="block"]');
+                const isMatchInVisible = Array.from(visibleCards).some(card => card.textContent.toLowerCase().includes(searchTerm));
+                if (isMatchInVisible) {
+                    found = true;
+                } else {
+                    const nextBtn = document.getElementById('NextBtnn');
+                    if (nextBtn) {
+                        nextBtn.click();
+                        setTimeout(() => {}, 200);
+                    }
+                    cardIndex++;
+                }
+            }
+        }
+    }
+
+    function activateSlide(slide) {
+        const slides = document.querySelectorAll('#Famous .sliidde');
+        slides.forEach(s => s.classList.remove('acttivve'));
+        slide.classList.add('acttivve');
+        CurrenttSlide = Array.from(slides).indexOf(slide);
+    }
+
+    function activateSunkenSlide(slide) {
+        const slides = document.querySelectorAll('#Sunken .inner_part');
+        const index = Array.from(slides).indexOf(slide);
+        const radioInput = document.querySelector(`#slidde_${index + 1}`);
+        if (radioInput) radioInput.checked = true;
+    }
+
+    searchInput.addEventListener('keypress', (e) => {
+        if (e.key === 'Enter') {
+            const value = searchInput.value.trim().toLowerCase();
+            let matchingSections = [];
+
+            if (isArabic(value) || value.length < 2) {
+                searchInput.value = value.length < 2 ? value : '';
+                removeHighlights();
+                return;
+            }
+
+            const matchedSection = sectionOrder.find(sectionName => {
+                const section = sections[sectionName];
+                return sectionName.toLowerCase() === value || section.content.includes(value);
+            });
+
+            if (matchedSection) {
+                const section = sections[matchedSection];
+                window.location.hash = section.id;
+                document.querySelector(section.id).scrollIntoView({ behavior: 'smooth' });
+                triggerShowMoreIfNeeded(section.id, value);
+                highlightText(value);
+                suggestionList.classList.remove('show');
+                return;
+            }
+
+            const matchedTerm = Object.keys(customSearchTerms).find(term => term.toLowerCase() === value);
+            if (matchedTerm) {
+                console.log("Redirecting to:", customSearchTerms[matchedTerm] + "?search=" + encodeURIComponent(value));
+                window.location.href = `${customSearchTerms[matchedTerm]}?search=${encodeURIComponent(value)}`;
+                return;
+            }
+
+            sectionOrder.forEach(sectionName => {
+                const section = sections[sectionName];
+                if (sectionName.toLowerCase().includes(value) || section.content.includes(value)) {
+                    matchingSections.push(section);
+                }
+            });
+
+            if (matchingSections.length > 0) {
+                matchingSections.forEach((section, index) => {
+                    setTimeout(() => {
+                        window.location.hash = section.id;
+                        document.querySelector(section.id).scrollIntoView({ behavior: 'smooth' });
+                        triggerShowMoreIfNeeded(section.id, value);
+                        highlightText(value);
+                    }, index * 1000);
+                });
+                suggestionList.classList.remove('show');
+                return;
+            }
+
+            let matchedMuseum = null;
+            Object.entries(customSearchTerms).forEach(([term, museumUrl]) => {
+                if (term.toLowerCase().includes(value)) {
+                    matchedMuseum = museumUrl;
+                }
+            });
+
+            if (matchedMuseum) {
+                console.log("Redirecting to matched museum:", matchedMuseum + "?search=" + encodeURIComponent(value));
+                window.location.href = `${matchedMuseum}?search=${encodeURIComponent(value)}`;
+                return;
+            }
+
+            console.log("No matching section or museum content found.");
+            suggestionList.classList.remove('show');
+        }
+    });
+
+    searchInput.addEventListener('input', filterSuggestions);
+
+    document.addEventListener('click', (e) => {
+        if (!searchInput.contains(e.target) && !suggestionList.contains(e.target) && suggestionList.children.length === 0) {
+            suggestionList.classList.remove('show');
+        }
+    });
+});
+
+
+
+  </script>
+</body>
+</html>

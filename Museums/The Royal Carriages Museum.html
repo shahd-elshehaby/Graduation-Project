@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Royal Carriages Museum</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="MuseumDesign.css">
+    <link rel="icon" href="Icon.png" type="image/png">
+
+    <style>
+.flap::before,
+.flap::after {
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 50%;
+    background: url("The Royal Carriages Museum/Act1.jpeg") no-repeat;
+    background-size: cover; /* Ensure the image covers the area */
+    transition: transform 1s; /* Use transform for smoother animation */
+}
+
+.flap::before {
+    left: 0; /* Position to the left */
+    background-position: 0px; /* Adjust background position */
+}
+
+.flap::after {
+    right: 0; /* Position to the right */
+    background-position: -250px; /* Adjust background position */
+}
+
+.cor:hover .flap::after {
+    transform: translateX(300px);
+}
+
+.cor:hover .flap::before {
+    transform: translateX(-300px);
+}
+
+
+.flapa::before,
+.flapa::after {
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 50%;
+    background: url("The Royal Carriages Museum/Act2.jpeg") no-repeat;
+    background-size: cover; /* Ensure the image covers the area */
+    transition: transform 1s; /* Use transform for smoother animation */
+}
+
+.flapa::before {
+    left: 0; /* Position to the left */
+    background-position: 0px; /* Adjust background position */
+}
+
+.flapa::after {
+    right: 0; /* Position to the right */
+    background-position: -250px; /* Adjust background position */
+}
+
+.cora:hover .flapa::after {
+    transform: translateX(300px);
+}
+
+.cora:hover .flapa::before {
+    transform: translateX(-300px);
+}
+
+
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="Icon.png" height="50px" width="35px">
+        <div class="logo">The Royal Carriages Museum</div>
+        </div>
+        <nav class="navigation">
+            <a href="#Home">Home</a>
+            <a href="#Most-Popular-Pieces">Most Popular Pieces</a>
+            <a href="#Activities">Activities</a>
+            <a href="#Appointments">Tickets & Opening Hours </a>
+            <a href="#Contacts">Contacts</a>
+        </nav>
+    </header>
+    <section id="Home">
+    <div class="slider">
+        <div class="list">
+            <div class="item">
+                <img src="The Royal Carriages Museum/Slide1.png" alt="The Royal Carriages Museum">
+                <div class="content">
+                    <div class="title" style="white-space: nowrap;">The Royal Carriages Museum</div>
+                    <div class="type"> in Boulaq</div>
+                    <div class="description">
+                        <h4>is one of the most prestigious specialized museums in the world.
+                        It was specifically established to display and preserve the cultural heritage of royal carriages dating back to the era of the Muhammad Ali dynasty and everything related to them.
+                        It also highlights the attention given tohorse breeding during <br> that period.</h4>
+                    </div>
+                    <div class="button">
+                        <a href="https://egymonuments.gov.eg/ar/museums/the-royal-carriages-museum">
+                            <button class="see-more-button">SEE MORE</button>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+            <div class="item">
+                <img src="The Royal Carriages Museum/Slide2.png" alt="The Royal Carriages Museum">
+                <div class="content">
+                    <div class="title" style="white-space: nowrap;">The Royal Carriages Museum</div>
+                    <div class="type"> in Boulaq</div>
+                    <div class="description" style="padding-top:18.47% ;">
+                        The idea of establishing the museum building<br>dates back to the era of Khedive Ismail,
+                        <br>who ruled Egypt between the years (1863-1879 AD).
+                    </div>
+                    <div class="button">
+                        <a href="https://egymonuments.gov.eg/ar/museums/the-royal-carriages-museum">
+                            <button class="see-more-button">SEE MORE</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="The Royal Carriages Museum/Slide3.png " alt="The Royal Carriages Museum">
+                <div class="content">
+                    <div class="title" style="white-space: nowrap;">The Royal Carriages Museum</div>
+                    <div class="type"> in Boulaq</div>
+                    <div class="description" style="padding-top:22.48% ;"> 
+                        The building was converted into a historical museum <br>after the end of the 1952 revolution.
+                    </div>
+                    <div class="button">
+                        <a href="https://egymonuments.gov.eg/ar/museums/the-royal-carriages-museum">
+                            <button class="see-more-button">SEE MORE</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="The Royal Carriages Museum/Slide4.png" alt="The Royal Carriages Museum">
+                <div class="content">
+                    <div class="title" style="white-space: nowrap;">The Royal Carriages Museum</div>
+                    <div class="type"> in Boulaq</div>
+                    <div class="description"style="padding-top:14.5% ;">The museum houses a magnificent collection of <br>royal carriages of various sizes and types,
+                        <br>dating back to the era of  the Muhammad<br> Ali Pasha dynasty in Egypt.
+                    </div>
+                    <div class="button">
+                        <a href="https://egymonuments.gov.eg/ar/museums/the-royal-carriages-museum">
+                            <button class="see-more-button">SEE MORE</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="thumbnail">
+            <div class="item">
+                <img src="The Royal Carriages Museum/Slide1.png" alt="Thumbnail of The Royal Carriages Museum">
+            </div>
+            <div class="item">
+                <img src="The Royal Carriages Museum/Slide2.png" alt="Thumbnail of The Royal Carriages Museum">
+            </div>
+            <div class="item">
+                <img src="The Royal Carriages Museum/Slide3.png" alt="Thumbnail of The Royal Carriages Museum">
+            </div>
+            <div class="item">
+                <img src="The Royal Carriages Museum/Slide4.png" alt="Thumbnail of The Royal Carriages Museum">
+            </div>
+        </div>
+    </div>
+        <div class="nextPrevArrows" style="padding-top: 4%;">
+            <button class="prev"> < </button>
+            <button class="next"> > </button>
+        </div>
+    </div>
+    </section>
+    <section id="Most-Popular-Pieces">
+        <br><br>
+        <div class="con">
+            <h2 class="heading reveal">Most Popular Pieces</h2>
+            <a href="#!" class="card card-1 reveal">
+                <div class="front" style="background-image: url('The Royal Carriages Museum/1.jpeg');" >
+                    <p>A Tanouh carriage</p>
+                </div>
+                <div class="back">
+                    <div>
+                        <p>A Tanouh carriage for the ride of His Highness Prince Farouk,
+                            <br> Prince of Upper Egypt, 1922-1936 AD.</p>
+                    </div>
+                </div>
+            </a>
+            <a href="#!" class="card card-2 reveal">
+                <div class="front" style="background-image: url('The Royal Carriages Museum/2.jpeg');" >
+                    <p>A metal lantern</p>
+                </div>
+                <div class="back">
+                    <div>
+                        <p>A metal lantern used to illuminate carriages, with the initials of Wali Said Pasha
+                             (1854-1863) engraved on its glass.</p>
+                    </div>
+                </div>
+            </a>
+            <a href="#!" class="card card-3 reveal">
+                <div class="front" style="background-image: url('The Royal Carriages Museum/3.jpeg');" >
+                    <p>Stirrups</p>
+                </div>
+                <div class="back">
+                    <div>
+                        <p>A pair of gilded copper stirrups.</p>
+                    </div>
+                </div>
+            </a>
+            <a href="#!" class="card card-4 reveal">
+                <div class="front" style="background-image: url('The Royal Carriages Museum/4.jpeg');" >
+                    <p>A porcelain statue</p>
+                </div>
+                <div class="back">
+                    <div>
+                        <p>A colored porcelain statue of a knight wearing a suit, with a wooden base—crafted in Austria.
+                        </p>
+                    </div>
+                </div>
+            </a>
+            <a href="#!" class="card card-5 reveal">
+                <div class="front" style="background-image: url('The Royal Carriages Museum/5.jpg');" >
+                    <p>The Alaï Private Carriage</p>
+                </div>
+                <div class="back">
+                    <div>
+                        <p>This carriage has a rich and illustrious history, as it was a gift from the French Emperor Napoleon III and his wife, 
+                            Empress Eugénie, to Khedive Ismail during the opening of the Suez Canal in 1869. 
+                            The Marriott Hotel preserves a painting that depicts this carriage.</p>
+                    </div>
+                </div>
+            </a>
+            <a href="#!" class="card card-6 reveal">
+                <div class="front" style="background-image: url('The Royal Carriages Museum/6.jpeg');" >
+                    <p>A collection of seals</p>
+                </div>
+                <div class="back">
+                    <div>
+                        <p>A collection of seals belonging to the Royal Carriages Department.</p>
+                    </div>
+                </div>
+            </a>
+            <a href="#!" class="card card-7 reveal">
+                <div class="front" style="background-image: url('The Royal Carriages Museum/7.jpg');" >
+                    <p>An oil painting </p>
+                </div>
+                <div class="back">
+                    <div>
+                        <p>An oil painting of King Fuad's favorite donkey, 
+                            with one of the royal palaces visible in the background of the painting.</p>
+                    </div>
+                </div>
+            </a>
+            <a href="#!" class="card card-8 reveal">
+                <div class="front" style="background-image: url('The Royal Carriages Museum/8.jpg');" >
+                    <p>Caravan Carriage</p>
+                </div>
+                <div class="back">
+                    <div>
+                        <p>A large wooden box carriage armored with zinc sheets, made in England during the era of Khedive Ismail <br>(1863-1879 AD), used for transporting furniture and kitchen supplies. It rests on four wheels, with a single door at the rear, a front seat for the driver, 
+                            and an iron railing on top of the box. It was driven by two men and pulled by four horses.</p>
+                    </div>
+                </div>
+            </a>
+            <a href="#!" class="card card-9 reveal">
+                <div class="front" style="background-image: url('The Royal Carriages Museum/9.jpg');" >
+                    <p>The Kumshegi's attire</p>
+                </div>
+                <div class="back">
+                    <div>
+                        <p>The attire of the Kumshegi, the person who would trot alongside each horse during official processions.<br> His duties included cleaning and protecting the carriages while in motion, clearing the path,<br>
+                             and holding a bamboo stick in the morning and a torch in the evening to light the way.</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </section>
+    <section id="Activities" style="background-image: url('The Royal Carriages Museum/Background1.jpg'); background-size: cover; background-position: center;">
+        <div class="cont">
+            <h2 class="heading reveal">Activities</h2>
+            <div class="card-container "> 
+            <div class="cor reveal">
+                <div class="cot ">
+                    <h1 class="i">27of January, 2025</h1>
+                    <h3 class="l">Today marked the launch of the first activities of the mid-year training program for 2025. The day began with welcoming the trainee students, who were divided into two groups for a guided tour to learn about the history of the museum's establishment and its most important collections, in collaboration with the Friends of the Royal Carriages Museum and under the supervision of the museum's curators. This was followed by theoretical lectures in the lecture hall, which included:
+                     <br> - An opening speech and a brief overview of the tasks and regulations of museum work, presented by Mr. Amin Mahmoud Al-Kahki, Director of the Royal Carriages Museum.
+                     <br> - A lecture titled "Volunteer Work: From Experience to Leadership," delivered by Dr. Mamdouh Farouk, Director of the Imhotep Museum in Saqqara.
+                     <br> - A lecture titled "The Evolution of Islamic Architecture during the Era of the Muhammad Ali Pasha Dynasty," presented by Dr. Gamal Abdel Rahim, Professor of Islamic Antiquities at Cairo University.
+                        Under the supervision of:<br>
+                        Mr. Amin Al-Kahki, Director of the Royal Carriages Museum.</h3>
+                </div>
+                <div class="flap"></div>
+            </div>
+            <div class="cora reveal">
+                <div class="cota ">
+                    <h1 class="ia">21st of January, 2025</h1>
+                    <h3 class="la">In implementation of the plan by the General Administration of Museum Education for People with Special Needs within the Museums Sector to train officials and heads of museum education departments for people with special needs in affiliated museums, the administration organized the first day of training on "Communication and Interaction Skills with Visually and Hearing Impaired Individuals." The training was conducted by Mrs. Hoda El-Enshasy, a clinical psychologist at Al-Nour and Al-Amal School, in collaboration with the Quality Union for Special Needs and Disabled Care Organizations. 
+                        The training covered the following topics:<br>
+                        The Law on the Rights of Persons with Disabilities (Visual and Hearing).<br>
+                        The importance of understanding communication and interaction skills for visually and hearing impaired individuals to avoid potential issues during their museum visits.<br>
+                        Methods for museum educators to attract the attention of visually and hearing impaired individuals during their museum visits.<br>
+                        Tools that enhance the sense of reassurance for visually and hearing impaired individuals and mechanisms for providing suitable environments with minimal available resources.<br>
+                        Under the supervision of:<br>
+                        Dr. Heba Abdel Aziz, Supervisor of the General Administration of Museum Education for People with Special Needs.
+                        <br>Mr. Amin Al-Kahki, Museum Director.</h3>
+                </div>
+                <div class="flapa"></div>
+            </div>
+            </div>
+        </div> 
+    </section>
+    <section id="Appointments">
+        <div class="conta">
+            <h2 class="heading reveal">Tickets & Opening Hours </h2>
+            <div class="admission-prices reveal">
+                <h2 class="hi">Ticket Prices</h2>
+                <p>Egyptian & Arab Visitors:</p>
+                <table>
+                    <tr>
+                        <td>Adults</td>
+                        <td>EGP 30</td>
+                    </tr>
+                    <tr>
+                        <td>Student</td>
+                        <td>EGP 10</td>
+                    </tr>
+                </table>
+                    <p>Foreigners Visitors:</p>
+                        <table>
+                        <tr>
+                            <td>Adults</td>
+                            <td>EGP 300</td>
+                        </tr>
+                        <tr>
+                            <td>Student</td>
+                            <td>EGP 150</td>
+                        </tr>
+                    </table>
+                
+            </div>
+            <div class="opening-hours reveal">
+                <h2 class="hi">Opening Hours</h2>
+                <p style="padding: 2.5%;">Visitors</p>
+                <table>
+                    <tr>
+                        <td>Every day</td>
+                        <td>9:00 a.m. – 5:00 p.m.</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </section>
+    <section id="Contacts" style="background-image: url('The Royal Carriages Museum/Background2.jpg'); " > 
+         <h2 class="heading reveal">Contact</h2>
+         <center>
+
+            <div class="Contact reveal" id="contact">
+                <h1 class="title">Contact us</h1>
+                <div class="icon">
+                <i class="fa fa-map-marker fa-2x"></i>    
+                </div>
+                    <div class="info">
+                        <p>82 26th of July Street, Cairo - Egypt</p>
+                        </div>
+                <div class="Contact reveal" >
+                <div class="icon">
+            <i class="fa fa-phone fa-2x"></i>    
+            </div>
+                    <div class="info">
+                        <h3>Phone</h3>
+                        <p>02 25774437</p>
+                    </div>
+                    
+                    <div class="Contact reveal">
+                        <div class="icon">
+                            <i class="fa fa-envelope fa-2x"></i>
+                        </div>
+                        
+                        <div class="info">
+                        <h3> Email </h3>
+                            <a href="mailto:royalcarriagemuseum.eg@gmail.com">royalcarriagemuseum.eg@gmail.com</a>
+                        </div>
+                        
+                </div>
+            </div>
+            <div>
+                <ul class="social-media-list ">
+                    
+                    <li>
+                        <a href="https://www.facebook.com/share/15yMnN7BSu/" target="_blank" class="co-icon">
+                            <i class="fa fa-facebook"></i>
+                        </a>
+                    </li>   
+                  </ul>
+            </div> 
+            </div> 
+        </center>
+      </section> 
+      <script src="MuseumScript.js"></script>
+</body>
+</html>

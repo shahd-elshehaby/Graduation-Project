@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nubia Museum</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="MuseumDesign.css">
+    <link rel="icon" href="Icon.png" type="image/png">
+
+    <style>
+.flap::before,
+.flap::after {
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 50%;
+    background: url("Nubia Museum/Act1.jpg") no-repeat;
+    background-size: cover; /* Ensure the image covers the area */
+    transition: transform 1s; /* Use transform for smoother animation */
+}
+
+.flap::before {
+    left: 0; /* Position to the left */
+    background-position: 0px; /* Adjust background position */
+}
+
+.flap::after {
+    right: 0; /* Position to the right */
+    background-position: -250px; /* Adjust background position */
+}
+
+.cor:hover .flap::after {
+    transform: translateX(300px);
+}
+
+.cor:hover .flap::before {
+    transform: translateX(-300px);
+}
+
+
+.flapa::before,
+.flapa::after {
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 50%;
+    background: url("Nubia Museum/Act2.jpg") no-repeat;
+    background-size: cover; /* Ensure the image covers the area */
+    transition: transform 1s; /* Use transform for smoother animation */
+}
+
+.flapa::before {
+    left: 0; /* Position to the left */
+    background-position: 0px; /* Adjust background position */
+}
+
+.flapa::after {
+    right: 0; /* Position to the right */
+    background-position: -250px; /* Adjust background position */
+}
+
+.cora:hover .flapa::after {
+    transform: translateX(300px);
+}
+
+.cora:hover .flapa::before {
+    transform: translateX(-300px);
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="Icon.png" height="50px" width="35px">
+        <div class="logo">Nubia Museum</div>
+        </div>
+        <nav class="navigation">
+            <a href="#Home">Home</a>
+            <a href="#Most-Popular-Pieces">Most Popular Pieces</a>
+            <a href="#Activities">Activities</a>
+            <a href="#Appointments">Tickets & Opening Hours </a>
+            <a href="#Contacts">Contacts</a>
+        </nav>
+    </header>
+    <section id="Home">
+    <div class="slider">
+        <div class="list">
+            <div class="item">
+                <img src="Nubia Museum/Slide1.png " alt="Nubia Museum">
+                <div class="content">
+                    <div class="title">Nubia Museum</div>
+                    <div class="type"> in Aswan</div>
+                    <div class="description" style="padding-top: 4%;">
+                       <h4>The museum was conceived during UNESCO’s 1960 campaign to save Nubian monuments, aiming to preserve Nubia’s heritage. 
+                        Designed by Dr. Mahmoud El-Hakim, it opened in 1997 with a display by Pedro Ramírez Vázquez.</h4>
+                    </div>
+                    <div class="button">
+                        <a href="https://egymonuments.gov.eg/ar/museums/nubia-museum/">
+                            <button class="see-more-button">SEE MORE</button>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+            <div class="item">
+                <img src="Nubia Museum/Slide2.png " alt="Nubia Museum">
+                <div class="content">
+                    <div class="title">Nubia Museum</div>
+                    <div class="type"> in Aswan</div>
+                    <div class="description" style="padding-top: 8.01%;">
+                        <h4>Its three-story design reflects traditional Nubian architecture, using sandstone and pink granite. 
+                            This earned it the Aga Khan Award for Architecture in 2001.</h4>
+                    </div>
+                    <div class="button">
+                        <a href="https://egymonuments.gov.eg/ar/museums/nubia-museum/">
+                            <button class="see-more-button">SEE MORE</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="Nubia Museum/Slide3.png " alt="Nubia Museum">
+                <div class="content">
+                    <div class="title">Nubia Museum</div>
+                    <div class="type"> in Aswan</div>
+                    <div class="description"  style="padding-top: 4%;">
+                        <h4>The museum showcases Nubia’s cultural evolution through artifacts, dioramas, and exhibits on local traditions. 
+                            It also features a lecture hall, library, and open-air theater for folk performances.</h4>
+                    </div>
+                    <div class="button">
+                        <a href="https://egymonuments.gov.eg/ar/museums/nubia-museum/">
+                            <button class="see-more-button">SEE MORE</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="Nubia Museum/Slide4.png" alt="Nubia Museum">
+                <div class="content">
+                    <div class="title">Nubia Museum</div>
+                    <div class="type"> in Aswan</div>
+                    <div class="description"  style="padding-top: 8.01%;">
+                        <h4>The garden includes a prehistoric rock-art cave, a symbolic Nile waterway, and a traditional Nubian house, 
+                            highlighting ancient daily life.</h4>
+                    </div>
+                    <div class="button">
+                        <a href="https://egymonuments.gov.eg/ar/museums/nubia-museum/">
+                            <button class="see-more-button">SEE MORE</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="thumbnail">
+            <div class="item">
+                <img src="Nubia Museum/Slide1.png" alt="Thumbnail of Nubia Museum">
+            </div>
+            <div class="item">
+                <img src="Nubia Museum/Slide2.png" alt="Thumbnail of Nubia Museum">
+            </div>
+            <div class="item">
+                <img src="Nubia Museum/Slide3.png" alt="Thumbnail of Nubia Museum">
+            </div>
+            <div class="item">
+                <img src="Nubia Museum/Slide4.png" alt="Thumbnail of Nubia Museum">
+            </div>
+        </div>
+    </div>
+        <div class="nextPrevArrows">
+            <button class="prev"> < </button>
+            <button class="next"> > </button>
+        </div>
+    </div>
+    </section>
+    <section id="Most-Popular-Pieces">
+        <br><br>
+        <div class="con">
+            <h2 class="heading reveal">Most Popular Pieces</h2>
+            <a href="#!" class="card card-1 reveal">
+                <div class="front" style="background-image: url('Nubia Museum/1.jpg');" >
+                    <p>A model of a Nubian bride's henna night</p>
+                </div>
+                <div class="back">
+                    <div>
+                        <p>The museum features numerous models that vividly portray the cultural traditions and daily life of the Nubian people, 
+                            offering a glimpse into their rich heritage.</p>
+                    </div>
+                </div>
+            </a>
+            <a href="#!" class="card card-2 reveal">
+                <div class="front" style="background-image: url('Nubia Museum/2.jpg');" >
+                    <p>The statue of King Ramses II</p>
+                </div>
+                <div class="back">
+                    <div>
+                        <p>It's one of the first and most significant pieces displayed at the Nubian Museum, 
+                            was discovered at the Gerf Hussein temple in Nubia, 160 km south of Aswan. Carved from sandstone, 
+                            the 8-meter tall statue depicts the king standing, wearing a kilt and the double crown, holding a flail and scepter, 
+                            with the name "Ramsesu" inscribed on his arm. Ramses II, a prominent 19th Dynasty pharaoh and son of Seti I, 
+                            ruled for 67 years, engaged in wars with the Hittites, notably the Battle of Kadesh, and built famous temples like Abu Simbel, 
+                            where sunlight aligns on his statue twice a year (February and October). 
+                            He was buried in the Valley of the Kings.</p>
+                    </div>
+                </div>
+            </a>
+            <a href="#!" class="card card-3 reveal">
+                <div class="front" style="background-image: url('Nubia Museum/3.jpg');" >
+                    <p>The statue of Prince Horemakhet</p>
+                </div>
+                <div class="back">
+                    <div>
+                        <p>He is the son of King Shabaka and High Priest of Amun, is considered one of the most beautiful statues in the Nubian Museum in Aswan. Dating back to the 25th Dynasty <br> (701-690 BC), it is made of quartzite and depicts Horemakhet as the son of King Shabaka and a prominent official during the reigns of Kings Taharqa and Tanutamun. 
+                            The statue was previously displayed in the Egyptian Museum in Cairo before being moved to the Nubian Museum.</p>
+                    </div>
+                </div>
+            </a>
+            <a href="#!" class="card card-4 reveal">
+                <div class="front" style="background-image: url('Nubia Museum/4.jpg');" >
+                    <p>The head of the statue of King Shebitku</p>
+                </div>
+                <div class="back">
+                    <div>
+                        <p>He is the son of King "Piye," made of pink granite, was discovered in Karnak. 
+                            King Shebitku engaged in wars with the Assyrians, 
+                            and one of the most famous battles was the Battle of Eltekh in 701 BC, 
+                            where he triumphed over the Assyrian threat.</p>
+                    </div>
+                </div>
+            </a>
+            <a href="#!" class="card card-5 reveal">
+                <div class="front" style="background-image: url('Nubia Museum/5.jpg');" >
+                    <p>A model of the original structure of the Deffufa in Kerma</p>
+                </div>
+                <div class="back">
+                    <div>
+                        <p>The Deffufa, dating back to 2500 BCE (4,500 years ago), is considered the oldest massive building in Africa. 
+                            This ancient monument reflects the architectural and cultural significance of the Kerma civilization.</p>
+                    </div>
+                </div>
+            </a>
+            <a href="#!" class="card card-6 reveal">
+                <div class="front" style="background-image: url('Nubia Museum/6.jpg');" >
+                    <p>The statue of Harwa</p>
+                </div>
+                <div class="back">
+                    <div>
+                        <p>The Great Steward of the Divine Adoratrice of Amun during the 25th Dynasty (Third Intermediate Period), 
+                            was found in his tomb on the West Bank of Luxor. The statue depicts Harwa seated in an unconventional pose, 
+                            similar to that of the physician Nyankhre, with a bald head and facial features indicating old age. 
+                            It is now housed in the Nubian Museum in Aswan.</p>
+                    </div>
+                </div>
+            </a>
+            <a href="#!" class="card card-7 reveal">
+                <div class="front" style="background-image: url('Nubia Museum/7.jpg');" >
+                    <p>The statue of King Khafre</p>
+                </div>
+                <div class="back">
+                    <div>
+                        <p>It carved from diorite sourced from quarries west of Toshka, depicts him seated on a throne. 
+                            This iconic representation showcases the king in a regal pose, symbolizing his authority and divine connection. 
+                            The use of durable diorite highlights the craftsmanship and significance of royal statuary in ancient Egypt.</p>
+                    </div>
+                </div>
+            </a>
+            <a href="#!" class="card card-8 reveal">
+                <div class="front" style="background-image: url('Nubia Museum/8.jpg');" >
+                    <p>The lantern of Prince Qawsun</p>
+                </div>
+                <div class="back">
+                    <div>
+                        <p>It is made of gilded glass enameled with mina, reflects Mamluk style. 
+                            Prince Qawsun, a prominent Mamluk of Sultan Al-Nasir Muhammad ibn Qalawun, 
+                            served as his cupbearer. The lantern features Quranic verse <br> "Allahu nooru alssamawati waalardi" which means <br> (Allah is the Light of the heavens and the earth)
+                            in Naskh script, separated by circular floral motifs on its neck. The body displays plant-based inscriptions with handles for hanging and intricate decorations, 
+                            including a peacock-like bird and a band with red-colored fish swimming in various directions.</p>
+                    </div>
+                </div>
+            </a>
+            <a href="#!" class="card card-9 reveal">
+                <div class="front" style="background-image: url('Nubia Museum/9.jpg');" >
+                    <p>The statue of Isis nursing Horus</p>
+                </div>
+                <div class="back">
+                    <div>
+                        <p>It is carved from schist and dating to the Late Period, depicts the goddess seated on a throne, 
+                            wearing a long dress, a crown with a solar disk and cow horns, and a uraeus on her forehead. 
+                            She cradles Horus, offering him her breast, symbolizing motherhood. 
+                            Revered as the wife of Osiris and mother of Horus in Egypt, 
+                            Isis also held great significance in Kush, 
+                            reflecting her widespread cultural importance.</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </section>
+    <section id="Activities" style="background-image: url('Nubia Museum/Background1.jpg'); background-size: cover; background-position: center;">
+        <div class="cont">
+            <h2 class="heading reveal">Activities</h2>
+            <div class="card-container "> 
+            <div class="cor reveal">
+                <div class="cot ">
+                    <h1 class="i">27st of November, 2024</h1>
+                    <h3 class="l">Celebration of the 27th Anniversary of the Nubian Museum’s Opening
+                        The Nubian Museum organized a celebration marking 27 years since its opening, attended by directors of various institutions in Aswan and school students. The event featured an exhibition of archival photos documenting the museum’s construction phases, followed by a welcoming speech by Mrs. Thanaa Hassan Moussa, the museum’s Director General, highlighting its role in promoting archaeological awareness.  
+                        
+                        A documentary film was screened, summarizing the museum’s construction stages and achievements over the years. Retired colleagues were also honored for their contributions. The celebration concluded with a choral performance by children from youth and sports centers in Aswan.</h3>
+                </div>
+                <div class="flap"></div>
+            </div>
+            <div class="cora reveal">
+                <div class="cota ">
+                    <h1 class="ia">1st of January, 2025</h1>
+                    <h3 class="la">The Nubian Museum, in collaboration with the Cultural Palaces Authority, celebrated the International Day of Persons with Disabilities. The event, organized by the Museum Education Department for People with Special Needs, included students from schools for the blind and deaf in Aswan.  
+
+                        Activities included art workshops, a general knowledge competition, and performances by students, such as singing, religious chants, and poetry. The event concluded with a performance by the Aswan Cultural Palace Children’s Choir.  
+                        
+                        The celebration was supervised by Mr. Thanaa Hassan, Director General of the Museum, and Dr. Heba Abdel Aziz, Head of the Museum Education Department for People with Special Needs.</h3>
+                </div>
+                <div class="flapa"></div>
+            </div>
+            </div>
+        </div> 
+    </section>
+    <section id="Appointments">
+        <div class="conta">
+            <h2 class="heading reveal">Tickets & Opening Hours </h2>
+            <div class="admission-prices reveal">
+                <h2 class="hi">Ticket Prices</h2>
+                <p>Egyptian & Arab Visitors:</p>
+                <table>
+                    <tr>
+                        <td>Adults</td>
+                        <td>EGP 30</td>
+                    </tr>
+                    <tr>
+                        <td>Student</td>
+                        <td>EGP 10</td>
+                    </tr>
+                </table>
+                    <p>Foreigners Visitors:</p>
+                        <table>
+                        <tr>
+                            <td>Adults</td>
+                            <td>EGP 400</td>
+                        </tr>
+                        <tr>
+                            <td>Student</td>
+                            <td>EGP 200</td>
+                        </tr>
+                    </table>
+            </div>
+            <div class="opening-hours reveal">
+                <h2 class="hi">Opening Hours</h2>
+                <p style="padding: 2.5%;">Visitors</p>
+                <table>
+                    <tr>
+                        <td>Every day</td>
+                        <td>9:00 a.m. – 5:00 p.m.</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </section>
+    <section id="Contacts" style="background-image: url('Nubia Museum/Background2.png'); " > 
+         <h2 class="heading reveal">Contact</h2>
+         <center>
+
+            <div class="Contact reveal" id="contact">
+                <h1 class="title">Contact us</h1>
+                <div class="icon">
+                <i class="fa fa-map-marker fa-2x"></i>    
+                </div>
+                    <div class="info">
+                        <p>First District, Aswan City, Aswan Governorate Egypt</p>
+                        </div>
+                <div class="Contact reveal" >
+                <div class="icon">
+            <i class="fa fa-phone fa-2x"></i>    
+            </div>
+                    <div class="info">
+                        <h3>Phone</h3>
+                        <p>097 2484 133</p>
+                    </div>
+                    <div class="Contact reveal">
+                        <div class="icon">
+                            <i class="fa fa-envelope fa-2x"></i>
+                        </div>
+                        
+                        <div class="info">
+                        <h3> Email </h3>
+                            <a href="mailto:nubiamuseum@moantiq.gov.eg">nubiamuseum@moantiq.gov.eg</a>
+                        </div>  
+                </div>
+            </div>
+            <div>
+                <ul class="social-media-list ">
+                    <li>
+                        <a href="https://www.facebook.com/share/194A79CvRL/" target="_blank" class="co-icon">
+                            <i class="fa fa-facebook"></i>
+                        </a>
+                    </li>    
+                  </ul>
+            </div> 
+            </div> 
+        </center>
+      </section> 
+      <script src="MuseumScript.js"></script>
+</body>
+</html>

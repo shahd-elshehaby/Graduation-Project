@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>National Police Museum</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="MuseumDesign.css">
+    <link rel="icon" href="Icon.png" type="image/png">
+
+    <style>
+.flap::before,
+.flap::after {
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 50%;
+    background: url("National Police Museum/Act1.jpg") no-repeat;
+    background-size: cover; /* Ensure the image covers the area */
+    transition: transform 1s; /* Use transform for smoother animation */
+}
+
+.flap::before {
+    left: 0; /* Position to the left */
+    background-position: 0px; /* Adjust background position */
+}
+
+.flap::after {
+    right: 0; /* Position to the right */
+    background-position: -250px; /* Adjust background position */
+}
+
+.cor:hover .flap::after {
+    transform: translateX(300px);
+}
+
+.cor:hover .flap::before {
+    transform: translateX(-300px);
+}
+
+
+.flapa::before,
+.flapa::after {
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 50%;
+    background: url("National Police Museum/Act2.jpg") no-repeat;
+    background-size: cover; /* Ensure the image covers the area */
+    transition: transform 1s; /* Use transform for smoother animation */
+}
+
+.flapa::before {
+    left: 0; /* Position to the left */
+    background-position: 0px; /* Adjust background position */
+}
+
+.flapa::after {
+    right: 0; /* Position to the right */
+    background-position: -250px; /* Adjust background position */
+}
+
+.cora:hover .flapa::after {
+    transform: translateX(300px);
+}
+
+.cora:hover .flapa::before {
+    transform: translateX(-300px);
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="Icon.png" height="50px" width="35px">
+        <div class="logo">National Police Museum</div>
+        </div>
+        <nav class="navigation">
+            <a href="#Home">Home</a>
+            <a href="#Most-Popular-Pieces">Most Popular Pieces</a>
+            <a href="#Activities">Activities</a>
+            <a href="#Appointments">Tickets & Opening Hours </a>
+            <a href="#Contacts">Contacts</a>
+        </nav>
+    </header>
+    <section id="Home">
+    <div class="slider">
+        <div class="list">
+            <div class="item">
+                <img src="National Police Museum/Slide1.jpg" alt="National Police Museum">
+                <div class="content">
+                    <div class="title" style="white-space: nowrap;">National Police Museum</div>
+                    <div class="type"> in Cairo</div>
+                    <div class="description" style="padding-top: 8.01%;">
+                        <h4>The National Police Museum, located in the northern part of Salah El-Din Al-Ayoubi Citadel in Cairo, 
+                            showcases the history and efforts of Egyptian police throughout different eras.</h4>
+                    </div>
+                    <div class="button">
+                        <a href="https://egymonuments.gov.eg/ar/museums/national-police-museum">
+                            <button class="see-more-button">SEE MORE</button>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+            <div class="item">
+                <img src="National Police Museum/Slide2.png" alt="National Police Museum">
+                <div class="content">
+                    <div class="title" style="white-space: nowrap;">National Police Museum</div>
+                    <div class="type"> in Cairo</div>
+                    <div class="description" >
+                        <h4>It features various halls dedicated to specific periods, such as ancient Egypt, the Islamic era, and the history of firefighting tools. Visitors can explore exhibits on significant battles, political assassinations, 
+                            social crimes, and the evolution of police weapons and uniforms.</h4>
+                    </div>
+                    <div class="button">
+                        <a href="https://egymonuments.gov.eg/ar/museums/national-police-museum">
+                            <button class="see-more-button">SEE MORE</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="National Police Museum/Slide3.jpg" alt="National Police Museum">
+                <div class="content">
+                    <div class="title" style="white-space: nowrap;">National Police Museum</div>
+                    <div class="type"> in Cairo</div>
+                    <div class="description"  style="padding-top: 4%;">
+                        <h4>The museum also displays firefighting vehicles used in the 18th and 19th centuries, 
+                            as well as models depicting the Egyptian police's struggle against colonialism, 
+                            including the 1952 Ismailia battle.</h4>
+                    </div>
+                    <div class="button">
+                        <a href="https://egymonuments.gov.eg/ar/museums/national-police-museum">
+                            <button class="see-more-button">SEE MORE</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="National Police Museum/Slide4.png" alt="National Police Museum">
+                <div class="content">
+                    <div class="title" style="white-space: nowrap;">National Police Museum</div>
+                    <div class="type"> in Cairo</div>
+                    <div class="description"  style="padding-top: 4%;">
+                        <h4>The museum is built around the "Lions' Tower," named for its carved lion reliefs, 
+                            believed to date back to the Mamluk era and associated with Sultan Baybars. 
+                            This tower is the only remaining Mamluk-era tower in the citadel.</h4>
+                    </div>
+                    <div class="button">
+                        <a href="https://egymonuments.gov.eg/ar/museums/national-police-museum">
+                            <button class="see-more-button">SEE MORE</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="thumbnail">
+            <div class="item">
+                <img src="National Police Museum/Slide1.jpg" alt="Thumbnail of National Police Museum">
+            </div>
+            <div class="item">
+                <img src="National Police Museum/Slide2.png" alt="Thumbnail of National Police Museum">
+            </div>
+            <div class="item">
+                <img src="National Police Museum/Slide3.jpg" alt="Thumbnail of National Police Museum">
+            </div>
+            <div class="item">
+                <img src="National Police Museum/Slide4.png" alt="Thumbnail of National Police Museum">
+            </div>
+        </div>
+    </div>
+        <div class="nextPrevArrows">
+            <button class="prev"> < </button>
+            <button class="next"> > </button>
+        </div>
+    </div>
+    </section>
+    <section id="Most-Popular-Pieces">
+        <br><br>
+        <div class="con">
+            <h2 class="heading reveal">Most Popular Pieces</h2>
+            <a href="#!" class="card card-1 reveal">
+                <div class="front" style="background-image: url('National Police Museum/1.jpg');" >
+                    <p>Oil Flask</p>
+                </div>
+                <div class="back">
+                    <div>
+                        <p>Pear-shaped and crafted from pottery, this Fatimid-era flask features raised fish-scale decorations. 
+                            It has a short neck ending in a narrow spout for pouring oil, resembling modern hand grenades in design.</p>
+                    </div>
+                </div>
+            </a>
+            <a href="#!" class="card card-2 reveal">
+                <div class="front" style="background-image: url('National Police Museum/2.jpg');" >
+                    <p>Deceptive Weapons</p>
+                </div>
+                <div class="back">
+                    <div>
+                        <p>It's a cane concealing a rifle inside, with a handle shaped like a snake's head. 
+                            Dating back to the Ottoman era, it is crafted from wood and ivory. 
+                            This cleverly designed weapon reflects the ingenuity and artistry of the period, 
+                            serving both as a functional tool and a concealed means of defense or attack.</p>
+                    </div>
+                </div>
+            </a>
+            <a href="#!" class="card card-3 reveal">
+                <div class="front" style="background-image: url('National Police Museum/3.jpg');" >
+                    <p>Model of a boat</p>
+                </div>
+                <div class="back">
+                    <div>
+                        <p>This is a model of an ancient Egyptian boat, dating back to the ancient Egyptian era. 
+                            The boat is made of wood and features ten sailors.</p>
+                    </div>
+                </div>
+            </a>
+            <a href="#!" class="card card-4 reveal">
+                <div class="front" style="background-image: url('National Police Museum/4.jpg');" >
+                    <p>Defensive Weapons</p>
+                </div>
+                <div class="back">
+                    <div>
+                        <p>The oval-shaped shield features a central handgrip and dates back to the Ottoman era. 
+                            Crafted from wood, leather, and tortoiseshell, it showcases the intricate design and materials used in defensive weapons of the time. 
+                            This shield reflects the craftsmanship and practicality of Ottoman-era armor, 
+                            designed for both protection and durability in battle.</p>
+                    </div>
+                </div>
+            </a>
+            <a href="#!" class="card card-5 reveal">
+                <div class="front" style="background-image: url('National Police Museum/5.jpg');" >
+                    <p>The Ramadan Cannon</p>
+                </div>
+                <div class="back">
+                    <div>
+                        <p>A Krupp-made cannon, is a historic artifact dating back to the era of the Muhammad Ali dynasty in 1871. 
+                            This cannon is distinguished by its iron barrel, which rests on a base with two large wooden wheels that have iron rims. 
+                            It was traditionally used to signal the start of Ramadan and announce the breaking of the fast at sunset each day during the holy month</p>
+                    </div>
+                </div>
+            </a>
+            <a href="#!" class="card card-6 reveal">
+                <div class="front" style="background-image: url('National Police Museum/6.jpg');" >
+                    <p>The world's first manual fire engine</p>
+                </div>
+                <div class="back">
+                    <div>
+                        <p>It was an English-made vehicle, designed in a very basic form. 
+                            It consisted of a rectangular box mounted on four wheels and was transported to fire sites by horses. 
+                            Dating back to the Ottoman era in 1766, it was constructed primarily from wood. This early firefighting tool marks a significant step in the evolution of firefighting technology, 
+                            showcasing the ingenuity of its time.</p>
+                    </div>
+                </div>
+            </a>
+            <a href="#!" class="card card-7 reveal">
+                <div class="front" style="background-image: url('National Police Museum/7.jpg');" >
+                    <p>Artwork</p>
+                </div>
+                <div class="back">
+                    <div>
+                        <p>The artwork depicts four individuals in full formal attire: one carrying a sword and three serving as honor guards. 
+                            Created during the Ottoman era, the painting is made on paper using oil paints. 
+                            This piece reflects the artistic style and cultural significance of the period, 
+                            capturing the elegance and ceremonial roles of its subjects.</p>
+                    </div>
+                </div>
+            </a>
+            <a href="#!" class="card card-8 reveal">
+                <div class="front" style="background-image: url('National Police Museum/8.jpg');" >
+                    <p>A Dagger</p>
+                </div>
+                <div class="back">
+                    <div>
+                        <p>The dagger is one of the oldest weapons used by ancient Egyptians, 
+                            dating back to the earliest periods for self-defense and combat. Made from wood and copper, 
+                            it reflects the early craftsmanship and technological advancements of the Old Kingdom.</p>
+                    </div>
+                </div>
+            </a>
+            <a href="#!" class="card card-9 reveal">
+                <div class="front" style="background-image: url('National Police Museum/9.jpg');" >
+                    <p>A Helmet</p>
+                </div>
+                <div class="back">
+                    <div>
+                        <p>The helmet is a protective headgear featuring a short spear-shaped ornament that also serves as a nose guard. 
+                            Adorned with floral motifs and inscriptions in Thuluth script, it dates back to the Mamluk era. Made from steel, 
+                            this helmet exemplifies the craftsmanship and decorative artistry of Mamluk military equipment, 
+                            blending functionality with intricate design.</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </section>
+    <section id="Activities" style="background-image: url('National Police Museum/Background1.png'); background-size: cover; background-position: center;">
+        <div class="cont">
+            <h2 class="heading reveal">Activities</h2>
+            <div class="card-container "> 
+            <div class="cor reveal">
+                <div class="cot ">
+                    <h1 class="i">25th January 2025</h1>
+                    <h3 class="l">As part of the celebration of the 73rd Egyptian Police Day, and in implementation of the Cultural and Archaeological Awareness Program of the National Police Museum, the Museum Education Department for People with Special Needs held workshops and storytelling sessions for our children with special needs, aiming to integrate them into the community. The day included the following activities:
+                      <br>● A storytelling workshop about the heroics of the Egyptian police during the Battle of Ismailia on January 25, 1952, which took place between the Egyptian police and the British occupation forces, resulting in the martyrdom of 50 Egyptian police officers who sacrificed their lives defending the nation.
+                      <br>● A drawing and coloring workshop where participants chose one of the archaeological artifacts displayed in the museum and expressed it through drawing and coloring.</h3>
+                </div>
+                <div class="flap"></div>
+            </div>
+            <div class="cora reveal">
+                <div class="cota ">
+                    <h1 class="ia">January 20, 2025</h1>
+                    <h3 class="la">The Beautiful Art Bus at the Police Museum  
+                        On Monday, January 20, 2025, the National Police Museum welcomed a visit from the Beautiful Art Bus group, affiliated with the General Authority of Cultural Palaces. They were accompanied by the museum’s curators on a guided tour through the exhibition halls, following the museum’s display scenario to learn about the tools and history of the Egyptian police from ancient times to the modern era.
+                       The visit also included an introduction to the role and efforts of the police in maintaining internal security for the nation. At the end of the tour, the visitors expressed their admiration for the museum’s collections and made sure to take commemorative photos to immortalize their visit to the museum.</h3>
+                </div>
+                <div class="flapa"></div>
+            </div>
+            </div>
+        </div> 
+    </section>
+    <section id="Appointments">
+        <div class="conta">
+            <h2 class="heading reveal">Tickets & Opening Hours </h2>
+            <div class="admission-prices reveal">
+                <h2 class="hi">Ticket Prices</h2>
+                <p>Egyptian & Arab Visitors:</p>
+                <table>
+                    <tr>
+                        <td>Adults</td>
+                        <td>EGP 60</td>
+                    </tr>
+                    <tr>
+                        <td>Student</td>
+                        <td>EGP 30</td>
+                    </tr>
+                </table>
+                    <p>Foreigners Visitors:</p>
+                        <table>
+                        <tr>
+                            <td>Adults</td>
+                            <td>EGP 200</td>
+                        </tr>
+                        <tr>
+                            <td>Student</td>
+                            <td>EGP 100</td>
+                        </tr>
+                    </table>
+            </div>
+            <div class="opening-hours reveal">
+                <h2 class="hi">Opening Hours</h2>
+                <p>Visitors</p>
+                <table>
+                    <tr>
+                        <td>Every day</td>
+                        <td>8:00 a.m. – 4:00 p.m.</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </section>
+    <section id="Contacts" style="background-image: url('National Police Museum/Background2.png'); " > 
+         <h2 class="heading reveal">Contact</h2>
+         <center>
+
+            <div class="Contact reveal" id="contact">
+                <h1 class="title">Contact us</h1>
+                <div class="icon">
+                <i class="fa fa-map-marker fa-2x"></i>    
+                </div>
+                    <div class="info">
+                        <p>Citadel of salah el-din, Cairo - Egypt</p>
+                        </div>
+                <div class="Contact reveal" >
+                <div class="icon">
+            <i class="fa fa-phone fa-2x"></i>    
+            </div>
+                    <div class="info">
+                        <h3>Phone</h3>
+                        <p>02 25122549</p>
+                    </div>
+                    
+                    <div class="Contact reveal">
+                        <div class="icon">
+                            <i class="fa fa-envelope fa-2x"></i>
+                        </div>
+                        
+                        <div class="info">
+                        <h3> Email </h3>
+                            <a href="mailto:policemuseum1@gmail.com">policemuseum1@gmail.com</a>
+                        </div>  
+                </div>
+            </div>
+            <div>
+                <ul class="social-media-list ">
+                    <li>
+                        <a href="https://www.facebook.com/share/15PKCu1bMD/" target="_blank" class="co-icon">
+                            <i class="fa fa-facebook"></i>
+                        </a>
+                    </li>   
+                  </ul>
+            </div> 
+            </div> 
+        </center>
+      </section> 
+      <script src="MuseumScript.js"></script>
+</body>
+</html>

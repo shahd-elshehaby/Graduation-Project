@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Royal Jewelry Museum</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="MuseumDesign.css">
+    <link rel="icon" href="Icon.png" type="image/png">
+
+    <style>
+.flap::before,
+.flap::after {
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 50%;
+    background: url("Royal Jewelry Museum/Act1.jpg") no-repeat;
+    background-size: cover; /* Ensure the image covers the area */
+    transition: transform 1s; /* Use transform for smoother animation */
+}
+
+.flap::before {
+    left: 0; /* Position to the left */
+    background-position: 0px; /* Adjust background position */
+}
+
+.flap::after {
+    right: 0; /* Position to the right */
+    background-position: -250px; /* Adjust background position */
+}
+
+.cor:hover .flap::after {
+    transform: translateX(300px);
+}
+
+.cor:hover .flap::before {
+    transform: translateX(-300px);
+}
+
+
+.flapa::before,
+.flapa::after {
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 50%;
+    background: url("Royal Jewelry Museum/Act2.jpeg") no-repeat;
+    background-size: cover; /* Ensure the image covers the area */
+    transition: transform 1s; /* Use transform for smoother animation */
+}
+
+.flapa::before {
+    left: 0; /* Position to the left */
+    background-position: 0px; /* Adjust background position */
+}
+
+.flapa::after {
+    right: 0; /* Position to the right */
+    background-position: -250px; /* Adjust background position */
+}
+
+.cora:hover .flapa::after {
+    transform: translateX(300px);
+}
+
+.cora:hover .flapa::before {
+    transform: translateX(-300px);
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="Icon.png" height="50px" width="35px">
+        <div class="logo">Royal Jewelry Museum</div>
+        </div>
+        <nav class="navigation">
+            <a href="#Home">Home</a>
+            <a href="#Most-Popular-Pieces">Most Popular Pieces</a>
+            <a href="#Activities">Activities</a>
+            <a href="#Appointments">Tickets & Opening Hours </a>
+            <a href="#Contacts">Contacts</a>
+        </nav>
+    </header>
+    <section id="Home">
+    <div class="slider">
+        <div class="list">
+            <div class="item">
+                <img src="Royal Jewelry Museum/Slide1.jpg" alt="Royal Jewelry Museum">
+                <div class="content">
+                    <div class="title" style="white-space: nowrap;">Royal Jewelry Museum</div>
+                    <div class="type"> in Alexandria</div>
+                    <div class="description" style="padding-top: 4%;">
+                       <h4>The Royal Jewelry Museum is a remarkable institution showcasing the treasures of the Muhammad Ali Dynasty,
+                        which ruled Egypt for over 150 years, from 1805 to 1952.</h4>
+                    </div>
+                    <div class="button">
+                        <a href="https://egymonuments.gov.eg/ar/museums/royal-jewelry-museum/">
+                            <button class="see-more-button">SEE MORE</button>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+            <div class="item">
+                <img src="Royal Jewelry Museum/Slide2.jpg" alt="Royal Jewelry Museum">
+                <div class="content">
+                    <div class="title" style="white-space: nowrap;">Royal Jewelry Museum</div>
+                    <div class="type"> in Alexandria</div>
+                    <div class="description" style="padding-top: 4%;">
+                        <h4>The palace was built in the Zizinya area in 1919 by Mrs. Zainab Fahmy and completed by her daughter, 
+                            Princess Fatima, daughter of Prince Ali Haidar, grandson of Muhammad Ali Pasha.</h4>
+                    </div>
+                    <div class="button">
+                        <a href="https://egymonuments.gov.eg/ar/museums/royal-jewelry-museum/">
+                            <button class="see-more-button">SEE MORE</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="Royal Jewelry Museum/Slide3.jpg" alt="Royal Jewelry Museum">
+                <div class="content">
+                    <div class="title" style="white-space: nowrap;">Royal Jewelry Museum</div>
+                    <div class="type"> in Alexandria</div>
+                    <div class="description" >
+                        <h4>he palace itself is a masterpiece, featuring exquisite paintings, gilded ceilings, and intricate mosaics that reflect the refined taste of the princess. 
+                            It consists of eastern and western wings connected by a corridor, each with two floors and a basement.</h4>
+                    </div>
+                    <div class="button">
+                        <a href="https://egymonuments.gov.eg/ar/museums/royal-jewelry-museum/">
+                            <button class="see-more-button">SEE MORE</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="Royal Jewelry Museum/Slide4.jpg" alt="Royal Jewelry Museum">
+                <div class="content">
+                    <div class="title" style="white-space: nowrap;">Royal Jewelry Museum</div>
+                    <div class="type"> in Alexandria</div>
+                    <div class="description"  style="padding-top: 4%;">
+                        <h4>The museum displays the luxurious possessions collected by the royal family throughout their reign, 
+                            offering a glimpse into their opulent lifestyle</h4>
+                    </div>
+                    <div class="button">
+                        <a href="https://egymonuments.gov.eg/ar/museums/royal-jewelry-museum/">
+                            <button class="see-more-button">SEE MORE</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="thumbnail">
+            <div class="item">
+                <img src="Royal Jewelry Museum/Slide1.jpg" alt="Thumbnail of Royal Jewelry Museum">
+            </div>
+            <div class="item">
+                <img src="Royal Jewelry Museum/Slide2.jpg" alt="Thumbnail of Royal Jewelry Museum">
+            </div>
+            <div class="item">
+                <img src="Royal Jewelry Museum/Slide3.jpg" alt="Thumbnail of Royal Jewelry Museum">
+            </div>
+            <div class="item">
+                <img src="Royal Jewelry Museum/Slide4.jpg" alt="Thumbnail of Royal Jewelry Museum">
+            </div>
+        </div>
+    </div>
+        <div class="nextPrevArrows">
+            <button class="prev"> < </button>
+            <button class="next"> > </button>
+        </div>
+    </div>
+    </section>
+    <section id="Most-Popular-Pieces">
+        <br><br>
+        <div class="con">
+            <h2 class="heading reveal">Most Popular Pieces</h2>
+            <a href="#!" class="card card-1 reveal">
+                <div class="front" style="background-image: url('Royal Jewelry Museum/1.jpeg');" >
+                    <p>A gold set belonging to Princess Malak Tousson</p>
+                </div>
+                <div class="back">
+                    <div>
+                        <p>It includes a brush, drinking cups, and a sword adorned with floral decorations and the letter "M." 
+                            It dates back to the Muhammad Ali Dynasty and is made of gold, found in Egypt.</p>
+                    </div>
+                </div>
+            </a>
+            <a href="#!" class="card card-2 reveal">
+                <div class="front" style="background-image: url('Royal Jewelry Museum/2.jpg');" >
+                    <p>The necklace belonging to Muhammad Ali Pasha</p>
+                </div>
+                <div class="back">
+                    <div>
+                        <p>A necklace of Muhammad Ali Pasha, made up of 16 decorative units, includes 8 units inscribed with his name and 8 others shaped like gold flowers, each with a gold ring set with diamonds. 
+                            It dates back to the Muhammad Ali Dynasty and is made of gold, found in Egypt.</p>
+                    </div>
+                </div>
+            </a>
+            <a href="#!" class="card card-3 reveal">
+                <div class="front" style="background-image: url('Royal Jewelry Museum/3.jpg');" >
+                    <p>The Queen Farida Set</p>
+                </div>
+                <div class="back">
+                    <div>
+                        <p>Is a luxurious piece made of platinum and 18-carat gold. Its crown features five graduated flowers, with the largest at the center, showcasing royal elegance. 
+                            Discovered in Egypt, it reflects the opulence and craftsmanship of the era.</p>
+                    </div>
+                </div>
+            </a>
+            <a href="#!" class="card card-4 reveal">
+                <div class="front" style="background-image: url('Royal Jewelry Museum/4.jpg');" >
+                    <p>The golden chess set from King Farouk's collection</p>
+                </div>
+                <div class="back">
+                    <div>
+                        <p>The golden chess set from King Farouk's collection features 32 pieces shaped like animal and human figures, adorned with 425 diamonds and colored enamel. The bases display historical figures, buildings, and Persian inscriptions in enamel. Dating back to the Muhammad Ali Dynasty and discovered in Iran, 
+                            this luxurious set reflects the era's opulence and intricate craftsmanship.</p>
+                    </div>
+                </div>
+            </a>
+            <a href="#!" class="card card-5 reveal">
+                <div class="front" style="background-image: url('Royal Jewelry Museum/5.jpg');" >
+                    <p>The set consists of nine pieces forming a desk set, housed in a wooden box</p>
+                </div>
+                <div class="back">
+                    <div>
+                        <p>The set includes nine pieces forming a luxurious desk set, housed in a wooden box. 
+                            It features three golden inkwells, a golden sponge holder, a double penholder, steel scissors, an ivory ruler, a paper knife, and a sand shaker, adorned with 166 brilliant-cut diamonds. Owned by Said Toson, this exquisite collection dates back to the Muhammad Ali Dynasty and was discovered in Egypt, 
+                            showcasing the era's opulence and craftsmanship.</p>
+                    </div>
+                </div>
+            </a>
+            <a href="#!" class="card card-6 reveal">
+                <div class="front" style="background-image: url('Royal Jewelry Museum/6.jpg');" >
+                    <p>The Princess Shwikar Set</p>
+                </div>
+                <div class="back">
+                    <div>
+                        <p>A set made of platinum and diamonds includes a crown and earrings. 
+                            It dates back to the Muhammad Ali Dynasty and was found in Egypt.</p>
+                    </div>
+                </div>
+            </a>
+            <a href="#!" class="card card-7 reveal">
+                <div class="front" style="background-image: url('Royal Jewelry Museum/7.jpeg');" >
+                    <p>The Elephant statue</p>
+                </div>
+                <div class="back">
+                    <div>
+                        <p>This unique masterpiece, gifted to King Farouk by Mohammad Reza Pahlavi, is an ivory elephant statue adorned with a golden saddle and howdah, encrusted with pearls, sapphires, and other precious stones. The elephant features gold ornaments with pearls and gemstones, a gold chain with a bell around its neck, and ivory tusks tipped with gold. Dating back to the Muhammad Ali Dynasty, this exquisite piece, discovered in Egypt, 
+                            reflects the opulence and artistry of royal gifts from that era.</p>
+                    </div>
+                </div>
+            </a>
+            <a href="#!" class="card card-8 reveal">
+                <div class="front" style="background-image: url('Royal Jewelry Museum/8.jpg');" >
+                    <p>The collection of household items</p>
+                </div>
+                <div class="back">
+                    <div>
+                        <p>The collection of household items at the Royal Jewelry Museum features exquisite pieces made of gold and diamonds, showcasing the luxury and craftsmanship of the Muhammad Ali Dynasty. These opulent items, discovered in Egypt, reflect the grandeur and refined taste of the royal family, 
+                            highlighting their lavish lifestyle and the artistic heritage of the era.</p>
+                    </div>
+                </div>
+            </a>
+            <a href="#!" class="card card-9 reveal">
+                <div class="front" style="background-image: url('Royal Jewelry Museum/9.jpg');" >
+                    <p>The collection of pocket watches</p>
+                </div>
+                <div class="back">
+                    <div>
+                        <p>Features a variety of golden watches in different designs. Some are engraved with portraits, 
+                            others bear names, and some are adorned with intricate decorative patterns. These exquisite timepieces date back to the Muhammad Ali Dynasty and are made of gold, reflecting the luxury and craftsmanship of the era. Discovered in Egypt, 
+                            the collection highlights the opulence and artistic heritage of the royal family.</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </section>
+    <section id="Activities" style="background-image: url('Royal Jewelry Museum/Background1.jpg'); background-size: cover; background-position: center;">
+        <div class="cont">
+            <h2 class="heading reveal">Activities</h2>
+            <div class="card-container "> 
+            <div class="cor reveal">
+                <div class="cot ">
+                    <h1 class="i">22nd of December, 2025</h1>
+                    <h3 class="l">The Scientific Research Department at the museum held a lecture titled 'Islamic Coins at the Greco-Roman Museum' , delivered by Dr. Salwa Abdel Mutalib, Senior Researcher at the Royal Jewelry Museum, on Sunday, December 22, 2024. The lecture covered Islamic coins starting from the emergence of Islam through the coins of the Rashidun, Umayyad, Abbasid, Almoravid, and Almohad caliphates, 
+                        and the changes that occurred in Islamic currency through the ages.</h3>
+                </div>
+                <div class="flap"></div>
+            </div>
+            <div class="cora reveal">
+                <div class="cota ">
+                    <h1 class="ia">30th of January, 2025</h1>
+                    <h3 class="la">On the occasion of celebrating the International Day of Education, the General Administration of Museum Education for People with Special Needs at the Royal Jewelry Museum organized a seminar discussing the latest educational methods provided by the state for people with special needs, how they were implemented, and the extent of their benefits in serving people with special needs. The seminar was delivered by Mr. Khaled Saleh Henein, Assistant Professor at the Department of Educational Foundations, Faculty of Education, Alexandria University. 
+                        <br>Supervised by: 
+                        <br>Ms. Safaa Farouk, General Manager of the Royal Jewelry Museum.
+                        <br>Dr. Heba Abdel Aziz, Supervisor of the General Administration of Museum Education for People with Special Needs at the Museums Sector</h3>
+                </div>
+                <div class="flapa"></div>
+            </div>
+            </div>
+        </div> 
+    </section>
+    <section id="Appointments">
+        <div class="conta">
+            <h2 class="heading reveal">Tickets & Opening Hours </h2>
+            <div class="admission-prices reveal">
+                <h2 class="hi">Ticket Prices</h2>
+                <p>Egyptian & Arab Visitors:</p>
+                <table>
+                    <tr>
+                        <td>Adults</td>
+                        <td>EGP 20</td>
+                    </tr>
+                    <tr>
+                        <td>Student</td>
+                        <td>EGP 5</td>
+                    </tr>
+                </table>
+                    <p>Foreigners Visitors:</p>
+                        <table>
+                        <tr>
+                            <td>Adults</td>
+                            <td>EGP 220</td>
+                        </tr>
+                        <tr>
+                            <td>Student</td>
+                            <td>EGP 110</td>
+                        </tr>
+                    </table>
+            </div>
+            <div class="opening-hours reveal">
+                <h2 class="hi">Opening Hours</h2>
+                <p style="padding: 2.5%;">Visitors</p>
+                <table>
+                    <tr>
+                        <td>Every day</td>
+                        <td>9:00 a.m. – 5:00 p.m.</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </section>
+    <section id="Contacts" style="background-image: url('Royal Jewelry Museum/Background2.jpg'); " > 
+         <h2 class="heading reveal">Contact</h2>
+         <center>
+
+            <div class="Contact reveal" id="contact">
+                <h1 class="title">Contact us</h1>
+                <div class="icon">
+                <i class="fa fa-map-marker fa-2x"></i>    
+                </div>
+                    <div class="info">
+                        <p>27 Ahmed Yehia Street, Alexandria - Egypt</p>
+                        </div>
+                <div class="Contact reveal" >
+                <div class="icon">
+            <i class="fa fa-phone fa-2x"></i>    
+            </div>
+                    <div class="info">
+                        <h3>Phone</h3>
+                        <p>03 5828348</p>
+                    </div>
+                    
+                    <div class="Contact reveal">
+                        <div class="icon">
+                            <i class="fa fa-envelope fa-2x"></i>
+                        </div>
+                        
+                        <div class="info">
+                        <h3> Email </h3>
+                            <a href="mailto:royaljewelry2015@gmail.com">royaljewelry2015@gmail.com</a>
+                        </div>  
+                </div>
+            </div>
+            <div>
+                <ul class="social-media-list ">
+                    
+                    <li>
+                        <a href="https://www.facebook.com/RoyalJewelryMuseum?mibextid=ZbWKwL" target="_blank" class="co-icon">
+                            <i class="fa fa-facebook"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://wa.me/201203635595" target="_blank" class="co-icon">
+                            <i class="fa fa-whatsapp" aria-hidden="true"></i>
+                          </a>
+                      </li>   
+                  </ul>
+            </div> 
+            </div> 
+        </center>
+      </section> 
+      <script src="MuseumScript.js"></script>
+</body>
+</html>
